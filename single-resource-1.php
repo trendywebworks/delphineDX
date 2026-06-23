@@ -1,4 +1,9 @@
-<?php /* Template Name: What is Sepsis */ get_header(); ?>
+<?php
+/*
+Template Name: Resource Post Layout 1
+Template Post Type: post, product, resource
+*/
+get_header(); ?>
 
   <main>
     <section class="sepsis-hero" aria-labelledby="sepsis-title">
