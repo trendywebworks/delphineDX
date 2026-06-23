@@ -2,9 +2,9 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <video class="hero-video" autoplay muted loop playsinline poster="assets/videos/hero-lab-microscope.jpg"
+      <video class="hero-video" autoplay muted loop playsinline poster="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/hero-lab-microscope.jpg"
         aria-hidden="true">
-        <source src="assets/videos/hero-lab-microscope.mp4" type="video/mp4">
+        <source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/hero-lab-microscope.mp4" type="video/mp4">
       </video>
       <div class="hero-inner">
         <div>
@@ -40,10 +40,10 @@
       <div class="section-inner approach-grid">
         <div class="approach-visual" aria-hidden="true">
           <div class="photo-stack primary">
-            <img src="assets/images/clinical-sample.png" alt="">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-sample.png" alt="">
           </div>
           <div class="photo-stack secondary">
-            <img src="assets/images/assay-kit.png" alt="">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/assay-kit.png" alt="">
           </div>
         </div>
         <div>
