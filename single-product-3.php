@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Product Post Layout 1
+Template Name: Product Post Layout 3
 Template Post Type: post, product, resource
 */
 get_header(); ?>
