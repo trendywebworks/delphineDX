@@ -18,18 +18,18 @@
 <body <?php body_class(); ?>>
   <header class="site-header">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Delphine Diagnostics home">
+      <a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Delphine Diagnostics home">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/delphine-logo.png" alt="">
         <span>Delphine Diagnostics</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <div class="nav-links" id="navLinks">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/about-us/">About Us</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>about-us/">About Us</a>
         <div class="nav-item has-dropdown">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Resources</a>
           <div class="dropdown-menu" aria-label="Resources submenu">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>/resources/what-is-sepsis/">What is Sepsis?</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>resources/what-is-sepsis/">What is Sepsis?</a>
           </div>
         </div>
         <div class="nav-item has-dropdown has-mega">
@@ -41,19 +41,19 @@
               <p>ML-enabled clinical decision support for real-time sepsis risk signals and care workflow context.</p>
               <span>Read More</span>
             </a>
-            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>/products/delphine-sepsis-diagnostic-assay/">
+            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-sepsis-diagnostic-assay/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/assay-kit.png" alt="">
               <h3>Delphine Sepsis Diagnostic Assay</h3>
               <p>Real-time PCR assay concept for pathogen and resistance marker detection from whole blood.</p>
               <span>Read More</span>
             </a>
-            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>/products/delphine-ai-ml-healthcare-platform/">
+            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-ai-ml-healthcare-platform/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="">
               <h3>Delphine AI/ML Healthcare Platform</h3>
               <p>Healthcare intelligence platform designed to connect clinical data, models, and recommendations.</p>
               <span>Read More</span>
             </a>
-            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>/products/ruo-pathogen-identification-test-kits/">
+            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/ruo-pathogen-identification-test-kits/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-sample.png" alt="">
               <h3>RUO Pathogen Identification Test Kits</h3>
               <p>Real-time PCR assays for research use in pathogen detection, monitoring, and microbiology studies.</p>
@@ -68,16 +68,18 @@
           </div>
         </div>
         <div class="nav-item has-dropdown">
-          <a href="blog.html">News</a>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/news/">News</a>
+          <!--
           <div class="dropdown-menu" aria-label="News submenu">
             <a href="blog.html#year-2025">2025</a>
             <a href="blog.html#year-2024">2024</a>
             <a href="blog.html#year-2023">2023</a>
             <a href="blog.html#year-2022">2022</a>
           </div>
+          -->
         </div>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/careers/">Career</a>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/blog/">Blog</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>careers/">Career</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/blog/">Blog</a>
       </div>
       <a class="button nav-cta" href="<?php echo esc_url( home_url( '/' ) ); ?>/contact-us/">Contact Us</a>
     </nav>
