@@ -27,7 +27,7 @@
                                     <?php if (has_post_thumbnail()) : ?>
                                         <?php the_post_thumbnail('large'); ?>
                                     <?php else : ?>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.jpg" alt="">
+                                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/placeholder.jpg" alt="">
                                     <?php endif; ?>
 
                                 </div>

@@ -67,17 +67,19 @@
             </a>
           </div>
         </div>
-        <div class="nav-item has-dropdown">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/news/">News</a>
-          <!--
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/news/">News</a>
+        <!--
+        <div class="nav-item has-dropdown">          
+          < !- -
           <div class="dropdown-menu" aria-label="News submenu">
             <a href="blog.html#year-2025">2025</a>
             <a href="blog.html#year-2024">2024</a>
             <a href="blog.html#year-2023">2023</a>
             <a href="blog.html#year-2022">2022</a>
           </div>
-          -->
+          - - >
         </div>
+        -->
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>careers/">Career</a>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/blog/">Blog</a>
       </div>
