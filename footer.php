@@ -28,7 +28,7 @@
           </svg>
         </a>
       </div>
-      <div>Copyright © 2026 Delphine Dx. All rights reserved.</div>
+      <div>Copyright © <?php echo date('Y'); ?> Delphine Dx. All rights reserved.</div>
     </div>
   </footer>
 
