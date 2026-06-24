@@ -396,7 +396,7 @@ h1 {
 }
 
 section {
-  padding: 92px 0;
+  padding: 40px 0;
 }
 
 .section-inner {
@@ -5529,4 +5529,65 @@ body.job-modal-open {
 .archive-pagination .page-numbers.current {
   background: #0073aa;
   color: #fff;
+}
+
+/* =========================
+   404 PAGE
+========================= */
+
+.not-found {
+  min-height: 68vh;
+  display: grid;
+  place-items: center;
+  padding: 120px 0;
+  background: linear-gradient(145deg, var(--cream), var(--mint));
+  text-align: center;
+}
+
+.not-found-inner {
+  max-width: 720px;
+}
+
+.not-found-code {
+  margin: 0 0 -18px;
+  color: rgba(98, 53, 123, 0.14);
+  font-size: clamp(7rem, 20vw, 13rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.08em;
+}
+
+.not-found-inner .eyebrow,
+.not-found-inner h1,
+.not-found-inner > p {
+  position: relative;
+}
+
+.not-found h1 {
+  max-width: 620px;
+  margin: 0 auto 18px;
+}
+
+.not-found-inner > p:not(.not-found-code):not(.eyebrow) {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+@media (max-width: 600px) {
+  .not-found {
+    min-height: 60vh;
+    padding: 88px 0;
+  }
+
+  .not-found-code {
+    font-size: 7rem;
+  }
 }
