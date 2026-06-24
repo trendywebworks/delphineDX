@@ -24,12 +24,12 @@
       </a>
       <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <div class="nav-links" id="navLinks">
-        <a href="#top">Home</a>
-        <a href="about.html">About Us</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/about-us/">About Us</a>
         <div class="nav-item has-dropdown">
-          <a href="what-is-sepsis.html">Resources</a>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Resources</a>
           <div class="dropdown-menu" aria-label="Resources submenu">
-            <a href="what-is-sepsis.html">What is Sepsis?</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>/resources/what-is-sepsis/">What is Sepsis?</a>
           </div>
         </div>
         <div class="nav-item has-dropdown has-mega">
@@ -41,19 +41,19 @@
               <p>ML-enabled clinical decision support for real-time sepsis risk signals and care workflow context.</p>
               <span>Read More</span>
             </a>
-            <a class="mega-card" href="delphine-sepsis-diagnostic-assay.html">
+            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>/products/delphine-sepsis-diagnostic-assay/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/assay-kit.png" alt="">
               <h3>Delphine Sepsis Diagnostic Assay</h3>
               <p>Real-time PCR assay concept for pathogen and resistance marker detection from whole blood.</p>
               <span>Read More</span>
             </a>
-            <a class="mega-card" href="delphine-ai-ml-healthcare-platform.html">
+            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>/products/delphine-ai-ml-healthcare-platform/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="">
               <h3>Delphine AI/ML Healthcare Platform</h3>
               <p>Healthcare intelligence platform designed to connect clinical data, models, and recommendations.</p>
               <span>Read More</span>
             </a>
-            <a class="mega-card" href="ruo-pathogen-identification-test-kits.html">
+            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>/products/ruo-pathogen-identification-test-kits/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-sample.png" alt="">
               <h3>RUO Pathogen Identification Test Kits</h3>
               <p>Real-time PCR assays for research use in pathogen detection, monitoring, and microbiology studies.</p>
@@ -76,9 +76,9 @@
             <a href="blog.html#year-2022">2022</a>
           </div>
         </div>
-        <a href="career.html">Career</a>
-        <a href="blog.html">Blog</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/careers/">Career</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/blog/">Blog</a>
       </div>
-      <a class="button nav-cta" href="contact.html">Contact Us</a>
+      <a class="button nav-cta" href="<?php echo esc_url( home_url( '/' ) ); ?>/contact-us/">Contact Us</a>
     </nav>
   </header>
