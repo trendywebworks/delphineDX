@@ -396,7 +396,7 @@ h1 {
 }
 
 section {
-  padding: 40px 0;
+  padding: 90px 0;
 }
 
 .section-inner {
@@ -4027,9 +4027,13 @@ body.job-modal-open {
 }
 
 .post-card a {
-  color: var(--secondary);
-  text-decoration: underline;
+  color: var(--primary);
+  text-decoration: none;
   text-underline-offset: 4px;
+}
+
+.post-card a:hover {
+  color: var(--secondary);
 }
 
 .post-meta {
@@ -4059,6 +4063,7 @@ body.job-modal-open {
 
 .blog-index-section {
   background: linear-gradient(180deg, #eef7fc 0%, #fbf9fd 100%);
+  padding: 40px 0;
 }
 
 .blog-layout {
@@ -5559,7 +5564,7 @@ body.job-modal-open {
 
 .not-found-inner .eyebrow,
 .not-found-inner h1,
-.not-found-inner > p {
+.not-found-inner>p {
   position: relative;
 }
 
@@ -5568,7 +5573,7 @@ body.job-modal-open {
   margin: 0 auto 18px;
 }
 
-.not-found-inner > p:not(.not-found-code):not(.eyebrow) {
+.not-found-inner>p:not(.not-found-code):not(.eyebrow) {
   max-width: 560px;
   margin: 0 auto;
 }
