@@ -33,38 +33,48 @@
           </div>
         </div>
         <div class="nav-item has-dropdown has-mega">
-          <a href="#products">Products</a>
+          <a href="<?php echo esc_url( home_url( '/products/' ) ); ?>">Products</a>
           <div class="mega-menu" aria-label="Products submenu">
-            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-ai-ml-healthcare-platform/">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-team.jpeg" alt="">
-              <h3>ClinSight Sepsis Prediction Using ML Tool</h3>
-              <p>ML-enabled clinical decision support for real-time sepsis risk signals and care workflow context.</p>
-              <span>Read More</span>
-            </a>
-            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-sepsis-diagnostic-assay/">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/assay-kit.png" alt="">
-              <h3>Delphine Sepsis Diagnostic Assay</h3>
-              <p>Real-time PCR assay concept for pathogen and resistance marker detection from whole blood.</p>
-              <span>Read More</span>
-            </a>
-            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-ai-ml-healthcare-platform/">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="">
-              <h3>Delphine AI/ML Healthcare Platform</h3>
-              <p>Healthcare intelligence platform designed to connect clinical data, models, and recommendations.</p>
-              <span>Read More</span>
-            </a>
-            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/ruo-pathogen-identification-test-kits/">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-sample.png" alt="">
-              <h3>RUO Pathogen Identification Test Kits</h3>
-              <p>Real-time PCR assays for research use in pathogen detection, monitoring, and microbiology studies.</p>
-              <span>Read More</span>
-            </a>
-            <a class="mega-card" href="#products">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sepsis-alliance.jpeg" alt="">
-              <h3>RUO Resistance Marker Identification Test Kits</h3>
-              <p>Research-use assay roadmap focused on antimicrobial resistance marker identification and insight.</p>
-              <span>Read More</span>
-            </a>
+            <?php
+            $menu_products = new WP_Query(
+              array(
+                'post_type'      => 'product',
+                'posts_per_page' => -1,
+                'post_status'    => 'publish',
+                'orderby'        => 'title',
+                'order'          => 'ASC',
+              )
+            );
+            ?>
+            <?php if ( $menu_products->have_posts() ) : ?>
+              <?php while ( $menu_products->have_posts() ) : $menu_products->the_post(); ?>
+                <?php
+                $menu_product_summary = wp_trim_words( get_the_excerpt() ?: get_the_content(), 16, '...' );
+
+                if ( $menu_product_summary === '' ) {
+                  $menu_product_summary = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+                }
+                ?>
+                <a class="mega-card" href="<?php the_permalink(); ?>">
+                  <?php if ( has_post_thumbnail() ) : ?>
+                    <?php the_post_thumbnail( 'medium_large' ); ?>
+                  <?php else : ?>
+                    <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/clinical-sample.png' ); ?>" alt="">
+                  <?php endif; ?>
+                  <h3><?php the_title(); ?></h3>
+                  <p><?php echo esc_html( $menu_product_summary ); ?></p>
+                  <span>Read More</span>
+                </a>
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+              <a class="mega-card" href="<?php echo esc_url( home_url( '/products/' ) ); ?>">
+                <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/clinical-sample.png' ); ?>" alt="">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span>Read More</span>
+              </a>
+            <?php endif; ?>
           </div>
         </div>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/news/">News</a>
