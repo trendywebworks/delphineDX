@@ -107,6 +107,41 @@ function delphine_register_custom_post_types() {
     );
 
     register_post_type('education', $education_args);
+
+    add_rewrite_rule(
+        '^education/what-is-sepsis/?$',
+        'index.php?post_type=education&name=what-is-sepsis',
+        'top'
+    );
 }
 
 add_action('init', 'delphine_register_custom_post_types');
+
+function delphine_migrate_resource_posts_to_education() {
+    if ( get_option( 'delphine_resource_to_education_migrated' ) ) {
+        return;
+    }
+
+    global $wpdb;
+
+    $wpdb->update(
+        $wpdb->posts,
+        array( 'post_type' => 'education' ),
+        array( 'post_type' => 'resource' )
+    );
+
+    update_option( 'delphine_resource_to_education_migrated', '1' );
+}
+add_action( 'init', 'delphine_migrate_resource_posts_to_education', 20 );
+
+function delphine_flush_rewrite_rules_once() {
+    $rewrite_version = '20260625_education_cpt';
+
+    if ( get_option( 'delphine_rewrite_version' ) === $rewrite_version ) {
+        return;
+    }
+
+    flush_rewrite_rules( false );
+    update_option( 'delphine_rewrite_version', $rewrite_version );
+}
+add_action( 'init', 'delphine_flush_rewrite_rules_once', 30 );
