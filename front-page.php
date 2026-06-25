@@ -34,7 +34,7 @@
               attributed to sepsis</span></div>
         </div>
 
-        <p><strong>Source: US CDC</strong></p>
+        <p class="source-details"><strong>Source: US CDC</strong></p>
       </div>
     </section>
 
@@ -99,7 +99,7 @@
             <button class="product-carousel-button product-carousel-next" type="button" aria-label="Next product"></button>
           </div>
           <div class="product-grid" tabindex="0">
-            <a class="product-card" href="#platform">
+            <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-ai-ml-healthcare-platform/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-team.jpeg" alt="">
               <h3>ClinSight Sepsis Prediction Using ML Tool</h3>
               <p>ML-enabled clinical decision support for real-time sepsis risk signals and care workflow context.</p>
@@ -130,6 +130,37 @@
               <span class="product-card-link">Read More</span>
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rapid-support" id="rapid-support">
+      <div class="section-inner rapid-support-grid">
+        <div class="section-head">
+          <p class="eyebrow">Rapid Diagnostics + AI Decision Support</p>
+          <h2>Earlier pathogen insight paired with clinical risk intelligence.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis vestibulum.
+            Suspendisse potenti. Donec non sem sed sapien fermentum efficitur.</p>
+        </div>
+        <div class="rapid-support-cards">
+          <article>
+            <span>01</span>
+            <h3>Rapid molecular diagnostics</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae sem at lorem interdum
+              sollicitudin.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>AI decision support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae sem at lorem interdum
+              sollicitudin.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Connected clinical workflow</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae sem at lorem interdum
+              sollicitudin.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -200,76 +231,33 @@
       </div>
     </section>
 
-    <section id="platform">
-      <div class="section-inner platform-grid">
-        <div>
-          <div class="section-head">
-            <p class="eyebrow">Delphine AI/ML healthcare platform</p>
-            <h2>Risk signals that meet clinicians inside the care workflow.</h2>
-            <p>ClinSight is planned as a clinical decision support assistant that integrates with EHR systems and uses
-              patient vitals, blood tests, metabolic panels, observations, and lab results to produce sepsis risk and
-              clinical recommendations.</p>
-          </div>
-          <a class="button" href="#contact">Partner with Delphine</a>
-        </div>
-        <div class="signal-panel" aria-label="ClinSight sample risk context">
-          <div class="signal-row">
-            <span class="signal-label">Vitals</span>
-            <div class="bar"><span style="width: 68%"></span></div>
-          </div>
-          <div class="signal-row">
-            <span class="signal-label">CBC</span>
-            <div class="bar warning"><span style="width: 82%"></span></div>
-          </div>
-          <div class="signal-row">
-            <span class="signal-label">CMP</span>
-            <div class="bar"><span style="width: 58%"></span></div>
-          </div>
-          <div class="signal-row">
-            <span class="signal-label">Observations</span>
-            <div class="bar warning"><span style="width: 74%"></span></div>
-          </div>
-          <div class="signal-row">
-            <span class="signal-label">Inference</span>
-            <div class="bar"><span style="width: 91%"></span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="traction" id="traction">
-      <div class="section-inner traction-grid">
-        <div class="traction-card">
-          <div class="traction-card-content">
-            <p class="eyebrow">Vision and mission</p>
-            <h3>Best-in-class, affordable products for diagnosis and treatment.</h3>
-            <p>Delphine Diagnostics is committed to reliable diagnostics and data insights that speed effective care for
-              patients with infectious diseases.</p>
-          </div>
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow">Vision &amp; Mission</p>
+          <h2>Best-in-class, affordable products for diagnosis and treatment.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis vestibulum.
+            Suspendisse potenti.</p>
         </div>
-        <div class="traction-content">
-          <div class="section-head">
-            <h2>Built by industry-experienced, mission-driven teams.</h2>
-            <p>The company brings together expertise across biomedical science, molecular biology, data analytics,
-              market development, clinical advisory, and commercialization.</p>
-          </div>
-          <div class="mission-grid">
-            <article class="mission-card">
-              <span>Vision</span>
-              <p>Enhance human healthcare by developing and supplying best-in-class, affordable products for diagnosis
-                and treatment.</p>
-            </article>
-            <article class="mission-card">
-              <span>Mission</span>
-              <p>Deliver top-tier diagnostic products and supplemental data insights that help speed effective diagnosis
-                and treatment.</p>
-            </article>
-          </div>
-          <div class="proof-grid">
-            <div class="proof"><b>150+</b><span>Years of combined field experience</span></div>
-            <div class="proof"><b>4</b><span>Hospital NDAs signed</span></div>
-            <div class="proof"><b>3</b><span>Competitive grants noted in early traction</span></div>
-          </div>
+        <div class="mission-grid">
+          <article class="mission-card">
+            <span>Vision</span>
+            <h3>Enhance human healthcare.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis
+              vestibulum.</p>
+          </article>
+          <article class="mission-card">
+            <span>Mission</span>
+            <h3>Deliver reliable diagnostics and insight.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis
+              vestibulum.</p>
+          </article>
+          <article class="mission-card">
+            <span>Purpose</span>
+            <h3>Support earlier, better decisions.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis
+              vestibulum.</p>
+          </article>
         </div>
       </div>
     </section>
