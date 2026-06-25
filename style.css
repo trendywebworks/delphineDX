@@ -2057,7 +2057,7 @@ section {
 
 .sepsis-hero-copy h1 {
   margin-bottom: 24px;
-  font-size: clamp(4rem, 7vw, 7rem);
+  font-size: clamp(1.96rem, 3.43vw, 3.43rem);
   line-height: 0.95;
 }
 
@@ -2075,7 +2075,7 @@ section {
 
 .sepsis-emergency-card {
   position: absolute;
-  inset: 0 36px 54px 0;
+  inset: 0;
   display: flex;
   padding: 48px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -2098,7 +2098,7 @@ section {
 .sepsis-emergency-card strong {
   display: block;
   margin: 24px 0 18px;
-  font-size: clamp(2rem, 3vw, 3.1rem);
+  font-size: clamp(1.2rem, 1.8vw, 1.86rem);
   line-height: 1.15;
 }
 
@@ -2139,6 +2139,55 @@ section {
 
 .sepsis-definition {
   background: var(--white);
+}
+
+.sepsis-live-content {
+  background: var(--white);
+}
+
+.sepsis-live-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 980px);
+  justify-content: center;
+}
+
+.sepsis-live-copy {
+  display: grid;
+  gap: 32px;
+}
+
+.sepsis-live-copy .section-head {
+  margin: 16px 0 0;
+}
+
+.sepsis-live-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding-left: 22px;
+  color: var(--primary);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.sepsis-live-list strong {
+  color: var(--secondary);
+}
+
+.sepsis-live-figure {
+  margin: 0;
+}
+
+.sepsis-live-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgba(29, 18, 48, 0.12);
+}
+
+.sepsis-live-figure-compact {
+  width: min(580px, 100%);
 }
 
 .sepsis-definition-grid {
@@ -2953,19 +3002,6 @@ section {
   box-shadow: 0 30px 70px rgba(18, 10, 32, 0.34);
 }
 
-.about-hero-quote {
-  position: absolute;
-  left: -48px;
-  bottom: 30px;
-  width: min(360px, 82%);
-  padding: 26px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 8px;
-  background: rgba(29, 18, 48, 0.92);
-  box-shadow: var(--shadow);
-}
-
-.about-hero-quote span,
 .team-card-content>span,
 .advisor-card span,
 .roadmap-card>span {
@@ -2975,14 +3011,6 @@ section {
   font-size: 0.76rem;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-}
-
-.about-hero-quote strong {
-  display: block;
-  margin: 0;
-  color: var(--white);
-  font-size: 1.38rem;
-  line-height: 1.25;
 }
 
 .about-hero-orb {
@@ -3126,30 +3154,6 @@ section {
   box-shadow: var(--shadow);
 }
 
-.experience-badge {
-  position: absolute;
-  right: -26px;
-  bottom: 32px;
-  width: 190px;
-  padding: 25px;
-  border-radius: 8px;
-  color: var(--white);
-  background: var(--primary);
-  box-shadow: var(--shadow);
-}
-
-.experience-badge strong {
-  display: block;
-  margin-bottom: 6px;
-  font-size: 2.8rem;
-  line-height: 1;
-}
-
-.experience-badge span {
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.9rem;
-}
-
 .values-list {
   display: grid;
 }
@@ -3183,8 +3187,7 @@ section {
   background: #1d1230;
 }
 
-.roadmap-heading,
-.team-heading {
+.roadmap-heading {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 70px;
@@ -3192,8 +3195,7 @@ section {
   margin-bottom: 48px;
 }
 
-.roadmap-heading .section-head,
-.team-heading .section-head {
+.roadmap-heading .section-head {
   margin-bottom: 0;
 }
 
@@ -3201,8 +3203,7 @@ section {
   color: var(--white);
 }
 
-.roadmap-heading>p,
-.team-heading>p {
+.roadmap-heading>p {
   color: rgba(255, 255, 255, 0.68);
 }
 
@@ -3237,10 +3238,6 @@ section {
 
 .team-section {
   background: var(--white);
-}
-
-.team-heading>p {
-  color: var(--muted);
 }
 
 .team-group+.team-group {
@@ -4849,10 +4846,6 @@ body.job-modal-open {
     width: min(720px, 100%);
   }
 
-  .about-hero-quote {
-    left: 24px;
-  }
-
   .purpose-grid,
   .roadmap-grid,
   .team-grid {
@@ -4870,11 +4863,10 @@ body.job-modal-open {
   }
 
   .difference-media {
-    width: min(680px, calc(100% - 30px));
+    width: min(680px, 100%);
   }
 
-  .roadmap-heading,
-  .team-heading {
+  .roadmap-heading {
     grid-template-columns: 1fr;
     gap: 10px;
   }
@@ -5038,14 +5030,6 @@ body.job-modal-open {
     height: 390px;
   }
 
-  .about-hero-quote {
-    left: 14px;
-    right: 14px;
-    bottom: 14px;
-    width: auto;
-    padding: 20px;
-  }
-
   h1 {
     font-size: clamp(2.35rem, 12vw, 3.55rem);
   }
@@ -5155,9 +5139,12 @@ body.job-modal-open {
 
   .assay-hero-copy h1,
   .ai-hero-copy h1,
-  .ruo-hero-copy h1,
-  .sepsis-hero-copy h1 {
+  .ruo-hero-copy h1 {
     font-size: clamp(2.4rem, 11vw, 3.6rem);
+  }
+
+  .sepsis-hero-copy h1 {
+    font-size: clamp(1.96rem, 8vw, 3.43rem);
   }
 
   .assay-status,
@@ -5365,7 +5352,7 @@ body.job-modal-open {
   }
 
   .sepsis-emergency-card {
-    inset: 0 14px 60px 0;
+    inset: 0;
     padding: 30px 24px;
   }
 
@@ -5486,17 +5473,8 @@ body.job-modal-open {
     margin-bottom: 46px;
   }
 
-  .difference-media {
-    width: calc(100% - 18px);
-  }
-
   .difference-media>img {
     height: 470px;
-  }
-
-  .experience-badge {
-    right: -18px;
-    bottom: 22px;
   }
 
   .roadmap-card {
@@ -5673,7 +5651,7 @@ body.job-modal-open {
 }
 
 .sepsis-hero-copy h1 {
-  font-size: clamp(2.8rem, 4.9vw, 4.9rem);
+  font-size: clamp(1.96rem, 3.43vw, 3.43rem);
 }
 
 .contact-intro h1 {
@@ -5704,8 +5682,11 @@ body.job-modal-open {
   .assay-hero-copy h1,
   .ai-hero-copy h1,
   .ruo-hero-copy h1,
-  .sepsis-hero-copy h1,
   .career-hero-copy h1 {
     font-size: clamp(1.68rem, 7.7vw, 2.52rem);
+  }
+
+  .sepsis-hero-copy h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
   }
 }

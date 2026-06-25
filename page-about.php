@@ -12,17 +12,13 @@
             AI/ML-enabled clinical decision support to help clinicians identify sepsis risk earlier and move patients
             toward effective treatment faster.</p>
           <div class="hero-actions">
-            <a class="button" href="#our-story">Our purpose</a>
             <a class="button secondary" href="#team">Meet the team</a>
+            <a class="button" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact Us</a>
           </div>
         </div>
         <div class="about-hero-visual" aria-label="Delphine Diagnostics team and laboratory innovation">
           <img class="about-hero-photo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-team.jpeg"
             alt="Clinical professionals collaborating in a hospital">
-          <div class="about-hero-quote">
-            <span>Our north star</span>
-            <strong>No one should die from a treatable infection.</strong>
-          </div>
         </div>
       </div>
     </section>
@@ -74,10 +70,6 @@
       <div class="section-inner difference-grid">
         <div class="difference-media">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="Scientist working in a molecular diagnostics laboratory">
-          <div class="experience-badge">
-            <strong>150+</strong>
-            <span>years of combined field experience</span>
-          </div>
         </div>
         <div>
           <div class="section-head">
@@ -126,29 +118,30 @@
         <div class="roadmap-heading">
           <div class="section-head">
             <p class="eyebrow">Our roadmap</p>
-            <h2>Building a connected healthcare diagnostics enterprise.</h2>
+            <h2>Planning a connected healthcare diagnostics enterprise.</h2>
           </div>
-          <p>Delphine's long-term direction extends from rapid assays and decision support into connected laboratory
-            services and privacy-conscious health data analytics.</p>
+          <p>As part of augmenting our service to the healthcare needs of patients, service providers (payers), and
+            healthcare providers, our enterprise is planning:</p>
         </div>
         <div class="roadmap-grid">
           <article class="roadmap-card">
-            <span>Now</span>
-            <h3>Advance rapid molecular testing</h3>
-            <p>Develop SepSeek and RUO assays for pathogen identification, with planned expansion into resistance and
-              additional microbial targets.</p>
+            <span>Logistics network</span>
+            <h3>Connect certified laboratories</h3>
+            <p>To establish a logistics network to connect certified laboratories in different countries to our central
+              facility and provide molecular and pathological testing services for different health conditions.</p>
           </article>
           <article class="roadmap-card">
-            <span>Next</span>
-            <h3>Embed clinical intelligence</h3>
-            <p>Develop ClinSight as an explainable sepsis risk and decision-support experience designed for integration
-              with hospital EHR systems.</p>
+            <span>Health data</span>
+            <h3>Build a secure health data repository</h3>
+            <p>To establish a health data repository and provide analytical services with a comprehensive health map of an
+              individual, adhering to country-specific privacy and ethical regulations.</p>
           </article>
           <article class="roadmap-card">
-            <span>Future</span>
-            <h3>Connect labs and health data</h3>
-            <p>Establish broader testing and analytics services through certified laboratory networks and secure,
-              regulation-aligned health data infrastructure.</p>
+            <span>Enterprise team</span>
+            <h3>Led by domain and business experts</h3>
+            <p>The enterprise team is led by domain and business experts with service and ethical mindsets, across
+              disciplines ranging from Biomedical Science (Pathology, Microbiology, Molecular Biology, and Biochemistry),
+              Data Analytics, and Market development.</p>
           </article>
         </div>
       </div>
@@ -156,15 +149,6 @@
 
     <section class="team-section" id="team">
       <div class="section-inner">
-        <div class="team-heading">
-          <div class="section-head">
-            <p class="eyebrow">Our people</p>
-            <h2>Industry-experienced. Passionate. Mission-driven.</h2>
-          </div>
-          <p>Select any member to learn more about their experience, qualifications, and work with Delphine
-            Diagnostics.</p>
-        </div>
-
         <div class="team-group">
           <div class="team-group-heading">
             <p class="eyebrow">Leadership</p>
