@@ -99,36 +99,46 @@
             <button class="product-carousel-button product-carousel-next" type="button" aria-label="Next product"></button>
           </div>
           <div class="product-grid" tabindex="0">
-            <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-ai-ml-healthcare-platform/">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-team.jpeg" alt="">
-              <h3>ClinSight Sepsis Prediction Using ML Tool</h3>
-              <p>ML-enabled clinical decision support for real-time sepsis risk signals and care workflow context.</p>
-              <span class="product-card-link">Read More</span>
-            </a>
-            <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-sepsis-diagnostic-assay/">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/assay-kit.png" alt="">
-              <h3>Delphine Sepsis Diagnostic Assay</h3>
-              <p>Real-time PCR assay concept for pathogen and resistance marker detection from whole blood.</p>
-              <span class="product-card-link">Read More</span>
-            </a>
-            <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-ai-ml-healthcare-platform/">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="">
-              <h3>Delphine AI/ML Healthcare Platform</h3>
-              <p>Healthcare intelligence platform designed to connect clinical data, models, and recommendations.</p>
-              <span class="product-card-link">Read More</span>
-            </a>
-            <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/ruo-pathogen-identification-test-kits/">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-sample.png" alt="">
-              <h3>RUO Pathogen Identification Test Kits</h3>
-              <p>Real-time PCR assays for research use in pathogen detection, monitoring, and microbiology studies.</p>
-              <span class="product-card-link">Read More</span>
-            </a>
-            <a class="product-card" href="#contact">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sepsis-alliance.jpeg" alt="">
-              <h3>RUO Resistance Marker Identification Test Kits</h3>
-              <p>Research-use assay roadmap focused on antimicrobial resistance marker identification and insight.</p>
-              <span class="product-card-link">Read More</span>
-            </a>
+            <?php
+            $homepage_products = new WP_Query(
+              array(
+                'post_type'      => 'product',
+                'posts_per_page' => -1,
+                'post_status'    => 'publish',
+                'orderby'        => 'title',
+                'order'          => 'ASC',
+              )
+            );
+            ?>
+            <?php if ( $homepage_products->have_posts() ) : ?>
+              <?php while ( $homepage_products->have_posts() ) : $homepage_products->the_post(); ?>
+                <?php
+                $product_summary = wp_trim_words( get_the_excerpt() ?: get_the_content(), 18, '...' );
+
+                if ( $product_summary === '' ) {
+                  $product_summary = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis.';
+                }
+                ?>
+                <a class="product-card" href="<?php the_permalink(); ?>">
+                  <?php if ( has_post_thumbnail() ) : ?>
+                    <?php the_post_thumbnail( 'large' ); ?>
+                  <?php else : ?>
+                    <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/clinical-sample.png' ); ?>" alt="">
+                  <?php endif; ?>
+                  <h3><?php the_title(); ?></h3>
+                  <p><?php echo esc_html( $product_summary ); ?></p>
+                  <span class="product-card-link">Read More</span>
+                </a>
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+              <article class="product-card">
+                <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/clinical-sample.png' ); ?>" alt="">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis.</p>
+                <span class="product-card-link">Read More</span>
+              </article>
+            <?php endif; ?>
           </div>
         </div>
       </div>
@@ -205,26 +215,21 @@
         <div class="section-head">
           <p class="eyebrow">Vision &amp; Mission</p>
           <h2>Best-in-class, affordable products for diagnosis and treatment.</h2>
-          <p>Affordability, reliability, and innovation guide Delphine Diagnostics' journey.</p>
         </div>
         <div class="mission-grid">
           <article class="mission-card">
-            <span>Vision</span>
+            <span>Our Vision</span>
             <h3>Enhance human healthcare.</h3>
             <p>Our vision is to enhance human healthcare by engaging in the development and supply of best-in-class,
               affordable products for diagnosis and treatment.</p>
           </article>
           <article class="mission-card">
-            <span>Mission</span>
+            <span>Our Mission</span>
             <h3>Deliver top-tier diagnostics and data insights.</h3>
             <p>Delphine Diagnostics, a New Jersey-based startup, is passionate in its efforts to deliver top-tier
               diagnostic products and supplemental data insights capabilities to speed effective diagnosis and treatment
-              for patients with infectious diseases.</p>
-          </article>
-          <article class="mission-card">
-            <span>Guiding principle</span>
-            <h3>Affordable and reliable innovation.</h3>
-            <p>The affordability and reliability of our innovative products guide our journey.</p>
+              for patients with infectious diseases. The affordability and reliability of our innovative products guide
+              our journey.</p>
           </article>
         </div>
       </div>

@@ -206,7 +206,7 @@ img {
 .mega-menu {
   left: 50%;
   width: min(var(--max), calc(100vw - 68px));
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 14px;
   transform: translate(-50%, 10px);
 }
@@ -357,7 +357,7 @@ img {
 
 .eyebrow {
   margin: 0 0 18px;
-  color: var(--sky);
+  color: #111111;
   font-size: 0.82rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -365,13 +365,21 @@ img {
 }
 
 .hero .eyebrow,
+.blog-hero .eyebrow,
+.assay-hero .eyebrow,
+.ai-hero .eyebrow,
+.ruo-hero .eyebrow,
+.sepsis-hero .eyebrow,
+.about-hero .eyebrow,
+.career-hero .eyebrow,
+.article-hero .eyebrow,
+.purpose-card-featured .eyebrow,
+.article-side-card-accent .eyebrow,
 .cta .eyebrow {
   color: #ffffff;
 }
 
-.approach .eyebrow,
-.products .eyebrow,
-.workflow .eyebrow {
+.purpose-card .eyebrow {
   color: #111111;
 }
 
@@ -388,7 +396,7 @@ strong {
 h1 {
   max-width: 760px;
   margin-bottom: 22px;
-  font-size: clamp(2.6rem, 4vw, 5rem);
+  font-size: clamp(1.82rem, 2.8vw, 3.5rem);
   line-height: 1;
   letter-spacing: 0;
 }
@@ -423,7 +431,7 @@ section {
 .section-head h2 {
   margin-bottom: 14px;
   color: var(--navy);
-  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-size: clamp(1.4rem, 2.8vw, 2.52rem);
   line-height: 1.02;
   letter-spacing: 0;
 }
@@ -2752,7 +2760,7 @@ section {
 
 .mission-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
 
@@ -3068,11 +3076,11 @@ section {
 
 .purpose-card .eyebrow {
   margin-bottom: 12px;
-  color: var(--secondary);
+  color: #111111;
 }
 
 .purpose-card-featured .eyebrow {
-  color: var(--sky);
+  color: #ffffff;
 }
 
 .purpose-card h2 {
@@ -4496,7 +4504,7 @@ body.job-modal-open {
 }
 
 .article-side-card-accent .eyebrow {
-  color: var(--mint);
+  color: #ffffff;
 }
 
 .article-side-card-accent h2 {
@@ -5650,4 +5658,54 @@ body.job-modal-open {
   margin: 10px auto 0 auto;
   text-align: center;
   font-size: 12px;
+}
+
+.hero h1,
+.about-hero-copy h1,
+.blog-hero-copy h1 {
+  font-size: clamp(1.82rem, 2.8vw, 3.5rem);
+}
+
+.assay-hero-copy h1,
+.ai-hero-copy h1,
+.ruo-hero-copy h1 {
+  font-size: clamp(2.1rem, 3.64vw, 3.71rem);
+}
+
+.sepsis-hero-copy h1 {
+  font-size: clamp(2.8rem, 4.9vw, 4.9rem);
+}
+
+.contact-intro h1 {
+  font-size: clamp(2.1rem, 4.2vw, 4.06rem);
+}
+
+.career-hero-copy h1 {
+  font-size: clamp(1.89rem, 3.5vw, 3.36rem);
+}
+
+.article-hero h1 {
+  font-size: clamp(1.75rem, 3.29vw, 2.45rem);
+}
+
+@media (max-width: 640px) {
+
+  .hero h1,
+  .about-hero-copy h1,
+  .blog-hero-copy h1,
+  h1 {
+    font-size: clamp(1.65rem, 8.4vw, 2.49rem);
+  }
+
+  .article-hero h1 {
+    font-size: clamp(1.54rem, 6.65vw, 2.17rem);
+  }
+
+  .assay-hero-copy h1,
+  .ai-hero-copy h1,
+  .ruo-hero-copy h1,
+  .sepsis-hero-copy h1,
+  .career-hero-copy h1 {
+    font-size: clamp(1.68rem, 7.7vw, 2.52rem);
+  }
 }
