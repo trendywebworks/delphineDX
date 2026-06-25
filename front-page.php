@@ -91,44 +91,39 @@
         <div class="section-head">
           <p class="eyebrow">Products and services</p>
           <h2>A connected portfolio for infection diagnosis and treatment support.</h2>
-          <p>Delphine's roadmap includes SepSeek, ClinSight and RUO pathogen identification assays.</p>
+          <p>Explore Delphine's diagnostic, decision-support, and research-use product areas.</p>
         </div>
         <div class="product-grid">
-          <article class="product-card featured">
-            <span class="tag">Diagnostic assay</span>
-            <h3>SepSeek Sepsis Diagnostic Test Kits</h3>
-            <p>A PCR-based assay concept for rapid detection of pathogen and host markers to support personalized
-              patient care.</p>
-            <ul>
-              <li>Targets pathogen identification</li>
-              <li>Plans for resistance marker expansion</li>
-              <li>Designed around standard clinical lab equipment</li>
-            </ul>
-            <a class="product-card-link" href="delphine-sepsis-diagnostic-assay.html">Explore the assay</a>
-          </article>
-          <article class="product-card">
-            <span class="tag">Decision support</span>
-            <h3>ClinSight Sepsis Prediction</h3>
-            <p>Machine-learning software intended to help clinicians identify patients at risk of developing sepsis or
-              readmission.</p>
-            <ul>
-              <li>EHR-embedded alert vision</li>
-              <li>Explainable risk context</li>
-              <li>Snapshot and forecast modeling</li>
-            </ul>
-            <a class="product-card-link" href="delphine-ai-ml-healthcare-platform.html">Explore the platform</a>
-          </article>
-          <article class="product-card">
-            <span class="tag">Research use</span>
-            <h3>RUO Pathogen Identification Kits</h3>
-            <p>Real-time PCR assays for organisms including E. coli, S. aureus, K. pneumoniae, and A. baumannii.</p>
-            <ul>
-              <li>Environmental monitoring</li>
-              <li>Food safety research</li>
-              <li>Microbiological studies</li>
-            </ul>
-            <a class="product-card-link" href="ruo-pathogen-identification-test-kits.html">Explore the RUO kits</a>
-          </article>
+          <a class="product-card" href="#platform">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-team.jpeg" alt="">
+            <h3>ClinSight Sepsis Prediction Using ML Tool</h3>
+            <p>ML-enabled clinical decision support for real-time sepsis risk signals and care workflow context.</p>
+            <span class="product-card-link">Read More</span>
+          </a>
+          <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-sepsis-diagnostic-assay/">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/assay-kit.png" alt="">
+            <h3>Delphine Sepsis Diagnostic Assay</h3>
+            <p>Real-time PCR assay concept for pathogen and resistance marker detection from whole blood.</p>
+            <span class="product-card-link">Read More</span>
+          </a>
+          <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-ai-ml-healthcare-platform/">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="">
+            <h3>Delphine AI/ML Healthcare Platform</h3>
+            <p>Healthcare intelligence platform designed to connect clinical data, models, and recommendations.</p>
+            <span class="product-card-link">Read More</span>
+          </a>
+          <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/ruo-pathogen-identification-test-kits/">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-sample.png" alt="">
+            <h3>RUO Pathogen Identification Test Kits</h3>
+            <p>Real-time PCR assays for research use in pathogen detection, monitoring, and microbiology studies.</p>
+            <span class="product-card-link">Read More</span>
+          </a>
+          <a class="product-card" href="#contact">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sepsis-alliance.jpeg" alt="">
+            <h3>RUO Resistance Marker Identification Test Kits</h3>
+            <p>Research-use assay roadmap focused on antimicrobial resistance marker identification and insight.</p>
+            <span class="product-card-link">Read More</span>
+          </a>
         </div>
       </div>
     </section>
