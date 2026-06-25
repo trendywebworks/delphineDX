@@ -80,7 +80,7 @@ function delphine_register_custom_post_types() {
     /* =========================
      * 2. EDUCATION CPT
      * ========================= */
-    $resource_labels = array(
+    $education_labels = array(
         'name'               => 'Education',
         'singular_name'      => 'Education',
         'menu_name'          => 'Education',
@@ -96,8 +96,8 @@ function delphine_register_custom_post_types() {
         'not_found_in_trash' => 'No education found in Trash',
     );
 
-    $resource_args = array(
-        'labels'             => $resource_labels,
+    $education_args = array(
+        'labels'             => $education_labels,
         'public'             => true,
         'has_archive'        => true,
         'menu_icon'          => 'dashicons-media-document',
@@ -106,7 +106,7 @@ function delphine_register_custom_post_types() {
         'show_in_rest'       => true,
     );
 
-    register_post_type('resource', $resource_args);
+    register_post_type('education', $education_args);
 }
 
 add_action('init', 'delphine_register_custom_post_types');
