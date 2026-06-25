@@ -135,68 +135,67 @@
     </section>
 
     <section class="workflow" id="workflow">
-      <div class="workflow-slide">
-        <div class="workflow-slide-header">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow">Workflow comparison</p>
           <h2>Sepsis Test Workflow Comparison</h2>
           <p>The SepSeek PCR based assay for bacterial, viral and fungal pathogen identification and resistance
-            biomarkers is 6-9 times faster than conventional blood culture</p>
+            biomarkers is 6-9 times faster than conventional blood culture.</p>
         </div>
 
-        <div class="workflow-panel">
-          <div class="workflow-row">
-            <div class="workflow-icon microbe-icon" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span>
-            </div>
-            <div class="workflow-content">
-              <div class="workflow-copy">
-                <div>
-                  <h3>MOST COMMON TURN AROUND TIME :</h3>
-                  <p>Conventional blood culture&nbsp; can take 1-7 days for results</p>
-                </div>
-                <span class="workflow-time">
-                  <svg viewBox="0 0 44 44" aria-hidden="true">
-                    <circle cx="22" cy="22" r="18"></circle>
-                    <path d="M22 10v13l9 6"></path>
-                  </svg>
-                  48-72 Hrs
-                </span>
+        <div class="workflow-compare">
+          <article class="workflow-card">
+            <div class="workflow-card-head">
+              <div class="workflow-icon microbe-icon" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
               </div>
-              <ol class="workflow-steps" aria-label="Conventional blood culture workflow">
-                <li>Blood<br>Collection<br>(20ml)</li>
-                <li>Blood Culture</li>
-                <li>Bacteria<br>Culture</li>
-                <li>Bacteria ID</li>
-                <li>Antimicrobial<br>Sensitivity</li>
-                <li>Pathogen ID +<br>Resistance</li>
-              </ol>
+              <div>
+                <span class="workflow-label">Conventional blood culture</span>
+                <h3>Most common turn around time</h3>
+                <p>Conventional blood culture can take 1-7 days for results.</p>
+              </div>
             </div>
-          </div>
+            <div class="workflow-time">
+              <svg viewBox="0 0 44 44" aria-hidden="true">
+                <circle cx="22" cy="22" r="18"></circle>
+                <path d="M22 10v13l9 6"></path>
+              </svg>
+              <strong>48-72 Hrs</strong>
+            </div>
+            <ol class="workflow-steps" aria-label="Conventional blood culture workflow">
+              <li><span>01</span>Blood Collection (20ml)</li>
+              <li><span>02</span>Blood Culture</li>
+              <li><span>03</span>Bacteria Culture</li>
+              <li><span>04</span>Bacteria ID</li>
+              <li><span>05</span>Antimicrobial Sensitivity</li>
+              <li><span>06</span>Pathogen ID + Resistance</li>
+            </ol>
+          </article>
 
-          <div class="workflow-row">
-            <div class="workflow-icon dna-icon" aria-hidden="true"></div>
-            <div class="workflow-content">
-              <div class="workflow-copy">
-                <div>
-                  <h3>MOST COMMON TURN AROUND TIME :</h3>
-                  <p>SepSeek results are available in under 8 hours</p>
-                </div>
-                <span class="workflow-time">
-                  <svg viewBox="0 0 44 44" aria-hidden="true">
-                    <circle cx="22" cy="22" r="18"></circle>
-                    <path d="M22 10v13l9 6"></path>
-                  </svg>
-                  6-8 Hrs
-                </span>
+          <article class="workflow-card workflow-card-fast">
+            <div class="workflow-card-head">
+              <div class="workflow-icon dna-icon" aria-hidden="true"></div>
+              <div>
+                <span class="workflow-label">SepSeek PCR based workflow</span>
+                <h3>Most common turn around time</h3>
+                <p>SepSeek results are available in under 8 hours.</p>
               </div>
-              <ol class="workflow-steps sepseek-steps" aria-label="SepSeek PCR based workflow">
-                <li>Blood<br>Collection (1ml)</li>
-                <li>DNA Extraction</li>
-                <li>Multiplex RT-<br>PCR</li>
-                <li>Data Analysis<br>and<br>Interpretation</li>
-                <li>Pathogen ID +<br>Resistance</li>
-              </ol>
             </div>
-          </div>
+            <div class="workflow-time">
+              <svg viewBox="0 0 44 44" aria-hidden="true">
+                <circle cx="22" cy="22" r="18"></circle>
+                <path d="M22 10v13l9 6"></path>
+              </svg>
+              <strong>6-8 Hrs</strong>
+            </div>
+            <ol class="workflow-steps" aria-label="SepSeek PCR based workflow">
+              <li><span>01</span>Blood Collection (1ml)</li>
+              <li><span>02</span>DNA Extraction</li>
+              <li><span>03</span>Multiplex RT-PCR</li>
+              <li><span>04</span>Data Analysis and Interpretation</li>
+              <li><span>05</span>Pathogen ID + Resistance</li>
+            </ol>
+          </article>
         </div>
       </div>
     </section>
