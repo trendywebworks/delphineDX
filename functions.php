@@ -145,3 +145,77 @@ function delphine_flush_rewrite_rules_once() {
     update_option( 'delphine_rewrite_version', $rewrite_version );
 }
 add_action( 'init', 'delphine_flush_rewrite_rules_once', 30 );
+
+function delphine_product_layout_options() {
+    return array(
+        ''                 => 'Default layout',
+        'product-layout-1' => 'Product layout 1',
+        'product-layout-2' => 'Product layout 2',
+        'product-layout-3' => 'Product layout 3',
+    );
+}
+
+function delphine_add_product_layout_meta_box() {
+    add_meta_box(
+        'delphine_product_layout',
+        'Product Layout',
+        'delphine_render_product_layout_meta_box',
+        'product',
+        'side',
+        'default'
+    );
+}
+add_action( 'add_meta_boxes', 'delphine_add_product_layout_meta_box' );
+
+function delphine_render_product_layout_meta_box( $post ) {
+    $selected_layout = get_post_meta( $post->ID, 'product_layout', true );
+
+    wp_nonce_field( 'delphine_save_product_layout', 'delphine_product_layout_nonce' );
+    ?>
+    <p>
+        <label for="delphine_product_layout_select">Choose the layout used for this product page.</label>
+    </p>
+    <select id="delphine_product_layout_select" name="delphine_product_layout" style="width: 100%;">
+        <?php foreach ( delphine_product_layout_options() as $layout_value => $layout_label ) : ?>
+            <option value="<?php echo esc_attr( $layout_value ); ?>" <?php selected( $selected_layout, $layout_value ); ?>>
+                <?php echo esc_html( $layout_label ); ?>
+            </option>
+        <?php endforeach; ?>
+    </select>
+    <?php
+}
+
+function delphine_save_product_layout_meta( $post_id ) {
+    if (
+        ! isset( $_POST['delphine_product_layout_nonce'] ) ||
+        ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['delphine_product_layout_nonce'] ) ), 'delphine_save_product_layout' )
+    ) {
+        return;
+    }
+
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+        return;
+    }
+
+    if ( ! current_user_can( 'edit_post', $post_id ) ) {
+        return;
+    }
+
+    $layout = isset( $_POST['delphine_product_layout'] )
+        ? sanitize_key( wp_unslash( $_POST['delphine_product_layout'] ) )
+        : '';
+
+    $allowed_layouts = array_keys( delphine_product_layout_options() );
+
+    if ( ! in_array( $layout, $allowed_layouts, true ) ) {
+        $layout = '';
+    }
+
+    if ( $layout === '' ) {
+        delete_post_meta( $post_id, 'product_layout' );
+        return;
+    }
+
+    update_post_meta( $post_id, 'product_layout', $layout );
+}
+add_action( 'save_post_product', 'delphine_save_product_layout_meta' );
