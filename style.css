@@ -371,7 +371,6 @@ img {
 
 .approach .eyebrow,
 .products .eyebrow,
-.rapid-support .eyebrow,
 .workflow .eyebrow {
   color: #111111;
 }
@@ -684,57 +683,6 @@ section {
 .product-card:hover .product-card-link,
 .product-card:focus-visible .product-card-link {
   color: var(--primary);
-}
-
-.rapid-support {
-  background: var(--white);
-}
-
-.rapid-support-grid {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 42px;
-  align-items: start;
-}
-
-.rapid-support-cards {
-  display: grid;
-  gap: 16px;
-}
-
-.rapid-support-cards article {
-  display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
-  gap: 16px;
-  align-items: start;
-  padding: 22px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fbf9fd;
-  box-shadow: 0 16px 36px rgba(16, 32, 51, 0.06);
-}
-
-.rapid-support-cards span {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 6px;
-  color: var(--white);
-  background: var(--secondary);
-  font-size: 0.78rem;
-}
-
-.rapid-support-cards h3 {
-  margin-bottom: 8px;
-  color: var(--primary);
-  font-size: 1.18rem;
-  line-height: 1.22;
-}
-
-.rapid-support-cards p {
-  margin: 0;
-  color: var(--muted);
 }
 
 .assay-hero {
@@ -4737,7 +4685,6 @@ body.job-modal-open {
   }
 
   .approach-grid,
-  .rapid-support-grid,
   .traction-grid,
   .about-hero-grid,
   .about-intro-grid,
