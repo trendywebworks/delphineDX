@@ -1,7 +1,7 @@
-<?php
+<?php 
 /*
-Template Name: Education Post Layout 1
-Template Post Type: post, product, resource
+Template Name: What Is Sepsis
+Template Post Type: education
 */
 get_header(); ?>
 

@@ -1,9 +1,4 @@
-<?php
-/*
-Template Name: Product Post Layout 2
-Template Post Type: post, product, resource
-*/
-get_header(); ?>
+<?php get_header(); ?>
 
   <main>
     <section class="ai-hero" aria-labelledby="ai-title">
