@@ -169,6 +169,49 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
 
+const productCarousel = document.querySelector(".product-carousel");
+
+if (productCarousel) {
+  const productTrack = productCarousel.querySelector(".product-grid");
+  const previousButton = productCarousel.querySelector(".product-carousel-prev");
+  const nextButton = productCarousel.querySelector(".product-carousel-next");
+
+  const getProductScrollAmount = () => {
+    const firstCard = productTrack.querySelector(".product-card");
+    const gap = Number.parseFloat(getComputedStyle(productTrack).columnGap) || 0;
+
+    return firstCard ? firstCard.getBoundingClientRect().width + gap : productTrack.clientWidth;
+  };
+
+  const updateProductControls = () => {
+    const maxScroll = productTrack.scrollWidth - productTrack.clientWidth;
+    const hasOverflow = maxScroll > 2;
+
+    previousButton.disabled = !hasOverflow || productTrack.scrollLeft <= 2;
+    nextButton.disabled = !hasOverflow || productTrack.scrollLeft >= maxScroll - 2;
+  };
+
+  previousButton.addEventListener("click", () => {
+    productTrack.scrollBy({
+      left: -getProductScrollAmount(),
+      behavior: "smooth"
+    });
+  });
+
+  nextButton.addEventListener("click", () => {
+    productTrack.scrollBy({
+      left: getProductScrollAmount(),
+      behavior: "smooth"
+    });
+  });
+
+  productTrack.addEventListener("scroll", updateProductControls, {
+    passive: true
+  });
+  window.addEventListener("resize", updateProductControls);
+  updateProductControls();
+}
+
 const teamModal = document.querySelector("#teamModal");
 const teamModalName = document.querySelector("#teamModalName");
 const teamModalRole = document.querySelector("#teamModalRole");

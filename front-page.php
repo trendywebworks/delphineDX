@@ -93,37 +93,43 @@
           <h2>A connected portfolio for infection diagnosis and treatment support.</h2>
           <p>Explore Delphine's diagnostic, decision-support, and research-use product areas.</p>
         </div>
-        <div class="product-grid">
-          <a class="product-card" href="#platform">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-team.jpeg" alt="">
-            <h3>ClinSight Sepsis Prediction Using ML Tool</h3>
-            <p>ML-enabled clinical decision support for real-time sepsis risk signals and care workflow context.</p>
-            <span class="product-card-link">Read More</span>
-          </a>
-          <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-sepsis-diagnostic-assay/">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/assay-kit.png" alt="">
-            <h3>Delphine Sepsis Diagnostic Assay</h3>
-            <p>Real-time PCR assay concept for pathogen and resistance marker detection from whole blood.</p>
-            <span class="product-card-link">Read More</span>
-          </a>
-          <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-ai-ml-healthcare-platform/">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="">
-            <h3>Delphine AI/ML Healthcare Platform</h3>
-            <p>Healthcare intelligence platform designed to connect clinical data, models, and recommendations.</p>
-            <span class="product-card-link">Read More</span>
-          </a>
-          <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/ruo-pathogen-identification-test-kits/">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-sample.png" alt="">
-            <h3>RUO Pathogen Identification Test Kits</h3>
-            <p>Real-time PCR assays for research use in pathogen detection, monitoring, and microbiology studies.</p>
-            <span class="product-card-link">Read More</span>
-          </a>
-          <a class="product-card" href="#contact">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sepsis-alliance.jpeg" alt="">
-            <h3>RUO Resistance Marker Identification Test Kits</h3>
-            <p>Research-use assay roadmap focused on antimicrobial resistance marker identification and insight.</p>
-            <span class="product-card-link">Read More</span>
-          </a>
+        <div class="product-carousel" aria-label="Products carousel">
+          <div class="product-carousel-controls">
+            <button class="product-carousel-button product-carousel-prev" type="button" aria-label="Previous product"></button>
+            <button class="product-carousel-button product-carousel-next" type="button" aria-label="Next product"></button>
+          </div>
+          <div class="product-grid" tabindex="0">
+            <a class="product-card" href="#platform">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-team.jpeg" alt="">
+              <h3>ClinSight Sepsis Prediction Using ML Tool</h3>
+              <p>ML-enabled clinical decision support for real-time sepsis risk signals and care workflow context.</p>
+              <span class="product-card-link">Read More</span>
+            </a>
+            <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-sepsis-diagnostic-assay/">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/assay-kit.png" alt="">
+              <h3>Delphine Sepsis Diagnostic Assay</h3>
+              <p>Real-time PCR assay concept for pathogen and resistance marker detection from whole blood.</p>
+              <span class="product-card-link">Read More</span>
+            </a>
+            <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-ai-ml-healthcare-platform/">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="">
+              <h3>Delphine AI/ML Healthcare Platform</h3>
+              <p>Healthcare intelligence platform designed to connect clinical data, models, and recommendations.</p>
+              <span class="product-card-link">Read More</span>
+            </a>
+            <a class="product-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/ruo-pathogen-identification-test-kits/">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-sample.png" alt="">
+              <h3>RUO Pathogen Identification Test Kits</h3>
+              <p>Real-time PCR assays for research use in pathogen detection, monitoring, and microbiology studies.</p>
+              <span class="product-card-link">Read More</span>
+            </a>
+            <a class="product-card" href="#contact">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/sepsis-alliance.jpeg" alt="">
+              <h3>RUO Resistance Marker Identification Test Kits</h3>
+              <p>Research-use assay roadmap focused on antimicrobial resistance marker identification and insight.</p>
+              <span class="product-card-link">Read More</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
