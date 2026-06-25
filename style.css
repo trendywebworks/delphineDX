@@ -365,14 +365,14 @@ img {
 }
 
 .hero .eyebrow,
-.traction-card .eyebrow,
 .cta .eyebrow {
   color: #ffffff;
 }
 
 .approach .eyebrow,
 .products .eyebrow,
-#platform .eyebrow {
+.rapid-support .eyebrow,
+.workflow .eyebrow {
   color: #111111;
 }
 
@@ -684,6 +684,57 @@ section {
 .product-card:hover .product-card-link,
 .product-card:focus-visible .product-card-link {
   color: var(--primary);
+}
+
+.rapid-support {
+  background: var(--white);
+}
+
+.rapid-support-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 42px;
+  align-items: start;
+}
+
+.rapid-support-cards {
+  display: grid;
+  gap: 16px;
+}
+
+.rapid-support-cards article {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbf9fd;
+  box-shadow: 0 16px 36px rgba(16, 32, 51, 0.06);
+}
+
+.rapid-support-cards span {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  color: var(--white);
+  background: var(--secondary);
+  font-size: 0.78rem;
+}
+
+.rapid-support-cards h3 {
+  margin-bottom: 8px;
+  color: var(--primary);
+  font-size: 1.18rem;
+  line-height: 1.22;
+}
+
+.rapid-support-cards p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .assay-hero {
@@ -2747,111 +2798,20 @@ section {
   transform: rotate(-42deg);
 }
 
-.platform-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 42px;
-  align-items: center;
-}
-
-.signal-panel {
-  padding: 28px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--white);
-  box-shadow: var(--shadow);
-}
-
-.signal-row {
-  display: grid;
-  grid-template-columns: 118px 1fr;
-  gap: 16px;
-  align-items: center;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.signal-row:last-child {
-  border-bottom: 0;
-}
-
-.signal-label {
-  color: var(--navy);
-  font-weight: 400;
-}
-
-.bar {
-  height: 12px;
-  overflow: hidden;
-  border-radius: 999px;
-  background: #ece8f1;
-}
-
-.bar span {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: var(--teal);
-}
-
-.bar.warning span {
-  background: var(--amber);
-}
-
 .traction {
   background: linear-gradient(180deg, var(--white) 0%, #fbf9fd 100%);
 }
 
-.traction-grid {
-  display: grid;
-  grid-template-columns: 0.92fr 1.08fr;
-  gap: 34px;
-  align-items: stretch;
-}
-
-.traction-card {
-  position: relative;
-  min-height: 520px;
-  overflow: hidden;
-  border-radius: 8px;
-  color: var(--white);
-  background:
-    linear-gradient(180deg, rgba(31, 32, 48, 0.08), rgba(150, 82, 177, 0.86)),
-    url("assets/images/clinical-team.jpeg") center / cover no-repeat;
-  box-shadow: var(--shadow);
-}
-
-.traction-card-content {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 34px;
-}
-
-.traction-card h3 {
-  color: var(--white);
-  font-size: clamp(1.8rem, 3vw, 2.8rem);
-  line-height: 1.08;
-}
-
-.traction-card p {
-  color: rgba(255, 255, 255, 0.86);
-}
-
-.traction-content {
-  display: grid;
-  gap: 24px;
-  align-content: start;
-}
-
 .mission-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
 .mission-card {
+  display: grid;
+  align-content: start;
+  min-height: 250px;
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -2871,36 +2831,16 @@ section {
   letter-spacing: 0.06em;
 }
 
+.mission-card h3 {
+  margin-bottom: 12px;
+  color: var(--primary);
+  font-size: 1.34rem;
+  line-height: 1.18;
+}
+
 .mission-card p {
   margin: 0;
   color: var(--muted);
-}
-
-.proof-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-}
-
-.proof {
-  min-height: 142px;
-  padding: 22px;
-  border-radius: 8px;
-  background: var(--primary);
-  border: 1px solid rgba(150, 82, 177, 0.22);
-  color: var(--white);
-}
-
-.proof b {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--white);
-  font-size: 2rem;
-  line-height: 1;
-}
-
-.proof span {
-  color: rgba(255, 255, 255, 0.82);
 }
 
 .cta {
@@ -4797,7 +4737,7 @@ body.job-modal-open {
   }
 
   .approach-grid,
-  .platform-grid,
+  .rapid-support-grid,
   .traction-grid,
   .about-hero-grid,
   .about-intro-grid,
@@ -4910,6 +4850,10 @@ body.job-modal-open {
     width: min(720px, 100%);
   }
 
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
   .career-value-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -4988,17 +4932,12 @@ body.job-modal-open {
     padding: 50px 34px 38px;
   }
 
-  .traction-card {
-    min-height: 430px;
-  }
-
   .hero-inner {
     min-height: auto;
   }
 
   .stats-grid,
-  .product-grid,
-  .proof-grid {
+  .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -5187,7 +5126,6 @@ body.job-modal-open {
   .stats-grid,
   .product-grid,
   .mission-grid,
-  .proof-grid,
   .purpose-grid,
   .roadmap-grid,
   .team-grid,
@@ -5664,101 +5602,7 @@ body.job-modal-open {
   .product-card {
     min-height: 0;
   }
-
-  .signal-row {
-    grid-template-columns: 1fr;
-  }
 }
-
-/* =========================
-   ARCHIVE LAYOUT (GLOBAL)
-========================= */
-
-.archive-page {
-  padding: 40px 0;
-}
-
-/* HERO */
-.archive-hero {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* GRID (Reusable everywhere) */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-/* CARD */
-.card {
-  background: #fff;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-}
-
-/* LINK WRAP */
-.card-link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-
-/* IMAGE */
-.card-media img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-}
-
-/* BODY */
-.card-body {
-  padding: 20px;
-}
-
-.card-title {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.card-text {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
-
-/* CTA TEXT */
-.card-link-text {
-  font-weight: 600;
-  color: #0073aa;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 992px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 
 /* =========================
    CARD META (for News)
@@ -5853,4 +5697,10 @@ body.job-modal-open {
   .not-found-code {
     font-size: 7rem;
   }
+}
+
+.source-details {
+  margin: 10px auto 0 auto;
+  text-align: center;
+  font-size: 12px;
 }

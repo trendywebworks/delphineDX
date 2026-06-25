@@ -35,7 +35,7 @@
         <div class="nav-item has-dropdown has-mega">
           <a href="#products">Products</a>
           <div class="mega-menu" aria-label="Products submenu">
-            <a class="mega-card" href="#platform">
+            <a class="mega-card" href="<?php echo esc_url( home_url( '/' ) ); ?>products/delphine-ai-ml-healthcare-platform/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-team.jpeg" alt="">
               <h3>ClinSight Sepsis Prediction Using ML Tool</h3>
               <p>ML-enabled clinical decision support for real-time sepsis risk signals and care workflow context.</p>

@@ -68,13 +68,10 @@ const revealSelectors = [
   ".approach-visual",
   ".capability",
   ".product-card",
+  ".rapid-support-cards article",
   ".workflow-card",
   ".workflow-steps li",
-  ".platform-grid > div",
-  ".signal-panel",
-  ".traction-card",
   ".mission-card",
-  ".proof",
   ".cta-box",
   ".about-hero-copy",
   ".about-hero-visual",
@@ -142,11 +139,11 @@ revealItems.forEach((item, index) => {
   item.classList.add("reveal");
   item.style.setProperty("--reveal-delay", `${Math.min(index % 6, 5) * 80}ms`);
 
-  if (item.matches(".approach-visual, .traction-card, .difference-media")) {
+  if (item.matches(".approach-visual, .difference-media")) {
     item.classList.add("from-left");
   }
 
-  if (item.matches(".signal-panel, .platform-grid > div:last-child, .about-hero-visual, .contact-form, .contact-map, .assay-hero-visual, .ai-hero-visual, .ruo-hero-visual, .sepsis-hero-visual")) {
+  if (item.matches(".about-hero-visual, .contact-form, .contact-map, .assay-hero-visual, .ai-hero-visual, .ruo-hero-visual, .sepsis-hero-visual")) {
     item.classList.add("from-right");
   }
 });
