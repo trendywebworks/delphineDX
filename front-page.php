@@ -33,6 +33,8 @@
           <div class="stat"><b class="counter" data-target="350" data-suffix="K">350K</b><span>U.S. deaths per year
               attributed to sepsis</span></div>
         </div>
+
+        <p><strong>Source: US CDC</strong></p>
       </div>
     </section>
 
@@ -51,8 +53,8 @@
             <p class="eyebrow">Delphine's comprehensive approach</p>
             <h2>Faster answers for a time-critical emergency.</h2>
             <p>Sepsis care is constrained by diagnostic uncertainty, slow culture workflows, and the need to choose
-              effective antimicrobial treatment quickly. Delphine combines rapid molecular testing with clinical risk
-              intelligence to support better decisions earlier in the patient journey.</p>
+              effective antimicrobial treatment quickly. Delphine combines <strong>Rapid molecular testing</span> with  <strong>Clinical Risk
+              intelligence</strong> to support better decisions earlier in the patient journey.</p>
           </div>
           <div class="capability-list">
             <article class="capability">
@@ -89,8 +91,7 @@
         <div class="section-head">
           <p class="eyebrow">Products and services</p>
           <h2>A connected portfolio for infection diagnosis and treatment support.</h2>
-          <p>Delphine's roadmap includes SepSeek, ClinSight, a broader AI/ML healthcare platform, and RUO pathogen
-            identification assays.</p>
+          <p>Delphine's roadmap includes SepSeek, ClinSight and RUO pathogen identification assays.</p>
         </div>
         <div class="product-grid">
           <article class="product-card featured">
@@ -133,66 +134,68 @@
     </section>
 
     <section class="workflow" id="workflow">
-      <div class="section-inner">
-        <div class="section-head">
-          <p class="eyebrow">Workflow comparison</p>
-          <h2>From days of uncertainty toward same-shift molecular answers.</h2>
-          <p>The SepSeek workflow is designed to reduce the time from blood collection to pathogen and resistance
-            insight compared with conventional blood culture.</p>
+      <div class="workflow-slide">
+        <div class="workflow-slide-header">
+          <h2>Sepsis Test Workflow Comparison</h2>
+          <p>The SepSeek PCR based assay for bacterial, viral and fungal pathogen identification and resistance
+            biomarkers is 6-9 times faster than conventional blood culture</p>
         </div>
-        <div class="timeline">
-          <article class="timeline-card">
-            <span class="time">48-72 hrs</span>
-            <h3>Conventional blood culture</h3>
-            <ul class="steps">
-              <li>
-                <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10"></path><path d="M8 3v5l-3.8 8.1A3.4 3.4 0 0 0 7.3 21h9.4a3.4 3.4 0 0 0 3.1-4.9L16 8V3"></path><path d="M6.4 15h11.2"></path></svg></span>
-                <span>Blood collection</span>
-              </li>
-              <li>
-                <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 2h6"></path><path d="M10 2v6.5L5.5 18a2.8 2.8 0 0 0 2.5 4h8a2.8 2.8 0 0 0 2.5-4L14 8.5V2"></path><path d="M8 15h8"></path></svg></span>
-                <span>Blood culture</span>
-              </li>
-              <li>
-                <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="9" cy="10" r="1"></circle><circle cx="14" cy="9" r="1"></circle><circle cx="15" cy="14" r="1"></circle><circle cx="10" cy="15" r="1"></circle></svg></span>
-                <span>Bacteria culture</span>
-              </li>
-              <li>
-                <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 11 2 2 4-5"></path><path d="M5 4h14v16H5z"></path><path d="M8 17h8"></path></svg></span>
-                <span>Bacteria ID</span>
-              </li>
-              <li>
-                <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 21 21 10"></path><path d="m14 7 3-3a2.1 2.1 0 0 1 3 3l-3 3"></path><path d="M4 20c4-1 7-4 8-8"></path><path d="M3 14h6"></path></svg></span>
-                <span>Antimicrobial sensitivity</span>
-              </li>
-            </ul>
-          </article>
-          <article class="timeline-card fast">
-            <span class="time">6-8 hrs</span>
-            <h3>SepSeek PCR-based workflow</h3>
-            <ul class="steps">
-              <li>
-                <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10"></path><path d="M8 3v5l-3.8 8.1A3.4 3.4 0 0 0 7.3 21h9.4a3.4 3.4 0 0 0 3.1-4.9L16 8V3"></path><path d="M7 16h10"></path></svg></span>
-                <span>Small-volume blood collection</span>
-              </li>
-              <li>
-                <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3c5 0 7 4 12 4"></path><path d="M6 21c5 0 7-4 12-4"></path><path d="M6 7c5 0 7 10 12 10"></path><path d="M6 17c5 0 7-10 12-10"></path></svg></span>
-                <span>DNA extraction</span>
-              </li>
-              <li>
-                <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 3h4"></path><path d="M11 3v6l-5 8a3 3 0 0 0 2.5 4h7a3 3 0 0 0 2.5-4l-5-8V3"></path><path d="M8 16h8"></path><path d="M9 19h6"></path></svg></span>
-                <span>Multiplex RT-PCR</span>
-              </li>
-              <li>
-                <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5"></path><path d="M4 19h16"></path><path d="M8 16v-5"></path><path d="M12 16V8"></path><path d="M16 16v-7"></path></svg></span>
-                <span>Data analysis and interpretation</span>
-              </li>
-              <li>
-                <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"></path><path d="M4 20h16"></path><path d="M4 4h16"></path></svg></span>
-                <span>Pathogen ID + resistance markers</span>
-              </li>
-            </ul>
-          </article>
+
+        <div class="workflow-panel">
+          <div class="workflow-row">
+            <div class="workflow-icon microbe-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="workflow-content">
+              <div class="workflow-copy">
+                <div>
+                  <h3>MOST COMMON TURN AROUND TIME :</h3>
+                  <p>Conventional blood culture&nbsp; can take 1-7 days for results</p>
+                </div>
+                <span class="workflow-time">
+                  <svg viewBox="0 0 44 44" aria-hidden="true">
+                    <circle cx="22" cy="22" r="18"></circle>
+                    <path d="M22 10v13l9 6"></path>
+                  </svg>
+                  48-72 Hrs
+                </span>
+              </div>
+              <ol class="workflow-steps" aria-label="Conventional blood culture workflow">
+                <li>Blood<br>Collection<br>(20ml)</li>
+                <li>Blood Culture</li>
+                <li>Bacteria<br>Culture</li>
+                <li>Bacteria ID</li>
+                <li>Antimicrobial<br>Sensitivity</li>
+                <li>Pathogen ID +<br>Resistance</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="workflow-row">
+            <div class="workflow-icon dna-icon" aria-hidden="true"></div>
+            <div class="workflow-content">
+              <div class="workflow-copy">
+                <div>
+                  <h3>MOST COMMON TURN AROUND TIME :</h3>
+                  <p>SepSeek results are available in under 8 hours</p>
+                </div>
+                <span class="workflow-time">
+                  <svg viewBox="0 0 44 44" aria-hidden="true">
+                    <circle cx="22" cy="22" r="18"></circle>
+                    <path d="M22 10v13l9 6"></path>
+                  </svg>
+                  6-8 Hrs
+                </span>
+              </div>
+              <ol class="workflow-steps sepseek-steps" aria-label="SepSeek PCR based workflow">
+                <li>Blood<br>Collection (1ml)</li>
+                <li>DNA Extraction</li>
+                <li>Multiplex RT-<br>PCR</li>
+                <li>Data Analysis<br>and<br>Interpretation</li>
+                <li>Pathogen ID +<br>Resistance</li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
     </section>
