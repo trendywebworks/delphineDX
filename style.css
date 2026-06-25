@@ -1858,6 +1858,27 @@ section {
   object-fit: cover;
 }
 
+.ruo-product-image-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+.ruo-product-image-stack img {
+  min-height: 0;
+}
+
+.ruo-product-image-stack img:first-child {
+  height: 58%;
+}
+
+.ruo-product-image-stack img:last-child {
+  height: 42%;
+  object-fit: contain;
+  padding: 20px;
+  background: var(--white);
+}
+
 .ruo-product-image::after {
   position: absolute;
   inset: 0;
@@ -1895,6 +1916,13 @@ section {
   line-height: 1.75;
 }
 
+.ruo-product-code {
+  margin: -6px 0 0;
+  color: var(--secondary);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .ruo-product-meta {
   display: flex;
   flex-wrap: wrap;
@@ -1908,6 +1936,40 @@ section {
   color: var(--secondary);
   background: #eef7fc;
   font-size: 0.68rem;
+}
+
+.ruo-product-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 0 0 28px;
+}
+
+.ruo-product-detail-grid article {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbf9fd;
+}
+
+.ruo-product-detail-grid strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--primary);
+  font-size: 0.82rem;
+}
+
+.ruo-product-detail-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.ruo-product-content h4 {
+  margin: 28px 0 10px;
+  color: var(--primary);
+  font-size: 1.15rem;
 }
 
 .ruo-product-content>a {
@@ -5333,6 +5395,10 @@ body.job-modal-open {
 
   .ruo-product-content {
     padding: 32px 24px;
+  }
+
+  .ruo-product-detail-grid {
+    grid-template-columns: 1fr;
   }
 
   .ruo-partner-box {
