@@ -78,22 +78,22 @@ function delphine_register_custom_post_types() {
 
 
     /* =========================
-     * 2. RESOURCES CPT
+     * 2. EDUCATION CPT
      * ========================= */
     $resource_labels = array(
-        'name'               => 'Resources',
-        'singular_name'      => 'Resource',
-        'menu_name'          => 'Resources',
-        'name_admin_bar'     => 'Resource',
+        'name'               => 'Education',
+        'singular_name'      => 'Education',
+        'menu_name'          => 'Education',
+        'name_admin_bar'     => 'Education',
         'add_new'            => 'Add New',
-        'add_new_item'       => 'Add New Resource',
-        'new_item'           => 'New Resource',
-        'edit_item'          => 'Edit Resource',
-        'view_item'          => 'View Resource',
-        'all_items'          => 'All Resources',
-        'search_items'       => 'Search Resources',
-        'not_found'          => 'No resources found',
-        'not_found_in_trash' => 'No resources found in Trash',
+        'add_new_item'       => 'Add New Education',
+        'new_item'           => 'New Education',
+        'edit_item'          => 'Edit Education',
+        'view_item'          => 'View Education',
+        'all_items'          => 'All Education',
+        'search_items'       => 'Search Education',
+        'not_found'          => 'No education found',
+        'not_found_in_trash' => 'No education found in Trash',
     );
 
     $resource_args = array(
@@ -102,7 +102,7 @@ function delphine_register_custom_post_types() {
         'has_archive'        => true,
         'menu_icon'          => 'dashicons-media-document',
         'supports'           => array('title', 'editor', 'thumbnail', 'excerpt'),
-        'rewrite'            => array('slug' => 'resources'),
+        'rewrite'            => array('slug' => 'education'),
         'show_in_rest'       => true,
     );
 

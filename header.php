@@ -27,9 +27,9 @@
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>about-us/">About Us</a>
         <div class="nav-item has-dropdown">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Resources</a>
-          <div class="dropdown-menu" aria-label="Resources submenu">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>resources/what-is-sepsis/">What is Sepsis?</a>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>education/">Education</a>
+          <div class="dropdown-menu" aria-label="Education submenu">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>education/what-is-sepsis/">What is Sepsis?</a>
           </div>
         </div>
         <div class="nav-item has-dropdown has-mega">
