@@ -68,7 +68,6 @@ const revealSelectors = [
   ".approach-visual",
   ".capability",
   ".product-card",
-  ".rapid-support-cards article",
   ".workflow-card",
   ".workflow-steps li",
   ".mission-card",

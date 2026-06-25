@@ -134,37 +134,6 @@
       </div>
     </section>
 
-    <section class="rapid-support" id="rapid-support">
-      <div class="section-inner rapid-support-grid">
-        <div class="section-head">
-          <p class="eyebrow">Rapid Diagnostics + AI Decision Support</p>
-          <h2>Earlier pathogen insight paired with clinical risk intelligence.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis vestibulum.
-            Suspendisse potenti. Donec non sem sed sapien fermentum efficitur.</p>
-        </div>
-        <div class="rapid-support-cards">
-          <article>
-            <span>01</span>
-            <h3>Rapid molecular diagnostics</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae sem at lorem interdum
-              sollicitudin.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>AI decision support</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae sem at lorem interdum
-              sollicitudin.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Connected clinical workflow</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae sem at lorem interdum
-              sollicitudin.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="workflow" id="workflow">
       <div class="section-inner">
         <div class="section-head">
@@ -236,27 +205,26 @@
         <div class="section-head">
           <p class="eyebrow">Vision &amp; Mission</p>
           <h2>Best-in-class, affordable products for diagnosis and treatment.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis vestibulum.
-            Suspendisse potenti.</p>
+          <p>Affordability, reliability, and innovation guide Delphine Diagnostics' journey.</p>
         </div>
         <div class="mission-grid">
           <article class="mission-card">
             <span>Vision</span>
             <h3>Enhance human healthcare.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis
-              vestibulum.</p>
+            <p>Our vision is to enhance human healthcare by engaging in the development and supply of best-in-class,
+              affordable products for diagnosis and treatment.</p>
           </article>
           <article class="mission-card">
             <span>Mission</span>
-            <h3>Deliver reliable diagnostics and insight.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis
-              vestibulum.</p>
+            <h3>Deliver top-tier diagnostics and data insights.</h3>
+            <p>Delphine Diagnostics, a New Jersey-based startup, is passionate in its efforts to deliver top-tier
+              diagnostic products and supplemental data insights capabilities to speed effective diagnosis and treatment
+              for patients with infectious diseases.</p>
           </article>
           <article class="mission-card">
-            <span>Purpose</span>
-            <h3>Support earlier, better decisions.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis
-              vestibulum.</p>
+            <span>Guiding principle</span>
+            <h3>Affordable and reliable innovation.</h3>
+            <p>The affordability and reliability of our innovative products guide our journey.</p>
           </article>
         </div>
       </div>
