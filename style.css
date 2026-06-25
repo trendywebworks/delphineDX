@@ -364,6 +364,18 @@ img {
   letter-spacing: 0.08em;
 }
 
+.hero .eyebrow,
+.traction-card .eyebrow,
+.cta .eyebrow {
+  color: #ffffff;
+}
+
+.approach .eyebrow,
+.products .eyebrow,
+#platform .eyebrow {
+  color: #111111;
+}
+
 h1,
 h2,
 h3,
