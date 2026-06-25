@@ -555,23 +555,89 @@ section {
   background: linear-gradient(180deg, #f0f7fc 0%, #fbf9fd 100%);
 }
 
-.product-grid {
+.product-carousel {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.product-carousel-controls {
+  width: min(var(--max), calc(100% - 40px));
+  margin: -22px auto 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.product-carousel-button {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 14px;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(150, 82, 177, 0.22);
+  border-radius: 50%;
+  color: var(--primary);
+  background: var(--white);
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(16, 32, 51, 0.08);
+}
+
+.product-carousel-button::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+}
+
+.product-carousel-prev::before {
+  transform: rotate(-135deg) translate(-1px, -1px);
+}
+
+.product-carousel-next::before {
+  transform: rotate(45deg) translate(-1px, 1px);
+}
+
+.product-carousel-button:hover,
+.product-carousel-button:focus-visible {
+  color: var(--white);
+  background: var(--primary);
+  outline: none;
+}
+
+.product-carousel-button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.product-grid {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-padding-inline: max(20px, calc((100vw - var(--max)) / 2));
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 0 max(20px, calc((100vw - var(--max)) / 2)) 18px;
+}
+
+.product-grid::-webkit-scrollbar {
+  display: none;
 }
 
 .product-card {
   display: grid;
+  flex: 0 0 clamp(300px, 30vw, 390px);
   gap: 10px;
   align-content: start;
-  min-height: 300px;
+  min-height: 328px;
   padding: 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
   color: #3f3350;
   background: #ffffff;
   box-shadow: 0 16px 36px rgba(16, 32, 51, 0.08);
+  scroll-snap-align: start;
   transition: border-color 160ms ease, background 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
