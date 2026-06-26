@@ -1,5 +1,15 @@
 <?php
 
+/* Theme setup */
+function delphine_theme_setup() {
+    add_theme_support( 'post-thumbnails' );
+
+    add_image_size( 'delphine-card', 720, 500, true );
+    add_image_size( 'delphine-mega-card', 480, 320, true );
+    add_image_size( 'delphine-article-featured', 1440, 720, true );
+}
+add_action( 'after_setup_theme', 'delphine_theme_setup' );
+
 /* CSS */
 function mytheme_enqueue_styles() {
 

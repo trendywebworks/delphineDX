@@ -25,7 +25,7 @@
                   <div class="post-media">
                     <a href="<?php the_permalink(); ?>">
                       <?php if ( has_post_thumbnail() ) : ?>
-                        <?php the_post_thumbnail( 'large' ); ?>
+                        <?php the_post_thumbnail( 'delphine-card' ); ?>
                       <?php else : ?>
                         <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/sepsis-alliance.jpeg' ); ?>" alt="">
                       <?php endif; ?>
