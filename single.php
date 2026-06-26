@@ -43,7 +43,7 @@
       <?php if ( has_post_thumbnail() ) : ?>
         <div class="section-inner article-featured-wrap">
           <figure class="article-featured">
-            <?php the_post_thumbnail( 'full' ); ?>
+            <?php the_post_thumbnail( 'delphine-article-featured' ); ?>
           </figure>
         </div>
       <?php endif; ?>

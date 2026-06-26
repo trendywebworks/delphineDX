@@ -51,7 +51,7 @@
                           <?php if (has_post_thumbnail()) : ?>
                               <div class="post-media">
                                   <a href="<?php the_permalink(); ?>">
-                                      <?php the_post_thumbnail('large'); ?>
+                                      <?php the_post_thumbnail('delphine-card'); ?>
                                   </a>
                               </div>
                           <?php endif; ?>

@@ -57,7 +57,7 @@
                 ?>
                 <a class="mega-card" href="<?php the_permalink(); ?>">
                   <?php if ( has_post_thumbnail() ) : ?>
-                    <?php the_post_thumbnail( 'medium_large' ); ?>
+                    <?php the_post_thumbnail( 'delphine-mega-card' ); ?>
                   <?php else : ?>
                     <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/clinical-sample.png' ); ?>" alt="">
                   <?php endif; ?>
