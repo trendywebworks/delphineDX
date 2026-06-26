@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <main>
+  <main class="assay-product-page">
     <section class="assay-hero" aria-labelledby="assay-title">
       <div class="section-inner assay-hero-grid">
         <div class="assay-hero-copy">
@@ -10,7 +10,7 @@
             from whole blood specimens of patients with suspected sepsis.</p>
           <div class="hero-actions">
             <a class="button" href="#assay-overview">Explore the assay</a>
-            <a class="button secondary" href="contact.html">Discuss a partnership</a>
+            <a class="button secondary" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Discuss a partnership</a>
           </div>
           <div class="assay-status">
             <span>Development status</span>
@@ -20,14 +20,6 @@
         <div class="assay-hero-visual">
           <div class="assay-device-card">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/assay-kit.png" alt="Delphine molecular diagnostic assay kit concept">
-          </div>
-          <div class="assay-hero-stat">
-            <strong>11</strong>
-            <span>Initial bacterial targets</span>
-          </div>
-          <div class="assay-hero-stat secondary">
-            <strong>Hours</strong>
-            <span>Intended result timeframe versus days for culture</span>
           </div>
         </div>
       </div>
@@ -150,7 +142,7 @@
             methods, compatible PCR instruments, workflow requirements, and the potential addition of host biomarkers.</p>
         </div>
         <div class="assay-partner-actions">
-          <a class="button" href="contact.html">Partner with Delphine</a>
+          <a class="button" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Partner with Delphine</a>
           <a href="mailto:customerservice@delphinedx.com?subject=Sepsis%20Diagnostic%20Assay%20Partnership">Email the team</a>
         </div>
       </div>
