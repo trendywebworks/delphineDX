@@ -10,7 +10,7 @@
             workflows, beginning with patients at risk of developing sepsis.</p>
           <div class="hero-actions">
             <a class="button" href="#ai-overview">Explore the platform</a>
-            <a class="button secondary" href="contact.html">Discuss a collaboration</a>
+            <a class="button secondary" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Discuss a collaboration</a>
           </div>
           <div class="ai-status">
             <span>Initial clinical focus</span>
