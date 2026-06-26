@@ -51,6 +51,14 @@ function delphine_reading_time() {
     return sprintf( _n( '%d min read', '%d min read', $minutes, 'delphine-dx' ), $minutes );
 }
 
+function delphine_fallback_featured_image( $alt = '' ) {
+    printf(
+        '<img src="%s" alt="%s">',
+        esc_url( get_stylesheet_directory_uri() . '/assets/images/fall-back.webp' ),
+        esc_attr( $alt )
+    );
+}
+
 /* CUSTOM POST TYPE */
 
 function delphine_register_custom_post_types() {

@@ -123,7 +123,7 @@
                   <?php if ( has_post_thumbnail() ) : ?>
                     <?php the_post_thumbnail( 'delphine-card' ); ?>
                   <?php else : ?>
-                    <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/clinical-sample.png' ); ?>" alt="">
+                    <?php delphine_fallback_featured_image( get_the_title() ); ?>
                   <?php endif; ?>
                   <h3><?php the_title(); ?></h3>
                   <p><?php echo esc_html( $product_summary ); ?></p>
@@ -133,7 +133,7 @@
               <?php wp_reset_postdata(); ?>
             <?php else : ?>
               <article class="product-card">
-                <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/clinical-sample.png' ); ?>" alt="">
+                <?php delphine_fallback_featured_image( 'Delphine Diagnostics fallback image' ); ?>
                 <h3>Lorem ipsum dolor</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis.</p>
                 <span class="product-card-link">Read More</span>

@@ -27,7 +27,7 @@
                       <?php if ( has_post_thumbnail() ) : ?>
                         <?php the_post_thumbnail( 'delphine-card' ); ?>
                       <?php else : ?>
-                        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/clinical-sample.png' ); ?>" alt="">
+                        <?php delphine_fallback_featured_image( get_the_title() ); ?>
                       <?php endif; ?>
                     </a>
                   </div>

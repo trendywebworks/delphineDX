@@ -40,13 +40,15 @@
         </div>
       </header>
 
-      <?php if ( has_post_thumbnail() ) : ?>
-        <div class="section-inner article-featured-wrap">
-          <figure class="article-featured">
+      <div class="section-inner article-featured-wrap">
+        <figure class="article-featured">
+          <?php if ( has_post_thumbnail() ) : ?>
             <?php the_post_thumbnail( 'delphine-article-featured' ); ?>
-          </figure>
-        </div>
-      <?php endif; ?>
+          <?php else : ?>
+            <?php delphine_fallback_featured_image( get_the_title() ); ?>
+          <?php endif; ?>
+        </figure>
+      </div>
 
       <section class="article-body-section">
         <div class="section-inner article-layout article-layout-single">
