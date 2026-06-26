@@ -923,7 +923,7 @@ section {
 
 .targets-heading h2 {
   color: var(--primary);
-  font-size: clamp(2.3rem, 4.5vw, 4.1rem);
+  font-size: clamp(1.61rem, 3.15vw, 2.87rem);
   line-height: 1.08;
 }
 
@@ -972,8 +972,12 @@ section {
 .assay-roadmap-copy h2 {
   margin-bottom: 20px;
   color: var(--primary);
-  font-size: clamp(2.3rem, 4vw, 3.8rem);
+  font-size: clamp(1.61rem, 2.8vw, 2.66rem);
   line-height: 1.08;
+}
+
+.assay-product-page .eyebrow {
+  color: var(--white);
 }
 
 .assay-roadmap-copy>p:not(.eyebrow) {
@@ -1314,7 +1318,7 @@ section {
 .ai-section-heading h2,
 .ai-roadmap-heading h2 {
   color: var(--primary);
-  font-size: clamp(2.3rem, 4.5vw, 4.1rem);
+  font-size: clamp(1.61rem, 3.15vw, 2.87rem);
   line-height: 1.08;
 }
 
@@ -1397,7 +1401,7 @@ section {
 .ai-models-copy h2 {
   margin-bottom: 20px;
   color: var(--white);
-  font-size: clamp(2.3rem, 4vw, 3.8rem);
+  font-size: clamp(1.61rem, 2.8vw, 2.66rem);
   line-height: 1.08;
 }
 
@@ -1497,8 +1501,12 @@ section {
 .ai-integration-grid h2 {
   margin-bottom: 20px;
   color: var(--primary);
-  font-size: clamp(2.3rem, 4vw, 3.8rem);
+  font-size: clamp(1.61rem, 2.8vw, 2.66rem);
   line-height: 1.08;
+}
+
+.ai-product-page .eyebrow {
+  color: var(--white);
 }
 
 .ai-integration-grid>div>p:not(.eyebrow) {

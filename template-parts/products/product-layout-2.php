@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <main>
+  <main class="ai-product-page">
     <section class="ai-hero" aria-labelledby="ai-title">
       <div class="section-inner ai-hero-grid">
         <div class="ai-hero-copy">
@@ -36,7 +36,6 @@
               <span>Vitals</span><span>Blood tests</span><span>Clinical observations</span>
             </div>
           </div>
-          <div class="ai-model-note"><strong>3</strong><span>Model families described in the initial ensemble</span></div>
         </div>
       </div>
     </section>
