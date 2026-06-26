@@ -2130,9 +2130,25 @@ section {
   line-height: 1.8;
 }
 
+.sepsis-hero-copy>p:not(.eyebrow)+p:not(.eyebrow) {
+  margin-top: 18px;
+}
+
+.sepsis-hero-copy strong {
+  color: var(--white);
+}
+
 .sepsis-hero-visual {
   position: relative;
   min-height: 490px;
+}
+
+.sepsis-hero-image {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 34px 80px rgba(12, 9, 24, 0.34);
 }
 
 .sepsis-emergency-card {
@@ -5711,6 +5727,10 @@ body.job-modal-open {
   font-size: clamp(1.82rem, 2.8vw, 3.5rem);
 }
 
+.about-hero-copy h1 {
+  font-size: clamp(1.27rem, 1.96vw, 2.45rem);
+}
+
 .assay-hero-copy h1,
 .ai-hero-copy h1,
 .ruo-hero-copy h1 {
@@ -5740,6 +5760,10 @@ body.job-modal-open {
   .blog-hero-copy h1,
   h1 {
     font-size: clamp(1.65rem, 8.4vw, 2.49rem);
+  }
+
+  .about-hero-copy h1 {
+    font-size: clamp(1.16rem, 5.88vw, 1.74rem);
   }
 
   .article-hero h1 {
