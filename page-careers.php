@@ -11,20 +11,15 @@
           <a class="button" href="#open-positions">View open positions</a>
         </div>
         <div class="career-hero-visual">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="Scientist working in a diagnostics laboratory">
-          <div class="career-hero-note">
-            <span>Our shared mission</span>
-            <strong>No one should die from a treatable infection.</strong>
-          </div>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="Scientist working in a diagnostics laboratory">          
         </div>
-      </div>
+      </div>        
     </section>
 
     <section class="career-values" aria-label="Why work at Delphine">
       <div class="section-inner">
         <div class="career-values-heading">
-          <p class="eyebrow">Why Delphine</p>
-          <h2>Meaningful science. Small-team ownership. Real patient impact.</h2>
+          <h2>Why Delphine</h2>
         </div>
         <div class="career-value-grid">
           <article>
@@ -83,12 +78,12 @@
 
         <div class="career-interest">
           <div>
-            <p class="eyebrow">Future opportunities</p>
+            <p class="eyebrow" style="color:white;">Future opportunities</p>
             <h2>Don't see your role?</h2>
             <p>We welcome introductions from people passionate about diagnostics, clinical technology, laboratory
               science, quality, and healthcare AI.</p>
           </div>
-          <a class="button secondary" href="mailto:customerservice@delphinedx.com?subject=Career%20Interest%20at%20Delphine%20Diagnostics">Introduce yourself</a>
+          <a class="button secondary" href="<?php echo esc_url( home_url( '/' ) ); ?>contat">Introduce yourself</a>
         </div>
       </div>
     </section>

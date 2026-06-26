@@ -243,8 +243,8 @@
           <p>Delphine is interested in hearing from future customers, clinical partners, laboratories, and healthcare
             organizations about diagnostic targets, compatible equipment, and workflow needs.</p>
           <div class="hero-actions">
-            <a class="button" href="contact.html">Contact us</a>
-            <a class="button secondary" href="#products">Review products</a>
+            <a class="button" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>">Contact us</a>
+            <a class="button secondary" href="<?php echo esc_url( home_url( '/products/' ) ); ?>">View Products</a>
           </div>
         </div>
       </div>
