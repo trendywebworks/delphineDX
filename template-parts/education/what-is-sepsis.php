@@ -11,15 +11,12 @@ get_header(); ?>
         <div class="sepsis-hero-copy">
           <p class="eyebrow">Sepsis awareness</p>
           <h1 id="sepsis-title">What is Sepsis?</h1>
-          <p>Sepsis is the body's extreme response to an infection, which if left undiagnosed and untreated can lead to
-            tissue damage, organ failure, and death.</p>
+          <p>Sepsis is the body's <strong>extreme response</strong> to an infection, which if left undiagnosed and
+            untreated can lead to tissue damage, organ failure, and death.</p>
+          <p>Anyone with an infection, severe injury, or serious non-communicable disease is at risk for sepsis.</p>
         </div>
         <div class="sepsis-hero-visual">
-          <div class="sepsis-emergency-card">
-            <span>Medical emergency</span>
-            <strong>Sepsis requires immediate evaluation and treatment.</strong>
-            <p>Anyone with an infection, severe injury, or serious non-communicable disease is at risk for sepsis.</p>
-          </div>
+          <img class="sepsis-hero-image" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/education/problem-and-urgency.png'); ?>" alt="Sepsis problem and urgency statistics">
         </div>
       </div>
     </section>
