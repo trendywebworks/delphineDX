@@ -53,125 +53,114 @@ $ruo_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/
         <div class="ruo-hero-copy">
           <p class="eyebrow">Research Use Only</p>
           <h1 id="ruo-title">RUO Pathogen Identification Test Kits</h1>
-          <p>Real-time PCR assay kits for research applications focused on selected bacterial pathogens, including
-            environmental monitoring, food safety research, microbiological studies, contamination control, and infection
-            control research.</p>
+          <p>Real-time PCR assay kits for research applications focused on selected bacterial pathogens.</p>
           <div class="hero-actions">
-            <a class="button" href="#ruo-catalog">View RUO kits</a>
+            <a class="button" href="#ruo-products">View kits</a>
             <a class="button secondary" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact Us</a>
           </div>
-          <div class="ruo-status">
-            <span>RUO</span>
-            <strong>Available in 50 or 100 reaction kits. Contact us regarding pricing and availability.</strong>
-          </div>
         </div>
-        <div class="ruo-hero-visual">
-          <div class="ruo-lab-card">
-            <img src="<?php echo esc_url($ruo_image_base . 'escherichia-coli.webp'); ?>" alt="Escherichia coli RUO pathogen target">
-            <div><span>Product code</span><strong>DDN-EC-001</strong></div>
-          </div>
-          <div class="ruo-hero-stat">
-            <strong>4</strong>
-            <span>RUO real-time PCR assays</span>
-          </div>
-          <div class="ruo-hero-stat secondary">
-            <strong>50 / 100</strong>
-            <span>Reaction kit configurations</span>
-          </div>
-        </div>
+        <figure class="ruo-hero-visual">
+          <img src="<?php echo esc_url($ruo_image_base . 'e-coli-kit.jpg'); ?>" alt="RUO real-time PCR assay kit package">
+          <figcaption>Available in 50 or 100 reaction kits</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="ruo-overview" id="ruo-overview">
-      <div class="section-inner ruo-overview-grid">
-        <div class="section-head">
+    <section class="ruo-intro" aria-label="RUO product overview">
+      <div class="section-inner ruo-intro-grid">
+        <div>
           <p class="eyebrow">Product overview</p>
-          <h2>Pathogen-specific real-time PCR assays for research workflows.</h2>
+          <h2>Clean, comparable assay information for four bacterial targets.</h2>
         </div>
-        <div class="ruo-overview-copy">
-          <p>Each RUO kit includes product documentation such as product inserts and SDS (Safety Data Sheet). The kits are
-            compatible with most standard real-time PCR platforms including ABI, Bio-Rad, Roche, and Qiagen.</p>
-          <p>The current RUO catalog includes assays for <i>Escherichia coli</i>, <i>Staphylococcus aureus</i>,
+        <div class="ruo-intro-copy">
+          <p>Each kit entry includes ordering information, kit configuration details, recommended real-time PCR platforms,
+            documentation notes, and pathogen background.</p>
+          <p>Current RUO assays include <i>Escherichia coli</i>, <i>Staphylococcus aureus</i>,
             <i>Klebsiella pneumoniae</i>, and <i>Acinetobacter baumannii</i>.</p>
         </div>
       </div>
     </section>
 
-    <section class="ruo-specs" aria-label="RUO kit details">
+    <nav class="ruo-product-nav" aria-label="RUO product links">
       <div class="section-inner">
-        <div class="ruo-spec-grid">
-          <article><span>01</span><h3>Ordering information</h3><p>Product code and lead time details are provided for each assay.</p></article>
-          <article><span>02</span><h3>Ordering details</h3><p>Available in 50 or 100 reaction kits. Contact us regarding pricing and availability.</p></article>
-          <article><span>03</span><h3>Recommended equipment</h3><p>Compatible with most standard real-time PCR platforms including ABI, Bio-Rad, Roche, and Qiagen.</p></article>
-          <article><span>04</span><h3>Documentation</h3><p>Product inserts and SDS (Safety Data Sheet) documentation are listed for each product.</p></article>
-        </div>
+        <?php foreach ($ruo_products as $product) : ?>
+          <a href="#<?php echo esc_attr(sanitize_title($product['name'])); ?>">
+            <?php echo esc_html($product['name']); ?>
+          </a>
+        <?php endforeach; ?>
       </div>
-    </section>
+    </nav>
 
-    <section class="ruo-catalog" id="ruo-catalog">
-      <div class="section-inner">
-        <div class="ruo-catalog-heading">
-          <div>
-            <p class="eyebrow">RUO catalog</p>
-            <h2>Four real-time PCR assays for selected bacterial targets.</h2>
-          </div>
-          <p>Each product entry below follows the source RUO page structure: assay name, product code, ordering details,
-            recommended equipment, documentation, and pathogen information.</p>
-        </div>
+    <section class="ruo-products" id="ruo-products" aria-label="RUO products">
+      <?php foreach ($ruo_products as $index => $product) : ?>
+        <article class="ruo-product<?php echo $index % 2 === 1 ? ' reverse' : ''; ?>" id="<?php echo esc_attr(sanitize_title($product['name'])); ?>">
+          <div class="section-inner ruo-product-grid">
+            <div class="ruo-product-media">
+              <figure class="ruo-pathogen-image">
+                <img src="<?php echo esc_url($ruo_image_base . $product['image']); ?>" alt="<?php echo esc_attr($product['caption']); ?>">
+                <figcaption><?php echo esc_html($product['caption']); ?></figcaption>
+              </figure>
+              <figure class="ruo-kit-image">
+                <img src="<?php echo esc_url($ruo_image_base . $product['kit_image']); ?>" alt="<?php echo esc_attr($product['name'] . ' real-time PCR assay kit'); ?>">
+              </figure>
+            </div>
 
-        <div class="ruo-product-list">
-          <?php foreach ($ruo_products as $index => $product) : ?>
-            <article class="ruo-product<?php echo $index % 2 === 1 ? ' reverse' : ''; ?>">
-              <div class="ruo-product-image">
-                <div class="ruo-product-image-stack">
-                  <img src="<?php echo esc_url($ruo_image_base . $product['image']); ?>" alt="<?php echo esc_attr($product['caption']); ?>">
-                  <img src="<?php echo esc_url($ruo_image_base . $product['kit_image']); ?>" alt="<?php echo esc_attr($product['name'] . ' kit graphic'); ?>">
-                </div>
-                <span><?php echo esc_html($product['caption']); ?></span>
+            <div class="ruo-product-content">
+              <p class="eyebrow">Real-time PCR Assay</p>
+              <h2><?php echo esc_html($product['assay']); ?></h2>
+              <p class="ruo-product-code">Product code: <?php echo esc_html($product['code']); ?></p>
+
+              <div class="ruo-toggle-list">
+                <details class="ruo-toggle" open>
+                  <summary>Ordering Information</summary>
+                  <div>
+                    <ul>
+                      <li>Product code: <?php echo esc_html($product['code']); ?></li>
+                      <li>Lead time, if applicable</li>
+                    </ul>
+                  </div>
+                </details>
+
+                <details class="ruo-toggle">
+                  <summary>Ordering Details</summary>
+                  <div>
+                    <ul>
+                      <li>Available in 50 or 100 reaction kits.</li>
+                      <li>Contact us regarding pricing and availability.</li>
+                    </ul>
+                  </div>
+                </details>
+
+                <details class="ruo-toggle">
+                  <summary>Recommended Equipment</summary>
+                  <div>
+                    <p>Compatible with most standard real-time PCR platforms including ABI, Bio-Rad, Roche, and Qiagen.</p>
+                  </div>
+                </details>
+
+                <details class="ruo-toggle">
+                  <summary>Documentation</summary>
+                  <div>
+                    <ul>
+                      <li>Product inserts</li>
+                      <li>SDS (Safety Data Sheet)</li>
+                    </ul>
+                  </div>
+                </details>
               </div>
-              <div class="ruo-product-content">
+
+              <div class="ruo-pathogen-info">
                 <p class="eyebrow">Pathogen information</p>
-                <h3><?php echo esc_html($product['assay']); ?></h3>
-                <p class="ruo-product-code">Product code: <?php echo esc_html($product['code']); ?></p>
-                <div class="ruo-product-meta">
-                  <span>50 or 100 reaction kits</span>
-                  <span>Real-time PCR</span>
-                  <span>Research Use Only</span>
-                </div>
-                <div class="ruo-product-detail-grid">
-                  <article><strong>Ordering information</strong><p>Product code: <?php echo esc_html($product['code']); ?><br>Lead time (if applicable)</p></article>
-                  <article><strong>Ordering details</strong><p>Available in 50 or 100 reaction kits. Contact us regarding pricing and availability.</p></article>
-                  <article><strong>Recommended equipment</strong><p>Compatible with most standard real-time PCR platforms including ABI, Bio-Rad, Roche, and Qiagen.</p></article>
-                  <article><strong>Documentation</strong><p>Product inserts and SDS (Safety Data Sheet).</p></article>
-                </div>
-                <h4><?php echo esc_html($product['name']); ?></h4>
+                <h3><?php echo esc_html($product['name']); ?></h3>
                 <p><?php echo esc_html($product['description']); ?></p>
                 <p><?php echo esc_html($product['use']); ?></p>
-                <a href="<?php echo esc_url(home_url('/contact-us/')); ?>">Click for more Information</a>
               </div>
-            </article>
-          <?php endforeach; ?>
-        </div>
-      </div>
-    </section>
 
-    <section class="ruo-workflow">
-      <div class="section-inner">
-        <div class="ruo-workflow-heading">
-          <div>
-            <p class="eyebrow">Common ordering path</p>
-            <h2>From product code to supporting documentation.</h2>
+              <a class="button secondary" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Click for more Information</a>
+            </div>
           </div>
-          <p>The source RUO page repeats the same ordering framework across all four assays, making the catalog easy to
-            compare and request.</p>
-        </div>
-        <ol class="ruo-steps">
-          <li><span>01</span><strong>Select assay</strong><p>Choose the pathogen-specific real-time PCR assay and product code.</p></li>
-          <li><span>02</span><strong>Choose kit size</strong><p>Discuss 50 or 100 reaction kit availability with Delphine Diagnostics.</p></li>
-          <li><span>03</span><strong>Confirm platform</strong><p>Review compatibility with standard real-time PCR platforms.</p></li>
-          <li><span>04</span><strong>Request documentation</strong><p>Access product inserts and SDS information for research workflows.</p></li>
-        </ol>
-      </div>
+        </article>
+      <?php endforeach; ?>
     </section>
 
     <section class="ruo-partner">
@@ -179,8 +168,8 @@ $ruo_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/
         <div>
           <p class="eyebrow">Pricing and availability</p>
           <h2>Contact Delphine Diagnostics for RUO kit information.</h2>
-          <p>Use the contact page to request pricing, availability, lead time details, and documentation for the RUO
-            pathogen identification test kits.</p>
+          <p>Request pricing, availability, lead time details, product inserts, and SDS information for the RUO pathogen
+            identification test kits.</p>
         </div>
         <div class="ruo-partner-actions">
           <a class="button" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Contact Us</a>
