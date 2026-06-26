@@ -48,13 +48,15 @@
 
                       <article <?php post_class('post-card'); ?>>
 
-                          <?php if (has_post_thumbnail()) : ?>
-                              <div class="post-media">
-                                  <a href="<?php the_permalink(); ?>">
+                          <div class="post-media">
+                              <a href="<?php the_permalink(); ?>">
+                                  <?php if (has_post_thumbnail()) : ?>
                                       <?php the_post_thumbnail('delphine-card'); ?>
-                                  </a>
-                              </div>
-                          <?php endif; ?>
+                                  <?php else : ?>
+                                      <?php delphine_fallback_featured_image( get_the_title() ); ?>
+                                  <?php endif; ?>
+                              </a>
+                          </div>
 
                           <div class="post-meta">
 
