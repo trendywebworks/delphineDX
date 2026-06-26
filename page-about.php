@@ -532,8 +532,8 @@
           <p>We welcome conversations with hospitals, laboratories, clinicians, researchers, strategic partners, and
             healthcare organizations working to improve infectious disease outcomes.</p>
           <div class="hero-actions">
-            <a class="button" href="contact.html">Contact Delphine</a>
-            <a class="button secondary" href="index.html#products">Explore our solutions</a>
+            <a class="button" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>">Contact Us</a>
+            <a class="button secondary" href="<?php echo esc_url( home_url( '/products/' ) ); ?>">View Products</a>
           </div>
         </div>
       </div>

@@ -15,13 +15,7 @@
       <div class="blog-feed">
 
         <section class="year-group">
-          <div class="year-heading">
-            <p class="eyebrow">Products</p>
-            <h2>Explore Products</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis
-              vestibulum.</p>
-          </div>
-
+          
           <?php if ( have_posts() ) : ?>
 
             <div class="post-grid">
@@ -45,7 +39,6 @@
 
                   <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                   <p><?php echo esc_html( wp_trim_words( get_the_excerpt(), 20, '...' ) ); ?></p>
-                  <a href="<?php the_permalink(); ?>">Read more</a>
                 </article>
 
               <?php endwhile; ?>
