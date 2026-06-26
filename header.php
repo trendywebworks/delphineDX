@@ -90,7 +90,7 @@
           - - >
         </div>
         -->
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>careers/">Career</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>careers/">Careers</a>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/blog/">Blog</a>
       </div>
       <a class="button nav-cta" href="<?php echo esc_url( home_url( '/' ) ); ?>/contact-us/">Contact Us</a>
