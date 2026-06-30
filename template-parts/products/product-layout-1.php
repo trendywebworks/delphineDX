@@ -142,7 +142,7 @@
             methods, compatible PCR instruments, workflow requirements, and the potential addition of host biomarkers.</p>
         </div>
         <div class="assay-partner-actions">
-          <a class="button" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Partner with Delphine</a>
+          <a class="button" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>">Partner with Delphine</a>
           <a href="mailto:customerservice@delphinedx.com?subject=Sepsis%20Diagnostic%20Assay%20Partnership">Email the team</a>
         </div>
       </div>

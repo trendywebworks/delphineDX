@@ -83,7 +83,7 @@
             <p>We welcome introductions from people passionate about diagnostics, clinical technology, laboratory
               science, quality, and healthcare AI.</p>
           </div>
-          <a class="button secondary" href="<?php echo esc_url( home_url( '/' ) ); ?>contat">Introduce yourself</a>
+          <a class="button secondary" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>">Introduce yourself</a>
         </div>
       </div>
     </section>

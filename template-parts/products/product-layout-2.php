@@ -151,7 +151,7 @@
             organizations interested in sepsis prediction and workflow integration.</p>
         </div>
         <div class="ai-partner-actions">
-          <a class="button" href="contact.html">Partner with Delphine</a>
+          <a class="button" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>">Partner with Delphine</a>
           <a href="mailto:customerservice@delphinedx.com?subject=AI%2FML%20Healthcare%20Platform%20Collaboration">Email the team</a>
         </div>
       </div>
