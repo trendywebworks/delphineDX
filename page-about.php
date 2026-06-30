@@ -117,7 +117,7 @@
       <div class="section-inner">
         <div class="roadmap-heading">
           <div class="section-head">
-            <p class="eyebrow">Our roadmap</p>
+            <p class="eyebrow eyebrow-white">Our roadmap</p>
             <h2>Planning a connected healthcare diagnostics enterprise.</h2>
           </div>
           <p>As part of augmenting our service to the healthcare needs of patients, service providers (payers), and

@@ -53,7 +53,7 @@
             <p class="eyebrow">Delphine's comprehensive approach</p>
             <h2>Faster answers for a time-critical emergency.</h2>
             <p>Sepsis care is constrained by diagnostic uncertainty, slow culture workflows, and the need to choose
-              effective antimicrobial treatment quickly. Delphine combines <strong>Rapid molecular testing</span> with  <strong>Clinical Risk
+              effective antimicrobial treatment quickly. Delphine combines <strong>Rapid molecular testing</strong> with  <strong>Clinical Risk
               intelligence</strong> to support better decisions earlier in the patient journey.</p>
           </div>
           <div class="capability-list">
