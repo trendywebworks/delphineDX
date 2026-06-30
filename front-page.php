@@ -42,7 +42,7 @@
       <div class="section-inner approach-grid">
         <div class="approach-visual" aria-hidden="true">
           <div class="photo-stack primary">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/clinical-sample.png" alt="">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/home-approach.webp" alt="">
           </div>
           <div class="photo-stack secondary">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/assay-kit.png" alt="">
