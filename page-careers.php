@@ -11,7 +11,7 @@
           <a class="button" href="#open-positions">View open positions</a>
         </div>
         <div class="career-hero-visual">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lab-scientist.jpeg" alt="Scientist working in a diagnostics laboratory">          
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/careers.webp" alt="Scientist working in a diagnostics laboratory">          
         </div>
       </div>        
     </section>
