@@ -16,7 +16,7 @@ get_header(); ?>
           <p>Anyone with an infection, severe injury, or serious non-communicable disease is at risk for sepsis.</p>
         </div>
         <div class="sepsis-hero-visual">
-          <img class="sepsis-hero-image" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/education/problem-and-urgency.png'); ?>" alt="Sepsis problem and urgency statistics">
+          <img class="sepsis-hero-image" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/education/what-is-sepsis.webp'); ?>" alt="Sepsis problem and urgency statistics">
         </div>
       </div>
     </section>
