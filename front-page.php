@@ -10,9 +10,9 @@
         <div>
           <p class="eyebrow">Rapid diagnostics + AI decision support</p>
           <h1 id="hero-title">No one should die from a treatable infection.</h1>
-          <p class="hero-copy">Delphine Diagnostics is building faster molecular sepsis diagnostics and machine-learning
-            e                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   a                                                                                                     nabled clinical decision support to help clinicians recognize risk earlier, identify pathogens sooner, and
-            treat with greater precision.</p>
+          <p class="hero-copy">Delphine Diagnostics is building rapid molecular diagnostics and AI/ML-enabled clinical
+            decision support to help clinicians recognize sepsis risk earlier, identify pathogens and resistance markers
+            sooner, and treat patients with greater precision.</p>
           <div class="hero-actions">
             <a class="button" href="#products">Explore solutions</a>
             <a class="button secondary" href="#workflow">See the workflow</a>
@@ -51,37 +51,72 @@
         <div>
           <div class="section-head">
             <p class="eyebrow">Delphine's comprehensive approach</p>
-            <h2>Faster answers for a time-critical emergency.</h2>
-            <p>Sepsis care is constrained by diagnostic uncertainty, slow culture workflows, and the need to choose
-              effective antimicrobial treatment quickly. Delphine combines <strong>Rapid molecular testing</strong> with  <strong>Clinical Risk
-              intelligence</strong> to support better decisions earlier in the patient journey.</p>
+            <h2>Uniting rapid pathogen identification with improved risk prediction.</h2>
+            <p>Delphine brings together a sepsis diagnostic panel and ML prediction software to deliver pathogen and
+              resistance-marker identification 6-9 times faster than standard of care, while enabling earlier detection
+              of sepsis risk and smarter treatment decisions.</p>
           </div>
           <div class="capability-list">
             <article class="capability">
               <div class="capability-icon">01</div>
               <div>
-                <h3>Rapid pathogen and resistance insight</h3>
-                <p>PCR-based detection is designed to identify microbial pathogens and resistance markers directly from
-                  whole blood specimens.</p>
+                <h3>Sepsis diagnostic panel</h3>
+                <p>SepSeek is designed for rapid pathogen and resistance-marker identification directly from whole blood
+                  specimens.</p>
               </div>
             </article>
             <article class="capability">
               <div class="capability-icon">02</div>
               <div>
-                <h3>ML-enabled sepsis risk prediction</h3>
-                <p>ClinSight uses an ensemble of models to support near real-time risk signals using vitals, lab
-                  results, and observations.</p>
+                <h3>ML prediction software tool</h3>
+                <p>ClinSight supports earlier sepsis risk detection using clinical features such as vitals, lab results,
+                  and observations.</p>
               </div>
             </article>
             <article class="capability">
               <div class="capability-icon">03</div>
               <div>
-                <h3>Personalized clinical direction</h3>
-                <p>Combined diagnostic and decision-support data can help reduce broad-spectrum overtreatment and
-                  shorten the path to targeted care.</p>
+                <h3>Faster, smarter treatment</h3>
+                <p>Combining diagnostic and decision-support data can reduce uncertainty, support targeted therapy, and
+                  improve outcomes.</p>
               </div>
             </article>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="outcomes" aria-labelledby="outcomes-title">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow">Our approach improves outcomes and economics</p>
+          <h2 id="outcomes-title">Faster, targeted treatment can change the patient journey.</h2>
+        </div>
+        <div class="outcome-grid">
+          <article class="outcome-card">
+            <span>01</span>
+            <h3>Improve and save patient lives</h3>
+            <p>Faster, targeted treatment means a better chance of survival, fewer complications, and safer recovery
+              with less exposure to unnecessary antibiotics.</p>
+          </article>
+          <article class="outcome-card">
+            <span>02</span>
+            <h3>Reduce diagnostic uncertainty</h3>
+            <p>Rapid answers and early risk signals empower clinicians to intervene sooner, choose the right therapy,
+              and reduce diagnostic uncertainty.</p>
+          </article>
+          <article class="outcome-card">
+            <span>03</span>
+            <h3>Improve outcomes and lower cost of care</h3>
+            <p>Preventing deterioration and avoiding broad-spectrum overtreatment can reduce high-cost admissions,
+              readmissions, and downstream complications.</p>
+          </article>
+          <article class="outcome-card">
+            <span>04</span>
+            <h3>Shorten length of stay and improve quality</h3>
+            <p>Earlier detection and optimized antibiotic use can lower ICU burden, shorten length of stay, reduce
+              readmissions, and improve quality metrics.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -225,7 +260,7 @@
           </article>
           <article class="mission-card">
             <span>Our Mission</span>
-            <h3>Deliver top-tier diagnostics and data insights.</h3>
+            <h3>Speed effective diagnosis and treatment.</h3>
             <p>Delphine Diagnostics, a New Jersey-based startup, is passionate in its efforts to deliver top-tier
               diagnostic products and supplemental data insights capabilities to speed effective diagnosis and treatment
               for patients with infectious diseases. The affordability and reliability of our innovative products guide

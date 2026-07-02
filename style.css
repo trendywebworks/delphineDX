@@ -567,6 +567,53 @@ section {
   color: var(--muted);
 }
 
+.outcomes {
+  background: linear-gradient(180deg, #f0f7fc 0%, #fbf9fd 100%);
+}
+
+.outcome-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.outcome-card {
+  display: grid;
+  align-content: start;
+  min-height: 280px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 16px 36px rgba(16, 32, 51, 0.06);
+}
+
+.outcome-card span {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 34px;
+  border-radius: 6px;
+  color: var(--white);
+  background: var(--primary);
+  font-size: 0.78rem;
+}
+
+.outcome-card h3 {
+  margin-bottom: 12px;
+  color: var(--primary);
+  font-size: 1.16rem;
+  line-height: 1.22;
+}
+
+.outcome-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
 .products {
   background: linear-gradient(180deg, #f0f7fc 0%, #fbf9fd 100%);
 }
@@ -2648,6 +2695,219 @@ section {
   margin: 0;
   color: var(--muted);
   font-size: 0.76rem;
+}
+
+.pathoseek-hero {
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  background:
+    linear-gradient(125deg, rgba(29, 18, 48, 0.95), rgba(98, 53, 123, 0.92)),
+    url("assets/videos/hero-lab-microscope.jpg") center / cover no-repeat;
+}
+
+.pathoseek-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.62fr);
+  gap: 70px;
+  align-items: center;
+}
+
+.pathoseek-hero-copy h1 {
+  max-width: 820px;
+  margin-bottom: 22px;
+  font-size: clamp(2.55rem, 5vw, 4.8rem);
+  line-height: 1;
+}
+
+.pathoseek-hero-copy>p:not(.eyebrow) {
+  max-width: 730px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.08rem;
+  line-height: 1.72;
+}
+
+.pathoseek-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.pathoseek-meta span {
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.78rem;
+}
+
+.pathoseek-hero-kit {
+  margin: 0;
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 24px 62px rgba(10, 7, 22, 0.28);
+}
+
+.pathoseek-hero-kit img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.2 / 1;
+  object-fit: contain;
+}
+
+.pathoseek-hero-kit figcaption {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.pathoseek-overview {
+  background: var(--white);
+}
+
+.pathoseek-overview-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.pathoseek-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.pathoseek-info-grid article,
+.pathoseek-ifu-grid article {
+  min-height: 210px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbf9fd;
+}
+
+.pathoseek-info-grid span,
+.pathoseek-ifu-grid span {
+  display: inline-flex;
+  margin-bottom: 28px;
+  color: var(--secondary);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.pathoseek-info-grid h3,
+.pathoseek-ifu-grid h3 {
+  margin-bottom: 12px;
+  color: var(--primary);
+  font-size: 1.18rem;
+  line-height: 1.22;
+}
+
+.pathoseek-info-grid p,
+.pathoseek-ifu-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.62;
+}
+
+.pathoseek-pathogen {
+  background: linear-gradient(180deg, #f0f7fc 0%, #fbf9fd 100%);
+}
+
+.pathoseek-pathogen-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.78fr) minmax(0, 1.22fr);
+  gap: 70px;
+  align-items: center;
+}
+
+.pathoseek-pathogen figure {
+  overflow: hidden;
+  margin: 0;
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.pathoseek-pathogen img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.1 / 1;
+  object-fit: cover;
+}
+
+.pathoseek-pathogen figcaption {
+  padding: 14px 18px;
+  color: var(--primary);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.pathoseek-pathogen h2 {
+  margin-bottom: 18px;
+  color: var(--primary);
+  font-size: clamp(2rem, 3.5vw, 3.4rem);
+  line-height: 1.08;
+}
+
+.pathoseek-pathogen p:not(.eyebrow) {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.78;
+}
+
+.pathoseek-ifu {
+  background: var(--white);
+}
+
+.pathoseek-ifu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.pathoseek-ifu-grid article {
+  background: linear-gradient(145deg, #fbf9fd, #eef7fc);
+}
+
+.pathoseek-cta {
+  padding: 70px 0;
+  background: #fbf9fd;
+}
+
+.pathoseek-cta-box {
+  display: flex;
+  gap: 42px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 44px;
+  border-radius: 8px;
+  color: var(--white);
+  background: linear-gradient(125deg, var(--primary), #356d99);
+}
+
+.pathoseek-cta-box h2 {
+  max-width: 780px;
+  margin-bottom: 14px;
+  color: var(--white);
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1.08;
+}
+
+.pathoseek-cta-box p:not(.eyebrow) {
+  max-width: 780px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .workflow {
@@ -4792,6 +5052,9 @@ body.job-modal-open {
 
   .approach-grid,
   .traction-grid,
+  .pathoseek-hero-grid,
+  .pathoseek-overview-grid,
+  .pathoseek-pathogen-grid,
   .about-hero-grid,
   .about-intro-grid,
   .difference-grid,
@@ -4830,6 +5093,10 @@ body.job-modal-open {
   }
 
   .assay-benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pathoseek-ifu-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -4905,6 +5172,15 @@ body.job-modal-open {
 
   .mission-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pathoseek-hero-kit {
+    width: min(520px, 100%);
+  }
+
+  .pathoseek-cta-box {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .career-value-grid {
@@ -4985,7 +5261,9 @@ body.job-modal-open {
   }
 
   .stats-grid,
-  .product-grid {
+  .product-grid,
+  .outcome-grid,
+  .pathoseek-info-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -5144,6 +5422,19 @@ body.job-modal-open {
     padding: 22px;
   }
 
+  .pathoseek-hero {
+    padding: 62px 0;
+  }
+
+  .pathoseek-hero-copy h1 {
+    font-size: clamp(2.25rem, 11vw, 3.4rem);
+  }
+
+  .pathoseek-hero-kit,
+  .pathoseek-cta-box {
+    padding: 24px;
+  }
+
   .workflow-card-head {
     grid-template-columns: 1fr;
   }
@@ -5165,6 +5456,9 @@ body.job-modal-open {
 
   .stats-grid,
   .product-grid,
+  .outcome-grid,
+  .pathoseek-info-grid,
+  .pathoseek-ifu-grid,
   .mission-grid,
   .purpose-grid,
   .roadmap-grid,
@@ -5928,6 +6222,54 @@ body.job-modal-open {
   background: #f7fbfc;
 }
 
+.ruo-kit-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.ruo-kit-overview-card {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  min-height: 300px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 16px 36px rgba(16, 32, 51, 0.06);
+}
+
+.ruo-kit-overview-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbf9fd;
+}
+
+.ruo-kit-overview-card h2 {
+  margin-bottom: 10px;
+  color: var(--primary);
+  font-size: clamp(1.2rem, 2vw, 1.58rem);
+  line-height: 1.2;
+}
+
+.ruo-kit-overview-card p:not(.eyebrow):not(.ruo-product-code) {
+  margin-bottom: 22px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.62;
+}
+
+.ruo-kit-overview-card .button {
+  width: fit-content;
+}
+
 .ruo-product {
   display: block;
   min-height: 0;
@@ -6135,7 +6477,8 @@ body.job-modal-open {
 
   .ruo-hero-grid,
   .ruo-intro-grid,
-  .ruo-product-grid {
+  .ruo-product-grid,
+  .ruo-kit-overview-grid {
     grid-template-columns: 1fr;
   }
 
@@ -6154,6 +6497,10 @@ body.job-modal-open {
 
   .ruo-product-grid {
     gap: 34px;
+  }
+
+  .ruo-kit-overview-card {
+    grid-template-columns: 150px minmax(0, 1fr);
   }
 
   .ruo-product-media {
@@ -6181,6 +6528,15 @@ body.job-modal-open {
   .ruo-hero-grid,
   .ruo-product-grid {
     gap: 28px;
+  }
+
+  .ruo-kit-overview-card {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .ruo-kit-overview-card img {
+    max-width: 230px;
   }
 
   .ruo-hero-visual img,
