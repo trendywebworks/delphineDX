@@ -270,6 +270,107 @@ img {
   text-underline-offset: 3px;
 }
 
+.products-mega-menu {
+  grid-template-columns: minmax(0, 1.1fr) minmax(330px, 0.9fr);
+  gap: 18px;
+  padding: 18px;
+}
+
+.mega-section {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbf9fd;
+}
+
+.mega-section-kits {
+  background: linear-gradient(145deg, #fbf9fd, #eef7fc);
+}
+
+.mega-section-head {
+  margin-bottom: 14px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid var(--line);
+}
+
+.mega-section-head span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--primary);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mega-section-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.mega-link-list {
+  display: grid;
+  gap: 8px;
+}
+
+.mega-link-list a,
+.mega-kit-grid a {
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: var(--white);
+}
+
+.mega-link-list a:hover,
+.mega-link-list a:focus-visible,
+.mega-kit-grid a:hover,
+.mega-kit-grid a:focus-visible {
+  color: inherit;
+  border-color: rgba(150, 82, 177, 0.24);
+  outline: none;
+  box-shadow: 0 10px 22px rgba(16, 32, 51, 0.06);
+}
+
+.mega-link-list strong,
+.mega-kit-grid strong {
+  color: var(--primary);
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.mega-link-list span {
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.mega-kit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.mega-kit-grid span {
+  color: var(--secondary);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.mega-overview-link {
+  display: inline-flex;
+  margin-top: 14px;
+  color: var(--secondary);
+  font-size: 0.78rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .nav-cta {
   flex: 0 0 auto;
 }
@@ -5036,6 +5137,15 @@ body.job-modal-open {
     grid-template-columns: 1fr;
   }
 
+  .products-mega-menu {
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .mega-section {
+    padding: 12px;
+  }
+
   .mega-card {
     min-height: 0;
     grid-template-columns: 96px 1fr;
@@ -5420,6 +5530,15 @@ body.job-modal-open {
   .workflow-card {
     gap: 18px;
     padding: 22px;
+  }
+
+  .mega-kit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mega-link-list a,
+  .mega-kit-grid a {
+    padding: 11px;
   }
 
   .pathoseek-hero {
