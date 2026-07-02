@@ -45,7 +45,7 @@
                   <strong>Delphine Sepsis Diagnostic Assay</strong>
                   <span>Rapid sepsis diagnostic assay for pathogen and resistance-marker identification.</span>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/products/sepsis-prediction-using-ml-tool/' ) ); ?>">
+                <a href="https://sepsis.neuralarc.com/test/login" target="_blank">
                   <strong>Sepsis Prediction Using ML Tool</strong>
                   <span>Machine-learning decision support for sepsis risk prediction.</span>
                 </a>
