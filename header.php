@@ -34,47 +34,57 @@
         </div>
         <div class="nav-item has-dropdown has-mega">
           <a href="<?php echo esc_url( home_url( '/products/' ) ); ?>">Products</a>
-          <div class="mega-menu" aria-label="Products submenu">
-            <?php
-            $menu_products = new WP_Query(
-              array(
-                'post_type'      => 'product',
-                'posts_per_page' => -1,
-                'post_status'    => 'publish',
-                'orderby'        => 'title',
-                'order'          => 'ASC',
-              )
-            );
-            ?>
-            <?php if ( $menu_products->have_posts() ) : ?>
-              <?php while ( $menu_products->have_posts() ) : $menu_products->the_post(); ?>
-                <?php
-                $menu_product_summary = wp_trim_words( get_the_excerpt() ?: get_the_content(), 16, '...' );
-
-                if ( $menu_product_summary === '' ) {
-                  $menu_product_summary = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
-                }
-                ?>
-                <a class="mega-card" href="<?php the_permalink(); ?>">
-                  <?php if ( has_post_thumbnail() ) : ?>
-                    <?php the_post_thumbnail( 'delphine-mega-card' ); ?>
-                  <?php else : ?>
-                    <?php delphine_fallback_featured_image( get_the_title() ); ?>
-                  <?php endif; ?>
-                  <h3><?php the_title(); ?></h3>
-                  <p><?php echo esc_html( $menu_product_summary ); ?></p>
-                  <span>Read More</span>
+          <div class="mega-menu products-mega-menu" aria-label="Products submenu">
+            <div class="mega-section mega-section-platforms">
+              <div class="mega-section-head">
+                <span>Product platforms</span>
+                <p>Diagnostics and clinical decision-support products</p>
+              </div>
+              <div class="mega-link-list">
+                <a href="<?php echo esc_url( home_url( '/products/sepseek-delphine-sepsis-diagnostic-test-kit/' ) ); ?>">
+                  <strong>SepSeek Sepsis Diagnostic Test Kit</strong>
+                  <span>Rapid sepsis diagnostic assay for pathogen and resistance-marker identification.</span>
                 </a>
-              <?php endwhile; ?>
-              <?php wp_reset_postdata(); ?>
-            <?php else : ?>
-              <a class="mega-card" href="<?php echo esc_url( home_url( '/products/' ) ); ?>">
-                <?php delphine_fallback_featured_image( 'Delphine Diagnostics fallback image' ); ?>
-                <h3>Lorem ipsum dolor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span>Read More</span>
-              </a>
-            <?php endif; ?>
+                <a href="<?php echo esc_url( home_url( '/products/clin-sight-sepsis-prediction-using-ml-tool/' ) ); ?>">
+                  <strong>ClinSight Sepsis Prediction Tool</strong>
+                  <span>Machine-learning decision support for sepsis risk prediction.</span>
+                </a>
+                <a href="<?php echo esc_url( home_url( '/products/delphine-ai-ml-healthcare-platform/' ) ); ?>">
+                  <strong>Delphine AI/ML Healthcare Platform</strong>
+                  <span>Healthcare software platform for clinical risk and workflow intelligence.</span>
+                </a>
+                <a href="<?php echo esc_url( home_url( '/products/ruo-pathogen-identification-test-kits/' ) ); ?>">
+                  <strong>PathoSeek RUO Pathogen ID Kits</strong>
+                  <span>Overview of the four research-use pathogen identification kits.</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="mega-section mega-section-kits">
+              <div class="mega-section-head">
+                <span>PathoSeek test kits</span>
+                <p>Individual RUO pathogen identification assays</p>
+              </div>
+              <div class="mega-kit-grid">
+                <a href="<?php echo esc_url( home_url( '/products/escherichia-coli-real-time-pcr-assay/' ) ); ?>">
+                  <span>DDN-EC-001</span>
+                  <strong><i>Escherichia coli</i></strong>
+                </a>
+                <a href="<?php echo esc_url( home_url( '/products/staphylococcus-aureus-real-time-pcr-assay/' ) ); ?>">
+                  <span>DDN-SA-002</span>
+                  <strong><i>Staphylococcus aureus</i></strong>
+                </a>
+                <a href="<?php echo esc_url( home_url( '/products/klebsiella-pneumoniae-real-time-pcr-assay/' ) ); ?>">
+                  <span>DDN-KP-003</span>
+                  <strong><i>Klebsiella pneumoniae</i></strong>
+                </a>
+                <a href="<?php echo esc_url( home_url( '/products/acinetobacter-baumannii-real-time-pcr-assay/' ) ); ?>">
+                  <span>DDN-AB-004</span>
+                  <strong><i>Acinetobacter baumannii</i></strong>
+                </a>
+              </div>
+              <a class="mega-overview-link" href="<?php echo esc_url( home_url( '/products/' ) ); ?>">View all products</a>
+            </div>
           </div>
         </div>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/news/">News</a>
