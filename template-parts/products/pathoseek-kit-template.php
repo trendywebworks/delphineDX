@@ -4,6 +4,12 @@ if ( ! isset( $pathoseek_product ) || ! is_array( $pathoseek_product ) ) {
 }
 
 $pathoseek_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/';
+$pathoseek_common_features = isset( $pathoseek_product['common_features'] ) && is_array( $pathoseek_product['common_features'] )
+    ? $pathoseek_product['common_features']
+    : array();
+$pathoseek_panel = isset( $pathoseek_product['panel'] ) && is_array( $pathoseek_product['panel'] )
+    ? $pathoseek_product['panel']
+    : array();
 ?>
 
 <?php get_header(); ?>
@@ -12,7 +18,7 @@ $pathoseek_image_base = get_stylesheet_directory_uri() . '/assets/images/product
     <section class="pathoseek-hero" aria-labelledby="pathoseek-title">
       <div class="section-inner pathoseek-hero-grid">
         <div class="pathoseek-hero-copy">
-          <p class="eyebrow">PathoSeek RUO Kit</p>
+          <p class="eyebrow eyebrow-white">PathoSeek RUO Kit</p>
           <h1 id="pathoseek-title"><?php echo esc_html( $pathoseek_product['assay'] ); ?></h1>
           <p><?php echo esc_html( $pathoseek_product['summary'] ); ?></p>
           <div class="pathoseek-meta">
@@ -46,12 +52,12 @@ $pathoseek_image_base = get_stylesheet_directory_uri() . '/assets/images/product
           <article>
             <span>02</span>
             <h3>Ordering details</h3>
-            <p>Available in 50 or 100 reaction kit configurations. Contact Delphine Diagnostics for pricing and availability.</p>
+            <p>50 reactions per kit. Contact Delphine Diagnostics for pricing, availability, and lead time.</p>
           </article>
           <article>
             <span>03</span>
             <h3>Recommended equipment</h3>
-            <p>Designed for use with standard real-time PCR workflows. Platform-specific compatibility should be confirmed before ordering.</p>
+            <p>Runs on standard real-time PCR platforms including ABI 7500, Bio-Rad CFX96, Roche LightCycler, and Rotor-Gene Q.</p>
           </article>
           <article>
             <span>04</span>
@@ -61,6 +67,47 @@ $pathoseek_image_base = get_stylesheet_directory_uri() . '/assets/images/product
         </div>
       </div>
     </section>
+
+    <?php if ( ! empty( $pathoseek_common_features ) ) : ?>
+      <section class="pathoseek-common" aria-label="Info for all PathoSeek panels">
+        <div class="section-inner">
+          <div class="section-head">
+            <p class="eyebrow">Info for all four</p>
+            <h2>Shared PathoSeek assay characteristics.</h2>
+          </div>
+          <div class="pathoseek-common-grid">
+            <?php foreach ( $pathoseek_common_features as $index => $feature ) : ?>
+              <article>
+                <span><?php echo esc_html( str_pad( (string) ( $index + 1 ), 2, '0', STR_PAD_LEFT ) ); ?></span>
+                <p><?php echo esc_html( $feature ); ?></p>
+              </article>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </section>
+    <?php endif; ?>
+
+    <?php if ( ! empty( $pathoseek_panel ) ) : ?>
+      <section class="pathoseek-panel-context" aria-label="PathoSeek panel context">
+        <div class="section-inner pathoseek-panel-context-grid">
+          <div class="section-head">
+            <p class="eyebrow">Panel context</p>
+            <h2><?php echo esc_html( $pathoseek_panel['title'] ); ?></h2>
+          </div>
+          <div class="pathoseek-panel-card">
+            <span><?php echo esc_html( $pathoseek_panel['number'] ); ?></span>
+            <dl>
+              <dt>Targets</dt>
+              <dd><?php echo esc_html( $pathoseek_panel['targets'] ); ?></dd>
+              <dt>Description</dt>
+              <dd><?php echo esc_html( $pathoseek_panel['description'] ); ?></dd>
+              <dt>Key note</dt>
+              <dd><?php echo esc_html( $pathoseek_panel['note'] ); ?></dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+    <?php endif; ?>
 
     <section class="pathoseek-pathogen" aria-label="Pathogen information">
       <div class="section-inner pathoseek-pathogen-grid">
@@ -83,30 +130,30 @@ $pathoseek_image_base = get_stylesheet_directory_uri() . '/assets/images/product
         <div class="section-head">
           <p class="eyebrow">Instructions for Use</p>
           <h2 id="ifu-title">IFU sections requested for this PathoSeek kit.</h2>
-          <p>These sections are ready for the approved kit-specific IFU content. Final reaction volumes, cycling
-            conditions, component quantities, storage temperatures, and troubleshooting guidance should be populated from
-            the official IFU document.</p>
+          <p>Client feedback requested downloadable IFU content for PathoSeek. The sections below now include available
+            shared product details from the feedback document; final reaction volumes, thermal cycling values, component
+            quantities, storage temperatures, and troubleshooting rows should be completed from the approved IFU PDF.</p>
         </div>
         <div class="pathoseek-ifu-grid">
           <article>
             <span>Reaction setup</span>
             <h3>Reaction setup volumes and total reaction volume</h3>
-            <p>Awaiting approved IFU values for reagent volumes, sample input, controls, and final reaction volume.</p>
+            <p>Multiplex, qualitative real-time PCR using TaqMan hydrolysis-probe chemistry. Targets are detected simultaneously in a single reaction and reported as detected or not detected.</p>
           </article>
           <article>
             <span>Thermal cycling</span>
             <h3>Temperature profile and cycle counts</h3>
-            <p>Awaiting approved IFU values for activation, denaturation, annealing/extension temperatures, hold times, and cycle counts.</p>
+            <p>Runs on standard real-time PCR platforms including ABI 7500, Bio-Rad CFX96, Roche LightCycler, and Rotor-Gene Q. Final temperature and cycle-count values should come from the approved IFU.</p>
           </article>
           <article>
             <span>Kit components</span>
             <h3>Vials, quantities, and storage temperatures</h3>
-            <p>Awaiting approved IFU component list, vial quantities, shipping conditions, storage temperature ranges, and stability details.</p>
+            <p>50 reactions per kit with built-in positive, negative, and RNase P internal controls. Final vial quantities and storage temperatures should come from the approved IFU.</p>
           </article>
           <article>
             <span>Troubleshooting</span>
             <h3>Troubleshooting table</h3>
-            <p>Awaiting approved IFU troubleshooting causes, recommended corrective actions, and acceptance criteria.</p>
+            <p>High sensitivity: detects fewer than 100 copies of target with greater than 95% priming efficiency. Final troubleshooting causes, corrective actions, and acceptance criteria should come from the approved IFU.</p>
           </article>
         </div>
       </div>
@@ -115,7 +162,7 @@ $pathoseek_image_base = get_stylesheet_directory_uri() . '/assets/images/product
     <section class="pathoseek-cta">
       <div class="section-inner pathoseek-cta-box">
         <div>
-          <p class="eyebrow">Pricing and availability</p>
+          <p class="eyebrow eyebrow-white">Pricing and availability</p>
           <h2>Request product details for <?php echo esc_html( $pathoseek_product['assay'] ); ?>.</h2>
           <p>Contact Delphine Diagnostics for pricing, availability, lead time, documentation, and IFU updates.</p>
         </div>
