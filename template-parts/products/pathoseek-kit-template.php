@@ -26,7 +26,7 @@ $pathoseek_panel = isset( $pathoseek_product['panel'] ) && is_array( $pathoseek_
             <span>Research Use Only</span>
           </div>
           <div class="hero-actions">
-            <a class="button" href="#ifu">View IFU sections</a>
+            <a class="button" href="#ifu">View Details</a>
             <a class="button secondary" href="<?php echo esc_url( home_url( '/contact-us/' ) ); ?>">Request information</a>
           </div>
         </div>
@@ -72,7 +72,6 @@ $pathoseek_panel = isset( $pathoseek_product['panel'] ) && is_array( $pathoseek_
       <section class="pathoseek-common" aria-label="Info for all PathoSeek panels">
         <div class="section-inner">
           <div class="section-head">
-            <p class="eyebrow">Info for all four</p>
             <h2>Shared PathoSeek assay characteristics.</h2>
           </div>
           <div class="pathoseek-common-grid">
@@ -91,7 +90,6 @@ $pathoseek_panel = isset( $pathoseek_product['panel'] ) && is_array( $pathoseek_
       <section class="pathoseek-panel-context" aria-label="PathoSeek panel context">
         <div class="section-inner pathoseek-panel-context-grid">
           <div class="section-head">
-            <p class="eyebrow">Panel context</p>
             <h2><?php echo esc_html( $pathoseek_panel['title'] ); ?></h2>
           </div>
           <div class="pathoseek-panel-card">
@@ -116,7 +114,6 @@ $pathoseek_panel = isset( $pathoseek_product['panel'] ) && is_array( $pathoseek_
           <figcaption><?php echo esc_html( $pathoseek_product['name'] ); ?></figcaption>
         </figure>
         <div>
-          <p class="eyebrow">Pathogen information</p>
           <h2><?php echo esc_html( $pathoseek_product['name'] ); ?></h2>
           <?php foreach ( $pathoseek_product['pathogen_copy'] as $paragraph ) : ?>
             <p><?php echo esc_html( $paragraph ); ?></p>
@@ -128,8 +125,7 @@ $pathoseek_panel = isset( $pathoseek_product['panel'] ) && is_array( $pathoseek_
     <section class="pathoseek-ifu" id="ifu" aria-labelledby="ifu-title">
       <div class="section-inner">
         <div class="section-head">
-          <p class="eyebrow">Instructions for Use</p>
-          <h2 id="ifu-title">IFU sections requested for this PathoSeek kit.</h2>
+          <h2 id="ifu-title">More Information</h2>
           <p>Client feedback requested downloadable IFU content for PathoSeek. The sections below now include available
             shared product details from the feedback document; final reaction volumes, thermal cycling values, component
             quantities, storage temperatures, and troubleshooting rows should be completed from the approved IFU PDF.</p>
