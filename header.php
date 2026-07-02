@@ -41,8 +41,8 @@
                 <p>Diagnostics and clinical decision-support products</p>
               </div>
               <div class="mega-link-list">
-                <a href="<?php echo esc_url( home_url( '/products/sepseek-delphine-sepsis-diagnostic-test-kit/' ) ); ?>">
-                  <strong>SepSeek Sepsis Diagnostic Test Kit</strong>
+                <a href="<?php echo esc_url( home_url( '/products/delphine-sepsis-diagnostic-assay/' ) ); ?>">
+                  <strong>Delphine Sepsis Diagnostic Assay</strong>
                   <span>Rapid sepsis diagnostic assay for pathogen and resistance-marker identification.</span>
                 </a>
                 <a href="<?php echo esc_url( home_url( '/products/clin-sight-sepsis-prediction-using-ml-tool/' ) ); ?>">

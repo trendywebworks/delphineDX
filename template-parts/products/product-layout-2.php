@@ -47,11 +47,46 @@
           <h2>Help care teams recognize risk before deterioration becomes obvious.</h2>
         </div>
         <div class="ai-overview-copy">
+          <p>Artificial intelligence and related technologies are increasingly prevalent in business and society and
+            are beginning to be applied to healthcare. These technologies can potentially transform many aspects of
+            patient care and administrative processes within providers, payers, and pharmaceutical organizations.</p>
           <p>Healthcare systems generate a continuous stream of vitals, laboratory results, observations, and patient
             history. The challenge is turning those signals into clear, timely context without adding more noise to a
             clinician's workflow.</p>
-          <p>Delphine is developing a machine-learning platform intended to analyze clinical features, estimate sepsis
-            risk, and ultimately support additional applications across the patient journey.</p>
+          <p>Delphine Diagnostics is in the process of developing a machine-learning-based healthcare software platform
+            and multiple software applications based on the AI/ML healthcare platform. The first set of products
+            addresses the need for improving patient outcomes for patients at risk of developing sepsis in the hospital
+            setting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-healthcare-context" aria-labelledby="ai-healthcare-context-title">
+      <div class="section-inner">
+        <div class="ai-section-heading">
+          <div>
+            <p class="eyebrow">AI in healthcare</p>
+            <h2 id="ai-healthcare-context-title">A collection of technologies, applied to specific clinical tasks.</h2>
+          </div>
+          <p>AI is not one technology, but a family of analytical methods. Machine learning is one of the most common
+            forms, using data to train statistical models that learn patterns relevant to defined tasks.</p>
+        </div>
+        <div class="ai-context-grid">
+          <article>
+            <span>Clinical potential</span>
+            <p>Research studies already suggest that AI can perform as well as or better than humans at key healthcare
+              tasks, including disease diagnosis.</p>
+          </article>
+          <article>
+            <span>Current evidence</span>
+            <p>Algorithms are already outperforming radiologists at spotting malignant tumors and helping researchers
+              construct cohorts for costly clinical trials.</p>
+          </article>
+          <article>
+            <span>Task-specific support</span>
+            <p>Most AI technologies have immediate relevance to healthcare, but the processes and tasks they support
+              vary widely across clinical and operational workflows.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -63,27 +98,27 @@
             <p class="eyebrow">Initial applications</p>
             <h2 id="use-cases-title">One platform, a growing set of clinical questions.</h2>
           </div>
-          <p>The product roadmap begins with risk prediction and expands toward treatment support informed by clinical
-            and molecular diagnostic data.</p>
+          <p>The product roadmap begins with in-hospital and discharge-stage risk prediction, then expands toward
+            treatment support informed by clinical and molecular diagnostic data.</p>
         </div>
         <div class="ai-use-case-grid">
           <article class="featured">
             <span>01 / In-hospital risk</span>
             <h3>Identify patients at risk of developing sepsis.</h3>
-            <p>Use clinical features such as vital signs and blood-test results to produce an earlier risk signal for
-              patients in the hospital setting.</p>
+            <p>Use a set of clinical features, including vital signs and blood-test results, to predict whether a
+              patient is at risk of developing sepsis in the hospital setting.</p>
           </article>
           <article>
             <span>02 / Discharge planning</span>
             <h3>Estimate sepsis-related readmission risk.</h3>
-            <p>Apply the model before discharge to help identify patients who may be at risk of returning because of
-              sepsis.</p>
+            <p>Apply the same product just before discharge to help predict whether a patient is at risk of readmission
+              due to sepsis.</p>
           </article>
           <article>
             <span>03 / Future phase</span>
             <h3>Support treatment decisions.</h3>
-            <p>Future applications are intended to combine clinical context with pathogen findings from Delphine's
-              molecular diagnostic program.</p>
+            <p>The next phase is intended to assist clinicians with treatment for patients who already have sepsis,
+              using pathogen-identification findings from Delphine's Sepsis Diagnostics kit.</p>
           </article>
         </div>
       </div>
@@ -94,8 +129,8 @@
         <div class="ai-models-copy">
           <p class="eyebrow">Ensemble intelligence</p>
           <h2>Different models, combined for a more useful signal.</h2>
-          <p>The source product roadmap describes an ensemble approach that brings together established statistical
-            methods and machine-learning architectures.</p>
+          <p>This product makes use of an ensemble of machine-learning models, bringing together established
+            statistical methods and machine-learning architectures.</p>
         </div>
         <div class="ai-model-stack">
           <article><span>01</span><div><h3>Logistic Regression</h3><p>Interpretable statistical modeling for estimating clinical risk.</p></div></article>
@@ -130,14 +165,14 @@
         <div>
           <p class="eyebrow">Designed for connected care</p>
           <h2>Meet clinicians inside the hospital workflow.</h2>
-          <p>Delphine's roadmap calls for its software products to integrate with hospital electronic medical record
-            systems, helping risk signals appear alongside the clinical data used to make care decisions.</p>
+          <p>Both the sepsis-risk and treatment-support products are planned to integrate with the electronic medical
+            record systems of the hospitals where Delphine's AI/ML model solution is used.</p>
         </div>
         <ol class="ai-integration-flow">
           <li><span>01</span><div><strong>Clinical data</strong><p>Vitals, blood-test results, observations, and relevant patient context.</p></div></li>
           <li><span>02</span><div><strong>Model ensemble</strong><p>Multiple analytical approaches evaluate patterns associated with risk.</p></div></li>
           <li><span>03</span><div><strong>Workflow context</strong><p>Risk information is intended to connect with the hospital EMR environment.</p></div></li>
-          <li><span>04</span><div><strong>Future diagnostic insight</strong><p>Planned treatment support may incorporate pathogen-identification results.</p></div></li>
+          <li><span>04</span><div><strong>Future diagnostic insight</strong><p>Planned treatment support may incorporate pathogens, fungi, viruses, and bacteria identification results from Delphine's Sepsis Diagnostics kit.</p></div></li>
         </ol>
       </div>
     </section>
