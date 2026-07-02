@@ -34,6 +34,47 @@ $ruo_products = array(
     ),
 );
 
+$pathoseek_common_features = array(
+    'Multiplex, qualitative real-time PCR using TaqMan hydrolysis-probe chemistry.',
+    'All targets are detected simultaneously in a single reaction and reported as detected or not detected.',
+    '50 reactions per kit.',
+    'High sensitivity: detects fewer than 100 copies of target with greater than 95% priming efficiency.',
+    'Results in a few hours compared with several days for traditional culture.',
+    'Built-in positive, negative, and RNase P internal controls.',
+    'Runs on standard real-time PCR platforms including ABI 7500, Bio-Rad CFX96, Roche LightCycler, and Rotor-Gene Q.',
+);
+
+$pathoseek_panels = array(
+    array(
+        'number'      => '01',
+        'title'       => 'Bacterial Pathogen Detection',
+        'targets'     => 'Escherichia coli, Acinetobacter baumannii, Staphylococcus aureus',
+        'description' => 'A real-time PCR panel for rapid detection of three widely studied bacterial pathogens associated with healthcare-associated infections, environmental contamination, and antimicrobial-resistance research. Suited to infection-control studies, environmental monitoring, and microbial-persistence models.',
+        'note'        => 'Detects bacterial DNA only and does not identify resistance markers, including methicillin resistance.',
+    ),
+    array(
+        'number'      => '02',
+        'title'       => 'Respiratory Pathogen Detection',
+        'targets'     => 'Klebsiella pneumoniae, Streptococcus pneumoniae, Haemophilus influenzae',
+        'description' => 'A real-time PCR panel targeting three major bacteria linked to pneumonia, bloodstream infections, and meningitis. Supports research into bacterial persistence, transmission pathways, and environmental contamination.',
+        'note'        => 'Does not provide antimicrobial-resistance or virulence-factor data.',
+    ),
+    array(
+        'number'      => '03',
+        'title'       => 'Antimicrobial Resistance (AMR) Gene Detection',
+        'targets'     => 'NDM, CTX-M, mecA',
+        'description' => 'A real-time PCR panel for detecting three key antimicrobial-resistance genes: NDM, CTX-M, and mecA. Built for resistance surveillance, transmission-dynamics, and environmental-reservoir research.',
+        'note'        => 'Detecting a resistance gene does not confirm phenotypic resistance, gene expression, or bacterial viability.',
+    ),
+    array(
+        'number'      => '04',
+        'title'       => 'Pathogen + Resistance Marker Detection',
+        'targets'     => 'Candida auris, OXA-48, Van A/B',
+        'description' => 'A combined real-time PCR panel detecting the emerging multidrug-resistant yeast Candida auris alongside two resistance markers: OXA-48 and vanA/vanB. Aimed at surveillance, infection-control, and AMR research.',
+        'note'        => 'Detecting OXA-48 or vanA/vanB does not confirm phenotypic resistance without additional testing.',
+    ),
+);
+
 $ruo_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/';
 ?>
 
@@ -62,13 +103,56 @@ $ruo_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/
       <div class="section-inner ruo-intro-grid">
         <div>
           <p class="eyebrow">Product overview</p>
-          <h2>Four RUO pathogen identification kits for research workflows.</h2>
+          <h2>PathoSeek panels and RUO kit pages for research workflows.</h2>
         </div>
         <div class="ruo-intro-copy">
-          <p>PathoSeek RUO Pathogen Identification Test Kits are real-time PCR assays for selected bacterial targets.
-            Choose a kit below to review product-specific details and instructions for use.</p>
-          <p>Current RUO assays include <i>Escherichia coli</i>, <i>Staphylococcus aureus</i>,
-            <i>Klebsiella pneumoniae</i>, and <i>Acinetobacter baumannii</i>.</p>
+          <p>PathoSeek RUO Pathogen Identification Test Kits are multiplex, qualitative real-time PCR assays using
+            TaqMan hydrolysis-probe chemistry. Targets are detected simultaneously in a single reaction and reported as
+            detected or not detected.</p>
+          <p>Use the product cards below for organism-specific pages, and review the panel summaries for the broader
+            PathoSeek offering.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pathoseek-common" aria-label="Info for all PathoSeek panels">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow">Info for all four</p>
+          <h2>Shared PathoSeek assay characteristics.</h2>
+        </div>
+        <div class="pathoseek-common-grid">
+          <?php foreach ($pathoseek_common_features as $index => $feature) : ?>
+            <article>
+              <span><?php echo esc_html(str_pad((string) ($index + 1), 2, '0', STR_PAD_LEFT)); ?></span>
+              <p><?php echo esc_html($feature); ?></p>
+            </article>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </section>
+
+    <section class="pathoseek-panels" aria-labelledby="pathoseek-panels-title">
+      <div class="section-inner">
+        <div class="section-head">
+          <p class="eyebrow">PathoSeek panels</p>
+          <h2 id="pathoseek-panels-title">Four panels for pathogen and resistance-marker research.</h2>
+        </div>
+        <div class="pathoseek-panel-grid">
+          <?php foreach ($pathoseek_panels as $panel) : ?>
+            <article>
+              <span><?php echo esc_html($panel['number']); ?></span>
+              <h3><?php echo esc_html($panel['title']); ?></h3>
+              <dl>
+                <dt>Targets</dt>
+                <dd><?php echo esc_html($panel['targets']); ?></dd>
+                <dt>Description</dt>
+                <dd><?php echo esc_html($panel['description']); ?></dd>
+                <dt>Key note</dt>
+                <dd><?php echo esc_html($panel['note']); ?></dd>
+              </dl>
+            </article>
+          <?php endforeach; ?>
         </div>
       </div>
     </section>
