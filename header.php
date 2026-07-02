@@ -62,25 +62,25 @@
 
             <div class="mega-section mega-section-kits">
               <div class="mega-section-head">
-                <span>PathoSeek test kits</span>
+                <span>PathoSeek RUO Pathogen ID Kits</span>
                 <p>Individual RUO pathogen identification assays</p>
               </div>
               <div class="mega-kit-grid">
-                <a href="<?php echo esc_url( home_url( '/products/escherichia-coli-real-time-pcr-assay/' ) ); ?>">
+                <a href="<?php echo esc_url( home_url( '/products/escherichia-coli/' ) ); ?>">
                   <span>DDN-EC-001</span>
-                  <strong><i>Escherichia coli</i></strong>
+                  <strong><i>Escherichia Coli</i></strong>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/products/staphylococcus-aureus-real-time-pcr-assay/' ) ); ?>">
+                <a href="<?php echo esc_url( home_url( '/products/staphylococcus-aureus/' ) ); ?>">
                   <span>DDN-SA-002</span>
-                  <strong><i>Staphylococcus aureus</i></strong>
+                  <strong><i>Staphylococcus Aureus</i></strong>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/products/klebsiella-pneumoniae-real-time-pcr-assay/' ) ); ?>">
+                <a href="<?php echo esc_url( home_url( '/products/klebsiella-pneumoniae/' ) ); ?>">
                   <span>DDN-KP-003</span>
-                  <strong><i>Klebsiella pneumoniae</i></strong>
+                  <strong><i>Klebsiella Pneumoniae</i></strong>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/products/acinetobacter-baumannii-real-time-pcr-assay/' ) ); ?>">
+                <a href="<?php echo esc_url( home_url( '/products/acinetobacter-baumannii/' ) ); ?>">
                   <span>DDN-AB-004</span>
-                  <strong><i>Acinetobacter baumannii</i></strong>
+                  <strong><i>Acinetobacter Baumannii</i></strong>
                 </a>
               </div>
               <a class="mega-overview-link" href="<?php echo esc_url( home_url( '/products/' ) ); ?>">View all products</a>
