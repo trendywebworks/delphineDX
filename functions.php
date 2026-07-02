@@ -171,6 +171,10 @@ function delphine_product_layout_options() {
         'product-layout-2' => 'Product layout 2',
         'product-layout-3' => 'Product layout 3',
         'product-layout-4' => 'Product layout 4',
+        'pathoseek-escherichia-coli'        => 'PathoSeek - Escherichia coli',
+        'pathoseek-staphylococcus-aureus'   => 'PathoSeek - Staphylococcus aureus',
+        'pathoseek-klebsiella-pneumoniae'   => 'PathoSeek - Klebsiella pneumoniae',
+        'pathoseek-acinetobacter-baumannii' => 'PathoSeek - Acinetobacter baumannii',
     );
 }
 
