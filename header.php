@@ -45,8 +45,8 @@
                   <strong>Delphine Sepsis Diagnostic Assay</strong>
                   <span>Rapid sepsis diagnostic assay for pathogen and resistance-marker identification.</span>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/products/clin-sight-sepsis-prediction-using-ml-tool/' ) ); ?>">
-                  <strong>ClinSight Sepsis Prediction Tool</strong>
+                <a href="<?php echo esc_url( home_url( '/products/sepsis-prediction-using-ml-tool/' ) ); ?>">
+                  <strong>Sepsis Prediction Using ML Tool</strong>
                   <span>Machine-learning decision support for sepsis risk prediction.</span>
                 </a>
                 <a href="<?php echo esc_url( home_url( '/products/delphine-ai-ml-healthcare-platform/' ) ); ?>">
@@ -54,7 +54,7 @@
                   <span>Healthcare software platform for clinical risk and workflow intelligence.</span>
                 </a>
                 <a href="<?php echo esc_url( home_url( '/products/ruo-pathogen-identification-test-kits/' ) ); ?>">
-                  <strong>PathoSeek RUO Pathogen ID Kits</strong>
+                  <strong>RUO Pathogen Identification Test Kits</strong>
                   <span>Overview of the four research-use pathogen identification kits.</span>
                 </a>
               </div>
