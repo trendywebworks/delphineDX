@@ -5,7 +5,6 @@
       <div class="section-inner">
         <div class="contact-intro-heading">
           <div>
-            <p class="eyebrow">Contact us</p>
             <h1 id="contact-title">Let's start a conversation.</h1>
           </div>
           <p>Whether you are exploring a clinical partnership, laboratory collaboration, investment opportunity, or
@@ -67,7 +66,6 @@
         <div class="contact-form-wrap">
           <div class="contact-panel-heading">
             <div>
-              <p class="eyebrow">Write to us</p>
               <h2>Send a message</h2>
               <p>Tell us a little about your inquiry and the right member of our team will follow up.</p>
             </div>
@@ -92,7 +90,6 @@
         <div class="contact-map">
           <div class="contact-panel-heading">
             <div>
-              <p class="eyebrow">Our location</p>
               <h2>Find us in Newark</h2>
               <p>Located at VentureLink, part of New Jersey's active technology and life sciences ecosystem.</p>
             </div>

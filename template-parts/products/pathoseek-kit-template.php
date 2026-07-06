@@ -48,7 +48,6 @@ $pathoseek_panels = isset( $pathoseek_product['panels'] ) && is_array( $pathosee
     <section class="pathoseek-hero" aria-labelledby="pathoseek-title">
       <div class="section-inner pathoseek-hero-grid">
         <div class="pathoseek-hero-copy">
-          <p class="eyebrow eyebrow-white">PathoSeek RUO Kit</p>
           <h1 id="pathoseek-title"><?php echo esc_html( $pathoseek_product['assay'] ); ?></h1>
           <p><?php echo esc_html( $pathoseek_product['summary'] ); ?></p>
           <div class="pathoseek-meta">
@@ -70,7 +69,6 @@ $pathoseek_panels = isset( $pathoseek_product['panels'] ) && is_array( $pathosee
     <section class="pathoseek-overview" aria-label="Product overview">
       <div class="section-inner pathoseek-overview-grid">
         <div class="section-head">
-          <p class="eyebrow">Product information</p>
           <h2>Ordering, documentation, and research-use details.</h2>
         </div>
         <div class="pathoseek-info-grid">
@@ -120,7 +118,6 @@ $pathoseek_panels = isset( $pathoseek_product['panels'] ) && is_array( $pathosee
       <section class="pathoseek-panel-context" aria-label="PathoSeek panel options">
         <div class="section-inner">
           <div class="section-head">
-            <p class="eyebrow">PathoSeek panels</p>
             <h2>Detection sections available across all four products.</h2>
           </div>
           <div class="pathoseek-panel-grid">
@@ -194,7 +191,6 @@ $pathoseek_panels = isset( $pathoseek_product['panels'] ) && is_array( $pathosee
     <section class="pathoseek-cta">
       <div class="section-inner pathoseek-cta-box">
         <div>
-          <p class="eyebrow eyebrow-white">Pricing and availability</p>
           <h2>Request product details for <?php echo esc_html( $pathoseek_product['assay'] ); ?>.</h2>
           <p>Contact Delphine Diagnostics for pricing, availability, lead time, documentation, and IFU updates.</p>
         </div>

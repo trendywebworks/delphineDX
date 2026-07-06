@@ -9,7 +9,6 @@ get_header(); ?>
     <section class="sepsis-hero" aria-labelledby="sepsis-title">
       <div class="section-inner sepsis-hero-grid">
         <div class="sepsis-hero-copy">
-          <p class="eyebrow">Sepsis awareness</p>
           <h1 id="sepsis-title">What is Sepsis?</h1>
           <p>Sepsis is the body's <strong>extreme response</strong> to an infection, which if left undiagnosed and
             untreated can lead to tissue damage, organ failure, and death.</p>
@@ -31,7 +30,6 @@ get_header(); ?>
           </ul>
 
           <div class="section-head">
-            <p class="eyebrow">Problem &amp; Urgency</p>
             <h2>Sepsis is a significant threat globally, nationally, and locally.</h2>
           </div>
 
@@ -61,7 +59,6 @@ get_header(); ?>
     <section class="sepsis-sources">
       <div class="section-inner sepsis-sources-box">
         <div>
-          <p class="eyebrow">References</p>
           <h2>References</h2>
         </div>
         <div class="sepsis-source-links">

@@ -4,7 +4,6 @@
     <section class="career-hero" aria-labelledby="career-title">
       <div class="section-inner career-hero-grid">
         <div class="career-hero-copy">
-          <p class="eyebrow">Careers at Delphine</p>
           <h1 id="career-title">Build what healthcare needs next.</h1>
           <p>Join a mission-driven team combining molecular diagnostics, data, and artificial intelligence to help
             clinicians act faster when every hour matters.</p>
@@ -45,7 +44,6 @@
       <div class="section-inner">
         <div class="positions-heading">
           <div>
-            <p class="eyebrow">Current opportunities</p>
             <h2 id="positions-title">Open positions</h2>
           </div>
           <p>Review our current opening below. Select the position to see the complete description and application
@@ -78,7 +76,6 @@
 
         <div class="career-interest">
           <div>
-            <p class="eyebrow" style="color:white;">Future opportunities</p>
             <h2>Don't see your role?</h2>
             <p>We welcome introductions from people passionate about diagnostics, clinical technology, laboratory
               science, quality, and healthcare AI.</p>
@@ -92,7 +89,6 @@
   <dialog class="job-modal" id="jobModal" aria-labelledby="jobModalTitle">
     <button class="job-modal-close" type="button" aria-label="Close job description">&times;</button>
     <div class="job-modal-header">
-      <p class="eyebrow" id="jobModalDepartment"></p>
       <h2 id="jobModalTitle"></h2>
       <div class="job-modal-location" id="jobModalLocation"></div>
     </div>

@@ -6,7 +6,6 @@
       <div class="about-hero-orb orb-two" aria-hidden="true"></div>
       <div class="section-inner about-hero-grid">
         <div class="about-hero-copy">
-          <p class="eyebrow">About Delphine Diagnostics</p>
           <h1 id="about-title">Science, data, and determination against treatable infection.</h1>
           <p>Delphine Diagnostics is a New Jersey-based healthcare startup developing rapid molecular diagnostics and
             AI/ML-enabled clinical decision support to help clinicians identify sepsis risk earlier and move patients
@@ -26,7 +25,6 @@
     <section class="about-intro" id="our-story">
       <div class="section-inner about-intro-grid">
         <div class="section-head">
-          <p class="eyebrow">Who we are</p>
           <h2>A mission-driven diagnostics company built around time-critical care.</h2>
         </div>
         <div class="about-prose">
@@ -44,20 +42,17 @@
         <div class="purpose-grid">
           <article class="purpose-card purpose-card-featured">
             <span class="purpose-number">01</span>
-            <p class="eyebrow">Vision</p>
             <h2>Enhance human healthcare.</h2>
             <p>Develop and supply best-in-class, affordable products for diagnosis and treatment.</p>
           </article>
           <article class="purpose-card">
             <span class="purpose-number">02</span>
-            <p class="eyebrow">Mission</p>
             <h2>Speed effective diagnosis and treatment.</h2>
             <p>Deliver reliable diagnostic products and supplemental data insights for patients with infectious
               diseases, guided by affordability, quality, and real-world clinical need.</p>
           </article>
           <article class="purpose-card">
             <span class="purpose-number">03</span>
-            <p class="eyebrow">Strategic intent</p>
             <h2>Connect trusted testing with intelligent software.</h2>
             <p>Pair certified molecular testing kits with AI/ML applications that strengthen analysis, diagnostic
               accuracy, and clinical decision support while following global best practices.</p>
@@ -73,7 +68,6 @@
         </div>
         <div>
           <div class="section-head">
-            <p class="eyebrow">How we work</p>
             <h2>Rigorous science, practical workflows, measurable impact.</h2>
             <p>Our approach starts with the needs of patients, clinicians, and laboratories, then works backward into
               product design.</p>
@@ -117,7 +111,6 @@
       <div class="section-inner">
         <div class="roadmap-heading">
           <div class="section-head">
-            <p class="eyebrow eyebrow-white">Our roadmap</p>
             <h2>Planning a connected healthcare diagnostics enterprise.</h2>
           </div>
           <p>As part of augmenting our service to the healthcare needs of patients, service providers (payers), and
@@ -151,7 +144,6 @@
       <div class="section-inner">
         <div class="team-group">
           <div class="team-group-heading">
-            <p class="eyebrow">Leadership</p>
             <h3>The Core Team</h3>
           </div>
           <div class="team-grid">
@@ -211,7 +203,6 @@
 
         <div class="team-group">
           <div class="team-group-heading">
-            <p class="eyebrow">Clinical leadership</p>
             <h3>Clinical Advisory Board</h3>
           </div>
           <div class="team-grid">
@@ -258,7 +249,6 @@
 
         <div class="team-group">
           <div class="team-group-heading">
-            <p class="eyebrow">Specialist guidance</p>
             <h3>Advisors &amp; Consultants</h3>
           </div>
           <div class="team-grid">
@@ -331,7 +321,6 @@
 
         <div class="team-group">
           <div class="team-group-heading">
-            <p class="eyebrow">Commercial expertise</p>
             <h3>Industry Advisors</h3>
           </div>
           <div class="team-grid">
@@ -370,7 +359,6 @@
       <div class="team-modal-layout">
         <div class="team-modal-photo"><img id="teamModalImage" src="" alt=""></div>
         <div class="team-modal-copy">
-          <p class="eyebrow">Team profile</p>
           <h2 id="teamModalName"></h2>
           <p class="team-modal-role" id="teamModalRole"></p>
           <div class="team-modal-details" id="teamModalDetails"></div>
@@ -527,7 +515,6 @@
     <section class="cta" id="contact">
       <div class="section-inner">
         <div class="cta-box">
-          <p class="eyebrow">Join our mission</p>
           <h2>Help bring faster, smarter infection diagnostics closer to patients.</h2>
           <p>We welcome conversations with hospitals, laboratories, clinicians, researchers, strategic partners, and
             healthcare organizations working to improve infectious disease outcomes.</p>

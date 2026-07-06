@@ -36,7 +36,6 @@
 
                           <section class="year-group" id="year-<?php echo esc_attr($post_year); ?>">
                               <div class="year-heading">
-                                  <p class="eyebrow">Archive</p>
                                   <h2><?php echo esc_html($post_year); ?></h2>
                               </div>
 
@@ -113,7 +112,6 @@
   <section class="cta">
       <div class="section-inner">
           <div class="cta-box">
-              <p class="eyebrow">Stay connected</p>
               <h2>Follow our latest updates and insights.</h2>
               <p>For media, partnership, investor, career, or customer inquiries, connect with our team.</p>
 
