@@ -256,7 +256,6 @@ teamModal?.addEventListener("close", () => {
 
 const jobModal = document.querySelector("#jobModal");
 const jobModalTitle = document.querySelector("#jobModalTitle");
-const jobModalDepartment = document.querySelector("#jobModalDepartment");
 const jobModalLocation = document.querySelector("#jobModalLocation");
 const jobModalBody = document.querySelector("#jobModalBody");
 const jobModalClose = document.querySelector(".job-modal-close");
@@ -278,7 +277,6 @@ document.querySelectorAll("[data-job]").forEach((button) => {
 
     activeJobTrigger = button;
     jobModalTitle.textContent = button.dataset.title;
-    jobModalDepartment.textContent = button.dataset.department;
     jobModalLocation.textContent = button.dataset.location;
     jobModalBody.replaceChildren(description.content.cloneNode(true));
     document.body.classList.add("job-modal-open");

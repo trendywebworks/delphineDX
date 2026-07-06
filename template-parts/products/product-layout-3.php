@@ -4,7 +4,6 @@
     <section class="assay-hero" aria-labelledby="assay-title">
       <div class="section-inner assay-hero-grid">
         <div class="assay-hero-copy">
-          <p class="eyebrow">Molecular diagnostics</p>
           <h1 id="assay-title">Delphine Sepsis Diagnostic Assay</h1>
           <p>A concept-stage real-time PCR assay designed to detect microbial pathogens and resistance markers directly
             from whole blood specimens of patients with suspected sepsis.</p>
@@ -28,7 +27,6 @@
     <section class="assay-overview" id="assay-overview">
       <div class="section-inner assay-overview-grid">
         <div class="section-head">
-          <p class="eyebrow">The diagnostic challenge</p>
           <h2>Move from culture-dependent delay toward molecular insight.</h2>
         </div>
         <div class="assay-overview-copy">
@@ -77,7 +75,6 @@
       <div class="section-inner">
         <div class="assay-development-heading">
           <div class="section-head">
-            <p class="eyebrow">Where are we now?</p>
             <h2>A structured proof of concept to demonstrate technical feasibility.</h2>
           </div>
           <p>Delphine is currently designing and validating primer sets for 11 bacterial pathogens commonly implicated
@@ -97,7 +94,6 @@
       <div class="section-inner">
         <div class="targets-heading">
           <div>
-            <p class="eyebrow">Initial panel</p>
             <h2 id="targets-title">Eleven bacterial proof-of-concept targets.</h2>
           </div>
           <p>The initial target set represents clinically important organisms associated with bloodstream infection,
@@ -179,7 +175,6 @@
     <section class="assay-roadmap">
       <div class="section-inner assay-roadmap-grid">
         <div class="assay-roadmap-copy">
-          <p class="eyebrow">Where are we going?</p>
           <h2>Toward a broader, more comprehensive sepsis diagnostic.</h2>
           <p>While the proof of concept includes 11 bacterial targets, Delphine plans to subsequently expand the panel
             to include resistance markers as well as other pathogens, including additional bacteria, viruses, fungi, and
@@ -198,7 +193,6 @@
     <section class="assay-partner">
       <div class="section-inner assay-partner-box">
         <div>
-          <p class="eyebrow">We need you</p>
           <h2>Help shape the assay around real user needs.</h2>
           <p>Delphine is passionate in its efforts to deliver best-in-class products to speed effective diagnosis for
             patients with infectious diseases. We are always interested in hearing from future customers about the
@@ -215,7 +209,6 @@
     <section class="assay-references" aria-labelledby="assay-references-title">
       <div class="section-inner">
         <div class="section-head">
-          <p class="eyebrow">References</p>
           <h2 id="assay-references-title">Sources for proof-of-concept target justifications.</h2>
         </div>
         <ol class="assay-reference-list">

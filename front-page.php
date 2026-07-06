@@ -8,7 +8,6 @@
       </video>
       <div class="hero-inner">
         <div>
-          <p class="eyebrow">Rapid diagnostics + AI decision support</p>
           <h1 id="hero-title">No one should die from a treatable infection.</h1>
           <p class="hero-copy">Delphine Diagnostics is building rapid molecular diagnostics and AI/ML-enabled clinical
             decision support to help clinicians recognize sepsis risk earlier, identify pathogens and resistance markers
@@ -50,7 +49,6 @@
         </div>
         <div>
           <div class="section-head">
-            <p class="eyebrow">Delphine's comprehensive approach</p>
             <h2>Uniting rapid pathogen identification with improved risk prediction.</h2>
             <p>Delphine brings together a sepsis diagnostic panel and ML prediction software to deliver pathogen and
               resistance-marker identification 6-9 times faster than standard of care, while enabling earlier detection
@@ -89,7 +87,6 @@
     <section class="outcomes" aria-labelledby="outcomes-title">
       <div class="section-inner">
         <div class="section-head">
-          <p class="eyebrow">Our approach improves outcomes and economics</p>
           <h2 id="outcomes-title">Faster, targeted treatment can change the patient journey.</h2>
         </div>
         <div class="outcome-grid">
@@ -124,7 +121,6 @@
     <section class="products" id="products">
       <div class="section-inner">
         <div class="section-head">
-          <p class="eyebrow">Products and services</p>
           <h2>A connected portfolio for infection diagnosis and treatment support.</h2>
           <p>Explore Delphine's diagnostic, decision-support, and research-use product areas.</p>
         </div>
@@ -182,7 +178,6 @@
     <section class="workflow" id="workflow">
       <div class="section-inner">
         <div class="section-head">
-          <p class="eyebrow">Workflow comparison</p>
           <h2>Sepsis Test Workflow Comparison</h2>
           <p>The SepSeek PCR based assay for bacterial, viral and fungal pathogen identification and resistance
             biomarkers is 6-9 times faster than conventional blood culture.</p>
@@ -248,7 +243,6 @@
     <section class="traction" id="traction">
       <div class="section-inner">
         <div class="section-head">
-          <p class="eyebrow">Vision &amp; Mission</p>
           <h2>Best-in-class, affordable products for diagnosis and treatment.</h2>
         </div>
         <div class="mission-grid">
@@ -273,7 +267,6 @@
     <section class="cta" id="contact">
       <div class="section-inner">
         <div class="cta-box">
-          <p class="eyebrow">Join Delphine's mission</p>
           <h2>Help bring faster sepsis diagnosis closer to the point of care.</h2>
           <p>Delphine is interested in hearing from future customers, clinical partners, laboratories, and healthcare
             organizations about diagnostic targets, compatible equipment, and workflow needs.</p>

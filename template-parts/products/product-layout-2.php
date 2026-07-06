@@ -4,7 +4,6 @@
     <section class="ai-hero" aria-labelledby="ai-title">
       <div class="section-inner ai-hero-grid">
         <div class="ai-hero-copy">
-          <p class="eyebrow">Clinical intelligence platform</p>
           <h1 id="ai-title">Delphine AI/ML Healthcare Platform</h1>
           <p>A development-stage software platform designed to bring machine-learning risk signals into hospital
             workflows, beginning with patients at risk of developing sepsis.</p>
@@ -43,7 +42,6 @@
     <section class="ai-overview" id="ai-overview">
       <div class="section-inner ai-overview-grid">
         <div class="section-head">
-          <p class="eyebrow">From data to timely context</p>
           <h2>Help care teams recognize risk before deterioration becomes obvious.</h2>
         </div>
         <div class="ai-overview-copy">
@@ -65,7 +63,6 @@
       <div class="section-inner">
         <div class="ai-section-heading">
           <div>
-            <p class="eyebrow">AI in healthcare</p>
             <h2 id="ai-healthcare-context-title">A collection of technologies, applied to specific clinical tasks.</h2>
           </div>
           <p>AI is not one technology, but a family of analytical methods. Machine learning is one of the most common
@@ -95,7 +92,6 @@
       <div class="section-inner">
         <div class="ai-section-heading">
           <div>
-            <p class="eyebrow">Initial applications</p>
             <h2 id="use-cases-title">One platform, a growing set of clinical questions.</h2>
           </div>
           <p>The product roadmap begins with in-hospital and discharge-stage risk prediction, then expands toward
@@ -127,7 +123,6 @@
     <section class="ai-models">
       <div class="section-inner ai-models-grid">
         <div class="ai-models-copy">
-          <p class="eyebrow">Ensemble intelligence</p>
           <h2>Different models, combined for a more useful signal.</h2>
           <p>This product makes use of an ensemble of machine-learning models, bringing together established
             statistical methods and machine-learning architectures.</p>
@@ -145,7 +140,6 @@
       <div class="section-inner">
         <div class="ai-roadmap-heading">
           <div>
-            <p class="eyebrow">Machine-learning lifecycle</p>
             <h2>Development is more than training a model.</h2>
           </div>
           <p>The referenced roadmap illustrates a continuous process spanning problem definition, data preparation,
@@ -163,7 +157,6 @@
     <section class="ai-integration">
       <div class="section-inner ai-integration-grid">
         <div>
-          <p class="eyebrow">Designed for connected care</p>
           <h2>Meet clinicians inside the hospital workflow.</h2>
           <p>Both the sepsis-risk and treatment-support products are planned to integrate with the electronic medical
             record systems of the hospitals where Delphine's AI/ML model solution is used.</p>
@@ -180,7 +173,6 @@
     <section class="ai-partner">
       <div class="section-inner ai-partner-box">
         <div>
-          <p class="eyebrow">Clinical and technology collaboration</p>
           <h2>Build useful intelligence around real care environments.</h2>
           <p>Delphine welcomes conversations with hospitals, clinical teams, data partners, and healthcare technology
             organizations interested in sepsis prediction and workflow integration.</p>

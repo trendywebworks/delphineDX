@@ -56,7 +56,6 @@
   <section class="cta">
     <div class="section-inner">
       <div class="cta-box">
-        <p class="eyebrow">Join Delphine's mission</p>
         <h2>Help bring faster sepsis diagnosis closer to the point of care.</h2>
         <p>Delphine is interested in hearing from future customers, clinical partners, laboratories, and healthcare
           organizations about diagnostic targets, compatible equipment, and workflow needs.</p>

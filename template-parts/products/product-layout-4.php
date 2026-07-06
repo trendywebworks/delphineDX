@@ -84,7 +84,6 @@ $ruo_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/
     <section class="ruo-hero" aria-labelledby="ruo-title">
       <div class="section-inner ruo-hero-grid">
         <div class="ruo-hero-copy">
-          <p class="eyebrow">Research Use Only</p>
           <h1 id="ruo-title">PathoSeek RUO Pathogen Identification Test Kits</h1>
           <p>Real-time PCR assay kits for research applications focused on selected bacterial pathogens.</p>
           <div class="hero-actions">
@@ -102,7 +101,6 @@ $ruo_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/
     <section class="ruo-intro" aria-label="RUO product overview">
       <div class="section-inner ruo-intro-grid">
         <div>
-          <p class="eyebrow">Product overview</p>
           <h2>PathoSeek panels and RUO kit pages for research workflows.</h2>
         </div>
         <div class="ruo-intro-copy">
@@ -118,7 +116,6 @@ $ruo_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/
     <section class="pathoseek-common" aria-label="Info for all PathoSeek panels">
       <div class="section-inner">
         <div class="section-head">
-          <p class="eyebrow">Info for all four</p>
           <h2>Shared PathoSeek assay characteristics.</h2>
         </div>
         <div class="pathoseek-common-grid">
@@ -135,7 +132,6 @@ $ruo_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/
     <section class="pathoseek-panels" aria-labelledby="pathoseek-panels-title">
       <div class="section-inner">
         <div class="section-head">
-          <p class="eyebrow">PathoSeek panels</p>
           <h2 id="pathoseek-panels-title">Four panels for pathogen and resistance-marker research.</h2>
         </div>
         <div class="pathoseek-panel-grid">
@@ -164,7 +160,6 @@ $ruo_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/
             <article class="ruo-kit-overview-card">
               <img src="<?php echo esc_url($ruo_image_base . $product['kit_image']); ?>" alt="<?php echo esc_attr($product['assay'] . ' kit'); ?>">
               <div>
-                <p class="eyebrow">PathoSeek RUO Kit</p>
                 <h2><?php echo esc_html($product['assay']); ?></h2>
                 <p class="ruo-product-code">Product code: <?php echo esc_html($product['code']); ?></p>
                 <p><?php echo esc_html($product['description']); ?></p>
@@ -179,7 +174,6 @@ $ruo_image_base = get_stylesheet_directory_uri() . '/assets/images/products/ruo/
     <section class="ruo-partner">
       <div class="section-inner ruo-partner-box">
         <div>
-          <p class="eyebrow">Pricing and availability</p>
           <h2>Contact Delphine Diagnostics for RUO kit information.</h2>
           <p>Request pricing, availability, lead time details, product inserts, and SDS information for the RUO pathogen
             identification test kits.</p>
