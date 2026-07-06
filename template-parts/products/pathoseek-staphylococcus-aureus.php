@@ -15,13 +15,6 @@ $pathoseek_product = array(
         'Built-in positive, negative, and RNase P internal controls.',
         'Runs on standard real-time PCR platforms including ABI 7500, Bio-Rad CFX96, Roche LightCycler, and Rotor-Gene Q.',
     ),
-    'panel'          => array(
-        'number'      => '01',
-        'title'       => 'Bacterial Pathogen Detection',
-        'targets'     => 'Escherichia coli, Acinetobacter baumannii, Staphylococcus aureus',
-        'description' => 'A real-time PCR panel for rapid detection of three widely studied bacterial pathogens associated with healthcare-associated infections, environmental contamination, and antimicrobial-resistance research. Suited to infection-control studies, environmental monitoring, and microbial-persistence models.',
-        'note'        => 'Detects bacterial DNA only and does not identify resistance markers, including methicillin resistance.',
-    ),
     'pathogen_copy'  => array(
         'Staphylococcus aureus is a Gram-positive bacterium commonly found on skin and mucous membranes. S. aureus is notorious for causing a wide spectrum of infections, ranging from skin and soft tissue infections to more severe conditions like pneumonia, endocarditis, and sepsis. Additionally, multi-drug resistant strains such as methicillin-resistant S. aureus (MRSA) and vancomycin-resistant S. aureus (VRSA) have emerged.',
         'While this kit is not designed to detect specific antimicrobial resistance, it is useful for microbiological research, contamination control studies, and tracking the prevalence of S. aureus in environmental or clinical research samples.',

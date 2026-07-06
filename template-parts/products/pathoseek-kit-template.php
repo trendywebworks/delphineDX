@@ -7,9 +7,39 @@ $pathoseek_image_base = get_stylesheet_directory_uri() . '/assets/images/product
 $pathoseek_common_features = isset( $pathoseek_product['common_features'] ) && is_array( $pathoseek_product['common_features'] )
     ? $pathoseek_product['common_features']
     : array();
-$pathoseek_panel = isset( $pathoseek_product['panel'] ) && is_array( $pathoseek_product['panel'] )
-    ? $pathoseek_product['panel']
-    : array();
+$pathoseek_default_panels = array(
+    array(
+        'number'      => '01',
+        'title'       => 'Bacterial Pathogen Detection',
+        'targets'     => 'Escherichia coli, Acinetobacter baumannii, Staphylococcus aureus',
+        'description' => 'A real-time PCR panel for rapid detection of three widely studied bacterial pathogens associated with healthcare-associated infections, environmental contamination, and antimicrobial-resistance research. Suited to infection-control studies, environmental monitoring, and microbial-persistence models.',
+        'note'        => 'Detects bacterial DNA only and does not identify resistance markers, including methicillin resistance.',
+    ),
+    array(
+        'number'      => '02',
+        'title'       => 'Respiratory Pathogen Detection',
+        'targets'     => 'Klebsiella pneumoniae, Streptococcus pneumoniae, Haemophilus influenzae',
+        'description' => 'A real-time PCR panel targeting three major bacteria linked to pneumonia, bloodstream infections, and meningitis. Supports research into bacterial persistence, transmission pathways, and environmental contamination.',
+        'note'        => 'Does not provide antimicrobial-resistance or virulence-factor data.',
+    ),
+    array(
+        'number'      => '03',
+        'title'       => 'Antimicrobial Resistance (AMR) Gene Detection',
+        'targets'     => 'NDM, CTX-M, mecA',
+        'description' => 'A real-time PCR panel for detecting three key antimicrobial-resistance genes: NDM (resistance to many last-line antibiotics, including carbapenems), CTX-M (resistance to penicillins and broad-spectrum cephalosporins), and mecA (the primary marker associated with MRSA). Built for resistance surveillance, transmission-dynamics, and environmental-reservoir research.',
+        'note'        => 'Detecting a resistance gene does not confirm phenotypic resistance, gene expression, or bacterial viability.',
+    ),
+    array(
+        'number'      => '04',
+        'title'       => 'Pathogen + Resistance Marker Detection',
+        'targets'     => 'Candida auris, OXA-48, Van A/B',
+        'description' => 'A combined real-time PCR panel detecting the emerging multidrug-resistant yeast Candida auris alongside two resistance markers: OXA-48 (carbapenem resistance) and vanA/vanB (vancomycin resistance). Aimed at surveillance, infection-control, and AMR research.',
+        'note'        => 'Detecting OXA-48 or vanA/vanB does not confirm phenotypic resistance without additional testing.',
+    ),
+);
+$pathoseek_panels = isset( $pathoseek_product['panels'] ) && is_array( $pathoseek_product['panels'] )
+    ? $pathoseek_product['panels']
+    : $pathoseek_default_panels;
 ?>
 
 <?php get_header(); ?>
@@ -86,22 +116,28 @@ $pathoseek_panel = isset( $pathoseek_product['panel'] ) && is_array( $pathoseek_
       </section>
     <?php endif; ?>
 
-    <?php if ( ! empty( $pathoseek_panel ) ) : ?>
-      <section class="pathoseek-panel-context" aria-label="PathoSeek panel context">
-        <div class="section-inner pathoseek-panel-context-grid">
+    <?php if ( ! empty( $pathoseek_panels ) ) : ?>
+      <section class="pathoseek-panel-context" aria-label="PathoSeek panel options">
+        <div class="section-inner">
           <div class="section-head">
-            <h2><?php echo esc_html( $pathoseek_panel['title'] ); ?></h2>
+            <p class="eyebrow">PathoSeek panels</p>
+            <h2>Detection sections available across all four products.</h2>
           </div>
-          <div class="pathoseek-panel-card">
-            <span><?php echo esc_html( $pathoseek_panel['number'] ); ?></span>
-            <dl>
-              <dt>Targets</dt>
-              <dd><?php echo esc_html( $pathoseek_panel['targets'] ); ?></dd>
-              <dt>Description</dt>
-              <dd><?php echo esc_html( $pathoseek_panel['description'] ); ?></dd>
-              <dt>Key note</dt>
-              <dd><?php echo esc_html( $pathoseek_panel['note'] ); ?></dd>
-            </dl>
+          <div class="pathoseek-panel-grid">
+            <?php foreach ( $pathoseek_panels as $pathoseek_panel ) : ?>
+              <article>
+                <span><?php echo esc_html( $pathoseek_panel['number'] ); ?></span>
+                <h3><?php echo esc_html( $pathoseek_panel['title'] ); ?></h3>
+                <dl>
+                  <dt>Targets</dt>
+                  <dd><?php echo esc_html( $pathoseek_panel['targets'] ); ?></dd>
+                  <dt>Description</dt>
+                  <dd><?php echo esc_html( $pathoseek_panel['description'] ); ?></dd>
+                  <dt>Key note</dt>
+                  <dd><?php echo esc_html( $pathoseek_panel['note'] ); ?></dd>
+                </dl>
+              </article>
+            <?php endforeach; ?>
           </div>
         </div>
       </section>
