@@ -15,13 +15,6 @@ $pathoseek_product = array(
         'Built-in positive, negative, and RNase P internal controls.',
         'Runs on standard real-time PCR platforms including ABI 7500, Bio-Rad CFX96, Roche LightCycler, and Rotor-Gene Q.',
     ),
-    'panel'          => array(
-        'number'      => '01',
-        'title'       => 'Bacterial Pathogen Detection',
-        'targets'     => 'Escherichia coli, Acinetobacter baumannii, Staphylococcus aureus',
-        'description' => 'A real-time PCR panel for rapid detection of three widely studied bacterial pathogens associated with healthcare-associated infections, environmental contamination, and antimicrobial-resistance research. Suited to infection-control studies, environmental monitoring, and microbial-persistence models.',
-        'note'        => 'Detects bacterial DNA only and does not identify resistance markers, including methicillin resistance.',
-    ),
     'pathogen_copy'  => array(
         'Escherichia coli is a Gram-negative bacterium, commonly found in the lower intestine of warm-blooded organisms. While many strains are harmless and part of a healthy gut microbiome, certain pathogenic strains are responsible for a wide range of human and animal diseases. The pathogenic strains can lead to diarrheal diseases, urinary tract infections, and more severe systemic infections.',
         'This kit is suitable for use in environmental monitoring, food safety research, and microbiological studies.',
