@@ -3366,7 +3366,7 @@ section {
   max-width: 440px;
   margin: 0 0 24px;
   color: var(--white);
-  font-size: clamp(2.1rem, 3.7vw, 3.15rem);
+  font-size: clamp(2.1rem, 3.7vw, 2.15rem);
   font-weight: 400;
   line-height: 1.08;
 }
@@ -3387,7 +3387,7 @@ section {
   max-width: 760px;
   margin: 0;
   color: var(--primary);
-  font-size: clamp(2.35rem, 4.6vw, 4.8rem);
+  font-size: clamp(2.35rem, 4.6vw, 3rem);
   font-weight: 400;
   line-height: 0.95;
 }
