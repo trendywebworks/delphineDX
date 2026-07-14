@@ -19,7 +19,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="sepsis-hero-visual">
-          <img src="assets/images/education/what-is-sepsis.webp" class="" alt="">
+          <img src="../../assets/images/education/what-is-sepsis.webp" class="" alt="">
         </div>
       </div>
     </section>
