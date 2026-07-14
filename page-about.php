@@ -111,30 +111,26 @@
       <div class="section-inner">
         <div class="roadmap-heading">
           <div class="section-head">
-            <h2>Planning a connected healthcare diagnostics enterprise.</h2>
+            <p class="eyebrow">OUR ROADMAP</p>
+            <h2>Building a connected healthcare diagnostics enterprise.</h2>
           </div>
-          <p>As part of augmenting our service to the healthcare needs of patients, service providers (payers), and
-            healthcare providers, our enterprise is planning:</p>
+          <p>Delphine's long-term direction extends from rapid assays and decision support into connected laboratory services and privacy-conscious health data analytics.</p>
         </div>
         <div class="roadmap-grid">
           <article class="roadmap-card">
-            <span>Logistics network</span>
-            <h3>Connect certified laboratories</h3>
-            <p>To establish a logistics network to connect certified laboratories in different countries to our central
-              facility and provide molecular and pathological testing services for different health conditions.</p>
+            <span>NOW</span>
+            <h3>Advance rapid molecular testing</h3>
+            <p>Develop SepSeek and RUO assays for pathogen identification, with planned expansion into resistance and additional microbial targets.</p>
           </article>
           <article class="roadmap-card">
-            <span>Health data</span>
-            <h3>Build a secure health data repository</h3>
-            <p>To establish a health data repository and provide analytical services with a comprehensive health map of an
-              individual, adhering to country-specific privacy and ethical regulations.</p>
+            <span>NEXT</span>
+            <h3>Embed clinical intelligence</h3>
+            <p>Develop Clinsight as an explainable sepsis risk and decision-support experience designed for integration with hospital EHR systems.</p>
           </article>
           <article class="roadmap-card">
-            <span>Enterprise team</span>
-            <h3>Led by domain and business experts</h3>
-            <p>The enterprise team is led by domain and business experts with service and ethical mindsets, across
-              disciplines ranging from Biomedical Science (Pathology, Microbiology, Molecular Biology, and Biochemistry),
-              Data Analytics, and Market development.</p>
+            <span>FUTURE</span>
+            <h3>Connect labs and health data</h3>
+            <p>Establish broader testing and analytics services through certified laboratory networks and secure, regulation- aligned health data infrastructure.</p>
           </article>
         </div>
       </div>

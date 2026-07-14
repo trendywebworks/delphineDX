@@ -49,7 +49,7 @@
         </div>
         <div>
           <div class="section-head">
-            <h2>Faster answers for a time critical emergency.</h2>
+            <h2>Delphine&quote;s Comprehensive Approach</h2>
             <p>Sepsis care is constrained by diagnostic uncertainty, slow culture workflows, and the need to choose effective antimicrobial treatment quickly. Delphine combines <strong>rapid molecular testing</strong> with <strong>clinical risk intelligence</strong> to support better decisions earlier in the patient journey.</p>
           </div>
           <div class="capability-list">
