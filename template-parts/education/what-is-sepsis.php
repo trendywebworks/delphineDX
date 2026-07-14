@@ -19,7 +19,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="sepsis-hero-visual">
-          <img src="../../assets/images/education/what-is-sepsis.webp" class="" alt="">
+          <img class="sepsis-hero-image" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/education/what-is-sepsis.webp'); ?>" alt="Illustration of infectious pathogens associated with sepsis">
         </div>
       </div>
     </section>
