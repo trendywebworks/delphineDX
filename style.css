@@ -3002,18 +3002,6 @@ section {
     linear-gradient(120deg, #1d1230 0%, #3c1d54 50%, #256f9e 100%);
 }
 
-.sepsis-hero::after {
-  content: "";
-  position: absolute;
-  right: -120px;
-  bottom: -150px;
-  width: min(48vw, 620px);
-  height: min(48vw, 620px);
-  border: 1px solid rgba(169, 217, 244, 0.38);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
 .sepsis-hero-grid {
   grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.85fr);
   gap: 86px;
@@ -7181,38 +7169,6 @@ body.job-modal-open {
   min-height: 470px;
 }
 
-.sepsis-hero-visual::before,
-.sepsis-hero-visual::after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.sepsis-hero-visual::before {
-  top: -24px;
-  left: 18px;
-  width: 230px;
-  height: 74px;
-  border: 7px solid rgba(255, 255, 255, 0.92);
-  border-right: 0;
-  border-bottom: 0;
-  border-radius: 50% 0 0 0;
-  transform: rotate(-3deg);
-}
-
-.sepsis-hero-visual::after {
-  right: -108px;
-  bottom: 74px;
-  width: 520px;
-  height: 170px;
-  border: 3px solid rgba(96, 178, 255, 0.9);
-  border-bottom: 0;
-  border-left-color: transparent;
-  border-radius: 50% 50% 0 0;
-  transform: rotate(-5deg);
-}
-
 .sepsis-hero-copy h1 {
   font-size: clamp(4.4rem, 7.4vw, 6.9rem);
 }
@@ -7233,10 +7189,10 @@ body.job-modal-open {
 }
 
 .sepsis-emergency-card strong {
-  max-width: 420px;
+  max-width: 100%;
   margin: 0 0 22px;
   color: var(--primary);
-  font-size: clamp(2.9rem, 5.2vw, 4.65rem);
+  font-size: clamp(2.2rem, 5.2vw, 4.65rem);
   font-weight: 400;
   line-height: 1.03;
 }
@@ -7294,22 +7250,6 @@ body.job-modal-open {
 
   .sepsis-hero-visual {
     min-height: 430px;
-  }
-
-  .sepsis-hero-visual::before {
-    top: -18px;
-    left: 8px;
-    width: 180px;
-    height: 58px;
-    border-width: 5px;
-  }
-
-  .sepsis-hero-visual::after {
-    right: -128px;
-    bottom: 96px;
-    width: 420px;
-    height: 150px;
-    border-width: 2px;
   }
 
   .sepsis-emergency-card {

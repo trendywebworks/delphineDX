@@ -49,7 +49,7 @@
         </div>
         <div>
           <div class="section-head">
-            <h2>Delphine&quote;s Comprehensive Approach</h2>
+            <h2>Delphine's Comprehensive Approach</h2>
             <p>Sepsis care is constrained by diagnostic uncertainty, slow culture workflows, and the need to choose effective antimicrobial treatment quickly. Delphine combines <strong>rapid molecular testing</strong> with <strong>clinical risk intelligence</strong> to support better decisions earlier in the patient journey.</p>
           </div>
           <div class="capability-list">
@@ -113,7 +113,7 @@
           <p>Delphine's roadmap includes SepSeek, ClinSight, and RUO pathogen identification assays.</p>
         </div>
         <div class="portfolio-products-grid" aria-label="Delphine product areas">
-          <article class="portfolio-product-card portfolio-product-card-featured">
+          <article class="portfolio-product-card">
             <span class="portfolio-product-eyebrow">Diagnostic Assay</span>
             <h3>SepSeek Sepsis Diagnostic Test Kits</h3>
             <p>A PCR-based assay concept for rapid detection of pathogen and host markers to support personalized
