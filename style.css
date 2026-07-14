@@ -7732,3 +7732,84 @@ body.job-modal-open {
     gap: 8px;
   }
 }
+
+@media (max-width: 640px) {
+
+  section,
+  .hero,
+  .about-hero,
+  .blog-hero,
+  .article-hero,
+  .career-hero,
+  .contact-intro,
+  .pathoseek-hero,
+  .assay-hero,
+  .ai-hero,
+  .ruo-hero,
+  .sepsis-hero,
+  .cta {
+    padding: 50px 20px;
+  }
+
+  .section-inner,
+  .hero-inner,
+  .footer-inner,
+  .article-featured-wrap {
+    width: 100%;
+  }
+
+  h1,
+  .hero h1,
+  .about-hero-copy h1,
+  .blog-hero-copy h1,
+  .article-hero h1,
+  .career-hero-copy h1,
+  .pathoseek-hero-copy h1,
+  .assay-hero-copy h1,
+  .ai-hero-copy h1,
+  .ruo-hero-copy h1,
+  .sepsis-hero-copy h1 {
+    font-size: clamp(1.9rem, 9vw, 2.65rem);
+    line-height: 1.08;
+  }
+
+  h2,
+  .section-head h2,
+  .sepsis-story h2,
+  .sepsis-signs-heading h2,
+  .sepsis-platform-copy h2,
+  .sepsis-mission-copy>h2 {
+    font-size: clamp(1.55rem, 7vw, 2.15rem);
+    line-height: 1.12;
+  }
+
+  h3,
+  .portfolio-product-card h3,
+  .mission-card h3 {
+    font-size: clamp(1.18rem, 5.5vw, 1.55rem);
+    line-height: 1.2;
+  }
+
+  p,
+  li,
+  .section-head p {
+    font-size: 0.95rem;
+  }
+
+  .portfolio-product-card,
+  .mission-card,
+  .sepsis-signal-panel,
+  .pathoseek-hero-kit,
+  .pathoseek-cta-box,
+  .ruo-partner-box {
+    padding: 24px 20px;
+  }
+
+  .sepsis-hero-visual {
+    min-height: 400px;
+  }
+
+  .sepsis-emergency-card {
+    padding: 24px 20px;
+  }
+}
