@@ -3031,10 +3031,10 @@ section {
 }
 
 .sepsis-hero-copy h1 {
-  max-width: 560px;
+  max-width: 100%;
   margin: 0 0 24px;
   color: var(--white);
-  font-size: clamp(4.4rem, 7.4vw, 6.9rem);
+  font-size: clamp(4.4rem, 7.4vw, 4rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 0.92;
@@ -3454,6 +3454,7 @@ section {
 }
 
 @media (max-width: 980px) {
+
   .sepsis-hero-grid,
   .sepsis-mission-grid {
     grid-template-columns: 1fr;
