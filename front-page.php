@@ -157,16 +157,16 @@
     <section class="workflow" id="workflow">
       <div class="section-inner">
         <div class="section-head">
-          <h2>Sepsis Test Workflow Comparison</h2>
-          <p>The SepSeek PCR based assay for bacterial, viral and fungal pathogen identification and resistance
-            biomarkers is 6-9 times faster than conventional blood culture.</p>
+          <h2>SepSeek Workflow Comparison</h2>
+          <p>SepSeek is Delphine's PCR-based assay concept for bacterial, viral and fungal pathogen identification and
+            resistance biomarkers. The workflow is designed to be 6-9 times faster than conventional blood culture.</p>
         </div>
 
         <div class="workflow-infographics">
           <article class="workflow-infographic" aria-labelledby="culture-workflow-title">
             <div class="workflow-infographic-head">
               <div>
-                <h3 id="culture-workflow-title">Most Common Turn Around Time :</h3>
+                <h3 id="culture-workflow-title">Conventional Blood Culture</h3>
                 <p>Conventional blood culture can take 1-7 days for results</p>
               </div>
               <div class="workflow-time-badge">
@@ -195,7 +195,7 @@
           <article class="workflow-infographic workflow-infographic-fast" aria-labelledby="sepseek-workflow-title">
             <div class="workflow-infographic-head">
               <div>
-                <h3 id="sepseek-workflow-title">Most Common Turn Around Time :</h3>
+                <h3 id="sepseek-workflow-title">SepSeek PCR Workflow</h3>
                 <p>SepSeek results are available in under 8 hours</p>
               </div>
               <div class="workflow-time-badge">
