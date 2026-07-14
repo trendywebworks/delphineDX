@@ -18,8 +18,16 @@ get_header(); ?>
             <a class="button secondary" href="#understand-sepsis">Understand sepsis</a>
           </div>
         </div>
-        <div class="sepsis-hero-visual">
-          <img class="sepsis-hero-image" src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/images/education/what-is-sepsis.webp'); ?>" alt="Illustration of infectious pathogens associated with sepsis">
+        <div class="sepsis-hero-visual" aria-label="Sepsis medical emergency reminder">
+          <div class="sepsis-emergency-card">
+            <span>Medical emergency</span>
+            <strong>Sepsis requires immediate evaluation and treatment.</strong>
+            <p>If an infection is not improving and signs of sepsis appear, seek medical care immediately.</p>
+          </div>
+          <div class="sepsis-hero-note">
+            <strong>Act fast</strong>
+            <span>Early recognition and treatment can improve the chance of survival.</span>
+          </div>
         </div>
       </div>
     </section>
@@ -39,22 +47,22 @@ get_header(); ?>
               often begin in the lungs, urinary tract, gastrointestinal tract, or skin.</p>
           </div>
         </div>
+        <div class="sepsis-story-block sepsis-story-progress">
+          <div class="sepsis-story-heading">
+            <span class="sepsis-light-kicker">How It Can Progress</span>
+            <h2>An infection can become a whole-body emergency.</h2>
+          </div>
+          <div class="sepsis-story-copy">
+            <p>The course differs from person to person, but deterioration may occur quickly. Suspected sepsis should never
+              be monitored at home while waiting for every symptom to appear.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="sepsis-signs" id="warning-signs">
       <div class="section-inner">
         <div class="sepsis-signs-heading">
-          <div class="sepsis-story-block sepsis-story-progress">
-            <div class="sepsis-story-heading">
-              <span class="sepsis-light-kicker">How It Can Progress</span>
-              <h2>An infection can become a whole-body emergency.</h2>
-            </div>
-            <div class="sepsis-story-copy">
-              <p>The course differs from person to person, but deterioration may occur quickly. Suspected sepsis should never
-                be monitored at home while waiting for every symptom to appear.</p>
-            </div>
-          </div>
           <div class="sepsis-warning-heading">
             <h2>Know the warning signs that may need urgent care.</h2>
             <div class="sepsis-action-note">
@@ -106,8 +114,8 @@ get_header(); ?>
     <section class="sepsis-platform">
       <div class="section-inner">
         <div class="sepsis-platform-copy">
-          <span class="sepsis-light-kicker">ClinSight AI/ML Healthcare Platform</span>
-          <h2>ClinSight: risk signals that meet clinicians inside the care workflow.</h2>
+          <span class="sepsis-light-kicker">Delphine AI/ML Healthcare Platform</span>
+          <h2>Risk signals that meet clinicians inside the care workflow.</h2>
           <p>ClinSight is weak as a clinical decision support assistant that integrates with EHR systems and uses
             patient vitals, blood tests, metabolic panels, observations, and lab results to produce sepsis risk and
             clinical recommendations. ClinSight is a clinical decision support assistant designed to integrate EHR systems.</p>
