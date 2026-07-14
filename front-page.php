@@ -49,36 +49,24 @@
         </div>
         <div>
           <div class="section-head">
-            <h2>Uniting rapid pathogen identification with improved risk prediction.</h2>
-            <p>Delphine brings together a sepsis diagnostic panel and ML prediction software to deliver pathogen and
-              resistance-marker identification 6-9 times faster than standard of care, while enabling earlier detection
-              of sepsis risk and smarter treatment decisions.</p>
+            <h2>Faster answers for a time critical emergency.</h2>
+            <p>Sepsis care is constrained by diagnostic uncertainty, slow culture workflows, and the need to choose effective antimicrobial treatment quickly. Delphine combines <strong>rapid molecular testing</strong> with <strong>clinical risk intelligence</strong> to support better decisions earlier in the patient journey.</p>
           </div>
           <div class="capability-list">
             <article class="capability">
               <div class="capability-icon">01</div>
               <div>
-                <h3>Sepsis diagnostic panel</h3>
-                <p>SepSeek is designed for rapid pathogen and resistance-marker identification directly from whole blood
-                  specimens.</p>
+                <h3>Sepsis Diagnostic Panel</h3>
+                <p>Pathogen and resistance marker identification  6-9 times faster than standard of care</p>
               </div>
             </article>
             <article class="capability">
               <div class="capability-icon">02</div>
               <div>
-                <h3>ML prediction software tool</h3>
-                <p>ClinSight supports earlier sepsis risk detection using clinical features such as vitals, lab results,
-                  and observations.</p>
+                <h3>ML Prediction software tool</h3>
+                <p>Our Goal: Early detection of sepsis risk enabling 50% reduction in readmission rate</p>
               </div>
-            </article>
-            <article class="capability">
-              <div class="capability-icon">03</div>
-              <div>
-                <h3>Faster, smarter treatment</h3>
-                <p>Combining diagnostic and decision-support data can reduce uncertainty, support targeted therapy, and
-                  improve outcomes.</p>
-              </div>
-            </article>
+            </article>            
           </div>
         </div>
       </div>
@@ -122,55 +110,46 @@
       <div class="section-inner">
         <div class="section-head">
           <h2>A connected portfolio for infection diagnosis and treatment support.</h2>
-          <p>Explore Delphine's diagnostic, decision-support, and research-use product areas.</p>
+          <p>Delphine's roadmap includes SepSeek, ClinSight, and RUO pathogen identification assays.</p>
         </div>
-        <div class="product-carousel" aria-label="Products carousel">
-          <div class="product-carousel-controls">
-            <button class="product-carousel-button product-carousel-prev" type="button" aria-label="Previous product"></button>
-            <button class="product-carousel-button product-carousel-next" type="button" aria-label="Next product"></button>
-          </div>
-          <div class="product-grid" tabindex="0">
-            <?php
-            $homepage_products = new WP_Query(
-              array(
-                'post_type'      => 'product',
-                'posts_per_page' => -1,
-                'post_status'    => 'publish',
-                'orderby'        => 'title',
-                'order'          => 'ASC',
-              )
-            );
-            ?>
-            <?php if ( $homepage_products->have_posts() ) : ?>
-              <?php while ( $homepage_products->have_posts() ) : $homepage_products->the_post(); ?>
-                <?php
-                $product_summary = wp_trim_words( get_the_excerpt() ?: get_the_content(), 18, '...' );
+        <div class="portfolio-products-grid" aria-label="Delphine product areas">
+          <article class="portfolio-product-card portfolio-product-card-featured">
+            <span class="portfolio-product-eyebrow">Diagnostic Assay</span>
+            <h3>SepSeek Sepsis Diagnostic Test Kits</h3>
+            <p>A PCR-based assay concept for rapid detection of pathogen and host markers to support personalized
+              patient care.</p>
+            <ul>
+              <li>Targets pathogen identification</li>
+              <li>Plans for resistance marker expansion</li>
+              <li>Designed around standard clinical lab equipment</li>
+            </ul>
+            <a class="portfolio-product-link" href="<?php echo esc_url( home_url( '/products/delphine-sepsis-diagnostic-assay/' ) ); ?>">Explore the assay</a>
+          </article>
 
-                if ( $product_summary === '' ) {
-                  $product_summary = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis.';
-                }
-                ?>
-                <a class="product-card" href="<?php the_permalink(); ?>">
-                  <?php if ( has_post_thumbnail() ) : ?>
-                    <?php the_post_thumbnail( 'delphine-card' ); ?>
-                  <?php else : ?>
-                    <?php delphine_fallback_featured_image( get_the_title() ); ?>
-                  <?php endif; ?>
-                  <h3><?php the_title(); ?></h3>
-                  <p><?php echo esc_html( $product_summary ); ?></p>
-                  <span class="product-card-link">Read More</span>
-                </a>
-              <?php endwhile; ?>
-              <?php wp_reset_postdata(); ?>
-            <?php else : ?>
-              <article class="product-card">
-                <?php delphine_fallback_featured_image( 'Delphine Diagnostics fallback image' ); ?>
-                <h3>Lorem ipsum dolor</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu facilisis.</p>
-                <span class="product-card-link">Read More</span>
-              </article>
-            <?php endif; ?>
-          </div>
+          <article class="portfolio-product-card">
+            <span class="portfolio-product-eyebrow">Decision Support</span>
+            <h3>ClinSight Sepsis Prediction</h3>
+            <p>Machine-learning software intended to help clinicians identify patients at risk of developing sepsis or
+              readmission.</p>
+            <ul>
+              <li>EHR-embedded alert vision</li>
+              <li>Explainable risk context</li>
+              <li>Snapshot and forecast modeling</li>
+            </ul>
+            <a class="portfolio-product-link" href="<?php echo esc_url( home_url( '/products/delphine-ai-ml-healthcare-platform/' ) ); ?>">Explore the platform</a>
+          </article>
+
+          <article class="portfolio-product-card">
+            <span class="portfolio-product-eyebrow">Research Use</span>
+            <h3>RUO Pathogen Identification Kits</h3>
+            <p>Real-time PCR assays for organisms including E. coli, S. aureus, K. pneumoniae, and A. baumannii.</p>
+            <ul>
+              <li>Environmental monitoring</li>
+              <li>Food safety research</li>
+              <li>Microbiological studies</li>
+            </ul>
+            <a class="portfolio-product-link" href="<?php echo esc_url( home_url( '/products/ruo-pathogen-identification-test-kits/' ) ); ?>">Explore the RUO kits</a>
+          </article>
         </div>
       </div>
     </section>
@@ -183,58 +162,60 @@
             biomarkers is 6-9 times faster than conventional blood culture.</p>
         </div>
 
-        <div class="workflow-compare">
-          <article class="workflow-card">
-            <div class="workflow-card-head">
-              <div class="workflow-icon microbe-icon" aria-hidden="true">
+        <div class="workflow-infographics">
+          <article class="workflow-infographic" aria-labelledby="culture-workflow-title">
+            <div class="workflow-infographic-head">
+              <div>
+                <h3 id="culture-workflow-title">Most Common Turn Around Time :</h3>
+                <p>Conventional blood culture can take 1-7 days for results</p>
+              </div>
+              <div class="workflow-time-badge">
+                <svg viewBox="0 0 44 44" aria-hidden="true">
+                  <circle cx="22" cy="22" r="18"></circle>
+                  <path d="M22 10v13l9 6"></path>
+                </svg>
+                <strong>48-72 Hrs</strong>
+              </div>
+            </div>
+            <div class="workflow-infographic-body">
+              <div class="workflow-symbol microbe-icon" aria-hidden="true">
                 <span></span><span></span><span></span><span></span><span></span>
               </div>
-              <div>
-                <span class="workflow-label">Conventional blood culture</span>
-                <h3>Most common turn around time</h3>
-                <p>Conventional blood culture can take 1-7 days for results.</p>
-              </div>
+              <ol class="workflow-flow" aria-label="Conventional blood culture workflow">
+                <li>Blood Collection (20ml)</li>
+                <li>Blood Culture</li>
+                <li>Bacteria Culture</li>
+                <li>Bacteria ID</li>
+                <li>Antimicrobial Sensitivity</li>
+                <li>Pathogen ID + Resistance</li>
+              </ol>
             </div>
-            <div class="workflow-time">
-              <svg viewBox="0 0 44 44" aria-hidden="true">
-                <circle cx="22" cy="22" r="18"></circle>
-                <path d="M22 10v13l9 6"></path>
-              </svg>
-              <strong>48-72 Hrs</strong>
-            </div>
-            <ol class="workflow-steps" aria-label="Conventional blood culture workflow">
-              <li><span>01</span>Blood Collection (20ml)</li>
-              <li><span>02</span>Blood Culture</li>
-              <li><span>03</span>Bacteria Culture</li>
-              <li><span>04</span>Bacteria ID</li>
-              <li><span>05</span>Antimicrobial Sensitivity</li>
-              <li><span>06</span>Pathogen ID + Resistance</li>
-            </ol>
           </article>
 
-          <article class="workflow-card workflow-card-fast">
-            <div class="workflow-card-head">
-              <div class="workflow-icon dna-icon" aria-hidden="true"></div>
+          <article class="workflow-infographic workflow-infographic-fast" aria-labelledby="sepseek-workflow-title">
+            <div class="workflow-infographic-head">
               <div>
-                <span class="workflow-label">SepSeek PCR based workflow</span>
-                <h3>Most common turn around time</h3>
-                <p>SepSeek results are available in under 8 hours.</p>
+                <h3 id="sepseek-workflow-title">Most Common Turn Around Time :</h3>
+                <p>SepSeek results are available in under 8 hours</p>
+              </div>
+              <div class="workflow-time-badge">
+                <svg viewBox="0 0 44 44" aria-hidden="true">
+                  <circle cx="22" cy="22" r="18"></circle>
+                  <path d="M22 10v13l9 6"></path>
+                </svg>
+                <strong>6-8 Hrs</strong>
               </div>
             </div>
-            <div class="workflow-time">
-              <svg viewBox="0 0 44 44" aria-hidden="true">
-                <circle cx="22" cy="22" r="18"></circle>
-                <path d="M22 10v13l9 6"></path>
-              </svg>
-              <strong>6-8 Hrs</strong>
+            <div class="workflow-infographic-body">
+              <div class="workflow-symbol dna-icon" aria-hidden="true"></div>
+              <ol class="workflow-flow" aria-label="SepSeek PCR based workflow">
+                <li>Blood Collection (1ml)</li>
+                <li>DNA Extraction</li>
+                <li>Multiplex RT-PCR</li>
+                <li>Data Analysis and Interpretation</li>
+                <li>Pathogen ID + Resistance</li>
+              </ol>
             </div>
-            <ol class="workflow-steps" aria-label="SepSeek PCR based workflow">
-              <li><span>01</span>Blood Collection (1ml)</li>
-              <li><span>02</span>DNA Extraction</li>
-              <li><span>03</span>Multiplex RT-PCR</li>
-              <li><span>04</span>Data Analysis and Interpretation</li>
-              <li><span>05</span>Pathogen ID + Resistance</li>
-            </ol>
           </article>
         </div>
       </div>
