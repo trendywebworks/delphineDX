@@ -3099,7 +3099,15 @@ section {
 }
 
 .sepsis-story-block {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.75fr) minmax(0, 1fr);
+  gap: 72px;
+  align-items: start;
   max-width: 1060px;
+}
+
+.sepsis-story-heading {
+  min-width: 0;
 }
 
 .sepsis-light-kicker {
@@ -3111,7 +3119,7 @@ section {
   max-width: 950px;
   margin: 0;
   color: var(--primary);
-  font-size: clamp(2.25rem, 4.3vw, 4rem);
+  font-size: clamp(1.35rem, 2.6vw, 2.4rem);
   font-weight: 400;
   line-height: 1.08;
 }
@@ -3120,7 +3128,7 @@ section {
   display: grid;
   gap: 24px;
   max-width: 1110px;
-  margin-top: 100px;
+  margin-top: 0;
 }
 
 .sepsis-story p {
@@ -3132,7 +3140,6 @@ section {
 
 .sepsis-story-progress h2 {
   max-width: 940px;
-  margin-bottom: 38px;
 }
 
 .sepsis-signs {
@@ -3143,14 +3150,40 @@ section {
 }
 
 .sepsis-signs-heading {
-  grid-template-columns: minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
   margin-bottom: 34px;
 }
 
 .sepsis-signs-heading h2 {
   max-width: 920px;
+  font-size: clamp(1.35rem, 2.6vw, 2.4rem);
   font-weight: 400;
+}
+
+.sepsis-signs .sepsis-story-block {
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: none;
+}
+
+.sepsis-signs .sepsis-light-kicker {
+  color: var(--sky);
+}
+
+.sepsis-signs .sepsis-story h2,
+.sepsis-signs .sepsis-story-progress h2 {
+  color: var(--white);
+}
+
+.sepsis-signs .sepsis-story-copy p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.sepsis-warning-heading {
+  display: grid;
+  gap: 22px;
 }
 
 .sepsis-action-note {
@@ -3231,6 +3264,27 @@ section {
   grid-template-columns: 130px minmax(0, 1fr);
   gap: 24px;
   align-items: center;
+}
+
+.sepsis-signal-panel .sepsis-signal-heading {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.sepsis-signal-heading h3 {
+  margin: 0 0 8px;
+  color: var(--primary);
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+.sepsis-signal-heading p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .sepsis-signal-panel span {
@@ -3413,6 +3467,11 @@ section {
     width: 100%;
   }
 
+  .sepsis-story-block {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
   .sepsis-mission-photo {
     min-height: 520px;
   }
@@ -3469,7 +3528,7 @@ section {
   }
 
   .sepsis-story-copy {
-    margin-top: 56px;
+    margin-top: 0;
   }
 
   .sepsis-sign-grid,

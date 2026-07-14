@@ -19,15 +19,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="sepsis-hero-visual">
-          <article class="sepsis-emergency-card">
-            <span>Medical Emergency</span>
-            <strong>Sepsis requires immediate evaluation and treatment.</strong>
-            <p>If an infection is not improving or signs of sepsis appear, seek medical care immediately.</p>
-          </article>
-          <div class="sepsis-hero-note">
-            <strong>Act fast</strong>
-            <span>Early recognition and treatment can improve the chance of survival.</span>
-          </div>
+          <img src="assets/images/education/what-is-sepsis.webp" class="" alt="">
         </div>
       </div>
     </section>
@@ -35,8 +27,10 @@ get_header(); ?>
     <section class="sepsis-definition" id="understand-sepsis">
       <div class="section-inner sepsis-story">
         <div class="sepsis-story-block">
-          <span class="sepsis-light-kicker">A Dangerous Chain Reaction</span>
-          <h2>When the response to infection begins damaging the body.</h2>
+          <div class="sepsis-story-heading">
+            <span class="sepsis-light-kicker">A Dangerous Chain Reaction</span>
+            <h2>When the response to infection begins damaging the body.</h2>
+          </div>
           <div class="sepsis-story-copy">
             <p>An infection can trigger an overwhelming immune response throughout the body. Instead of remaining focused
               on the infection, that response can impair circulation, injure tissues, and disrupt the function of vital
@@ -45,22 +39,28 @@ get_header(); ?>
               often begin in the lungs, urinary tract, gastrointestinal tract, or skin.</p>
           </div>
         </div>
-        <div class="sepsis-story-block sepsis-story-progress">
-          <span class="sepsis-light-kicker">How It Can Progress</span>
-          <h2>An infection can become a whole-body emergency.</h2>
-          <p>The course differs from person to person, but deterioration may occur quickly. Suspected sepsis should never
-            be monitored at home while waiting for every symptom to appear.</p>
-        </div>
       </div>
     </section>
 
     <section class="sepsis-signs" id="warning-signs">
       <div class="section-inner">
         <div class="sepsis-signs-heading">
-          <h2>Know the warning signs that may need urgent care.</h2>
-          <div class="sepsis-action-note">
-            <strong>Do not wait.</strong>
-            <p>Call emergency services or go to an emergency department if sepsis is suspected.</p>
+          <div class="sepsis-story-block sepsis-story-progress">
+            <div class="sepsis-story-heading">
+              <span class="sepsis-light-kicker">How It Can Progress</span>
+              <h2>An infection can become a whole-body emergency.</h2>
+            </div>
+            <div class="sepsis-story-copy">
+              <p>The course differs from person to person, but deterioration may occur quickly. Suspected sepsis should never
+                be monitored at home while waiting for every symptom to appear.</p>
+            </div>
+          </div>
+          <div class="sepsis-warning-heading">
+            <h2>Know the warning signs that may need urgent care.</h2>
+            <div class="sepsis-action-note">
+              <strong>Do not wait.</strong>
+              <p>Call emergency services or go to an emergency department if sepsis is suspected.</p>
+            </div>
           </div>
         </div>
         <div class="sepsis-sign-grid">
@@ -106,14 +106,18 @@ get_header(); ?>
     <section class="sepsis-platform">
       <div class="section-inner">
         <div class="sepsis-platform-copy">
-          <span class="sepsis-light-kicker">Delphine AI/ML Healthcare Platform</span>
-          <h2>Risk signals that meet clinicians inside the care workflow.</h2>
+          <span class="sepsis-light-kicker">ClinSight AI/ML Healthcare Platform</span>
+          <h2>ClinSight: risk signals that meet clinicians inside the care workflow.</h2>
           <p>ClinSight is planned as a clinical decision support assistant that integrates with EHR systems and uses
             patient vitals, blood tests, metabolic panels, observations, and lab results to produce sepsis risk and
             clinical recommendations.</p>
           <a class="button" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Partner with Delphine</a>
         </div>
         <div class="sepsis-signal-panel" aria-label="ClinSight input signal illustration">
+          <div class="sepsis-signal-heading">
+            <h3>ClinSight input signals</h3>
+            <p>Illustrative inputs that may contribute to sepsis risk context and clinical recommendations.</p>
+          </div>
           <div><span>Vitals</span><b style="--signal-width: 68%; --signal-color: var(--teal);"></b></div>
           <div><span>CBC</span><b style="--signal-width: 82%; --signal-color: var(--amber);"></b></div>
           <div><span>CMP</span><b style="--signal-width: 58%; --signal-color: var(--teal);"></b></div>
@@ -136,7 +140,7 @@ get_header(); ?>
         </article>
         <div class="sepsis-mission-copy">
           <h2>Built by industry-experienced, mission-driven teams.</h2>
-          <p>The company brings together expertise across biomedical science, molecular biology, data analytics, market
+          <p>We bring together expertise across biomedical science, molecular biology, data analytics, market
             development, clinical advisory, and commercialization.</p>
           <div class="sepsis-purpose-grid">
             <article>
@@ -153,7 +157,7 @@ get_header(); ?>
           <div class="sepsis-stats-row">
             <article><strong>150+</strong><span>Years of combined field experience</span></article>
             <article><strong>4</strong><span>Hospital NDAs signed</span></article>
-            <article><strong>3</strong><span>Competitive grants noted in early traction</span></article>
+            <article><strong>3</strong><span>Competitive grants awarded</span></article>
           </div>
         </div>
       </div>
