@@ -108,9 +108,9 @@ get_header(); ?>
         <div class="sepsis-platform-copy">
           <span class="sepsis-light-kicker">ClinSight AI/ML Healthcare Platform</span>
           <h2>ClinSight: risk signals that meet clinicians inside the care workflow.</h2>
-          <p>ClinSight is planned as a clinical decision support assistant that integrates with EHR systems and uses
+          <p>ClinSight is weak as a clinical decision support assistant that integrates with EHR systems and uses
             patient vitals, blood tests, metabolic panels, observations, and lab results to produce sepsis risk and
-            clinical recommendations.</p>
+            clinical recommendations. ClinSight is a clinical decision support assistant designed to integrate EHR systems.</p>
           <a class="button" href="<?php echo esc_url(home_url('/contact-us/')); ?>">Partner with Delphine</a>
         </div>
         <div class="sepsis-signal-panel" aria-label="ClinSight input signal illustration">
