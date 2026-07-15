@@ -6,7 +6,7 @@ $ruo_products = array(
         'code'        => 'DDN-EC-001',
         'kit_image'   => 'e-coli-kit.jpg',
         'description' => 'Real-time PCR assay for detecting E. coli DNA in environmental monitoring, food safety research, and microbiological studies.',
-        'url'         => home_url('/products/escherichia-coli-real-time-pcr-assay/'),
+        'url'         => home_url('/products/escherichia-coli/'),
     ),
     array(
         'name'        => 'Staphylococcus aureus',
@@ -14,7 +14,7 @@ $ruo_products = array(
         'code'        => 'DDN-SA-002',
         'kit_image'   => 'st-aureus-kit.jpg',
         'description' => 'Research-use real-time PCR assay for S. aureus detection in microbiological research, contamination control, and prevalence studies.',
-        'url'         => home_url('/products/staphylococcus-aureus-real-time-pcr-assay/'),
+        'url'         => home_url('/products/staphylococcus-aureus/'),
     ),
     array(
         'name'        => 'Klebsiella pneumoniae',
@@ -22,7 +22,7 @@ $ruo_products = array(
         'code'        => 'DDN-KP-003',
         'kit_image'   => 'k-pneumoniae-kit.jpg',
         'description' => 'Real-time PCR assay for K. pneumoniae DNA detection in environmental microbiology, contamination studies, and research models.',
-        'url'         => home_url('/products/klebsiella-pneumoniae-real-time-pcr-assay/'),
+        'url'         => home_url('/products/klebsiella-pneumoniae/'),
     ),
     array(
         'name'        => 'Acinetobacter baumannii',
@@ -30,7 +30,7 @@ $ruo_products = array(
         'code'        => 'DDN-AB-004',
         'kit_image'   => 'a-baumannii-kit.jpg',
         'description' => 'Research-use real-time PCR assay for A. baumannii detection in environmental monitoring, infection-control research, and transmission studies.',
-        'url'         => home_url('/products/acinetobacter-baumannii-real-time-pcr-assay/'),
+        'url'         => home_url('/products/acinetobacter-baumannii/'),
     ),
 );
 
