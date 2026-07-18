@@ -4178,6 +4178,108 @@ section {
   color: var(--muted);
 }
 
+.sepseek-video {
+  background: #f3f3f3;
+}
+
+.sepseek-video h2 {
+  margin: 0 0 74px;
+  color: #050505;
+  font-size: clamp(1.85rem, 3.2vw, 2.52rem);
+  font-weight: 700;
+  line-height: 1.08;
+  text-align: center;
+}
+
+.sepseek-video-frame {
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: #111;
+}
+
+.sepseek-video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.partners-allies {
+  background: var(--white);
+}
+
+.partners-allies h2 {
+  margin: 0 0 48px;
+  color: #050505;
+  font-size: clamp(1.85rem, 3.2vw, 2.52rem);
+  font-weight: 700;
+  line-height: 1.08;
+  text-align: center;
+}
+
+.logo-carousel-stack {
+  display: grid;
+  gap: 50px;
+}
+
+.logo-carousel {
+  display: grid;
+  gap: 18px;
+}
+
+.logo-carousel-track {
+  display: grid;
+  grid-auto-columns: calc((100% - 75px) / 4);
+  grid-auto-flow: column;
+  gap: 25px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.logo-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.logo-carousel-card {
+  display: grid;
+  min-height: 196px;
+  place-items: center;
+  border: 1px solid #d4d4d4;
+  background: var(--white);
+  scroll-snap-align: start;
+}
+
+.logo-carousel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  min-height: 10px;
+}
+
+.logo-carousel-dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #d4d4d4;
+  cursor: pointer;
+}
+
+.logo-carousel-dot.is-active {
+  background: #111;
+}
+
 .cta {
   padding: 108px 0;
   color: var(--white);
@@ -6137,6 +6239,10 @@ body.job-modal-open {
     grid-template-columns: 1fr;
   }
 
+  .logo-carousel-track {
+    grid-auto-columns: calc((100% - 25px) / 2);
+  }
+
   .pathoseek-hero-kit {
     width: min(520px, 100%);
   }
@@ -7798,11 +7904,32 @@ body.job-modal-open {
 
   .portfolio-product-card,
   .mission-card,
+  .logo-carousel-card,
   .sepsis-signal-panel,
   .pathoseek-hero-kit,
   .pathoseek-cta-box,
   .ruo-partner-box {
     padding: 24px 20px;
+  }
+
+  .sepseek-video h2 {
+    margin-bottom: 34px;
+  }
+
+  .partners-allies h2 {
+    margin-bottom: 30px;
+  }
+
+  .logo-carousel-stack {
+    gap: 34px;
+  }
+
+  .logo-carousel-track {
+    grid-auto-columns: 100%;
+  }
+
+  .logo-carousel-card {
+    min-height: 172px;
   }
 
   .sepsis-hero-visual {

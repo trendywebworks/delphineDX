@@ -245,6 +245,65 @@
       </div>
     </section>
 
+    <section class="sepseek-video" aria-labelledby="sepseek-video-title">
+      <div class="section-inner">
+        <h2 id="sepseek-video-title">SepSeek &amp; CDSA</h2>
+        <div class="sepseek-video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/jRnQ7YzcwXc"
+            title="SepSeek and CDSA video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners-allies" aria-labelledby="partners-allies-title">
+      <div class="section-inner">
+        <h2 id="partners-allies-title">Partners and Allies</h2>
+
+        <?php
+          $logo_groups = array(
+            array(
+              'label' => 'Partners',
+              'logos' => array(
+                array('file' => '/assets/images/partners/p-02.webp', 'alt' => 'Sepsis Alliance'),
+                array('file' => '/assets/images/partners/p-03.webp', 'alt' => 'New Jersey Commission on Science, Innovation and Technology'),
+                array('file' => '/assets/images/partners/p-04.webp', 'alt' => 'Institute for Life Science Entrepreneurship'),
+                array('file' => '/assets/images/partners/p-05.webp', 'alt' => 'NJEDA Economic Development Authority'),
+                array('file' => '/assets/images/partners/partner-01.webp', 'alt' => 'BioNJ'),
+              ),
+            ),
+            array(
+              'label' => 'Allies',
+              'logos' => array(
+                array('file' => '/assets/images/allies/A-04.webp', 'alt' => 'Stevens Institute of Technology'),
+                array('file' => '/assets/images/allies/A-03.webp', 'alt' => 'New Jersey Institute of Technology'),
+                array('file' => '/assets/images/allies/A-01.webp', 'alt' => 'New Jersey Department of Labor and Workforce Development'),
+                array('file' => '/assets/images/allies/A-02.webp', 'alt' => 'Rutgers Business School Newark and New Brunswick'),
+              ),
+            ),
+          );
+        ?>
+
+        <div class="logo-carousel-stack">
+          <?php foreach ($logo_groups as $group) : ?>
+            <div class="logo-carousel" data-logo-carousel aria-label="<?php echo esc_attr($group['label']); ?>">
+              <div class="logo-carousel-track">
+                <?php foreach ($group['logos'] as $logo) : ?>
+                  <div class="logo-carousel-card">
+                    <img src="<?php echo esc_url(get_stylesheet_directory_uri() . $logo['file']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>">
+                  </div>
+                <?php endforeach; ?>
+              </div>
+              <div class="logo-carousel-dots" aria-label="<?php echo esc_attr($group['label'] . ' carousel pagination'); ?>"></div>
+            </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    </section>
+
     <section class="cta" id="contact">
       <div class="section-inner">
         <div class="cta-box">

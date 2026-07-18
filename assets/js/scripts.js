@@ -73,6 +73,9 @@ const revealSelectors = [
   ".workflow-infographic",
   ".workflow-steps li",
   ".mission-card",
+  ".sepseek-video-frame",
+  ".partners-allies h2",
+  ".logo-carousel",
   ".cta-box",
   ".about-hero-copy",
   ".about-hero-visual",
@@ -214,6 +217,58 @@ if (productCarousel) {
   window.addEventListener("resize", updateProductControls);
   updateProductControls();
 }
+
+document.querySelectorAll("[data-logo-carousel]").forEach((carousel) => {
+  const track = carousel.querySelector(".logo-carousel-track");
+  const dotsWrap = carousel.querySelector(".logo-carousel-dots");
+
+  if (!track || !dotsWrap) {
+    return;
+  }
+
+  const getPageCount = () => Math.max(1, Math.ceil(track.scrollWidth / track.clientWidth));
+
+  const setActiveDot = () => {
+    const maxScroll = Math.max(1, track.scrollWidth - track.clientWidth);
+    const maxIndex = Math.max(0, dotsWrap.children.length - 1);
+    const index = Math.round((track.scrollLeft / maxScroll) * maxIndex);
+
+    [...dotsWrap.children].forEach((dot, dotIndex) => {
+      const isActive = dotIndex === index;
+      dot.classList.toggle("is-active", isActive);
+      dot.setAttribute("aria-current", isActive ? "true" : "false");
+    });
+  };
+
+  const renderDots = () => {
+    const pageCount = getPageCount();
+
+    dotsWrap.replaceChildren();
+
+    for (let index = 0; index < pageCount; index += 1) {
+      const dot = document.createElement("button");
+      dot.className = "logo-carousel-dot";
+      dot.type = "button";
+      dot.setAttribute("aria-label", `Show logo group ${index + 1}`);
+      dot.addEventListener("click", () => {
+        track.scrollTo({
+          left: index * track.clientWidth,
+          behavior: "smooth"
+        });
+      });
+      dotsWrap.append(dot);
+    }
+
+    dotsWrap.hidden = pageCount < 2;
+    setActiveDot();
+  };
+
+  track.addEventListener("scroll", setActiveDot, {
+    passive: true
+  });
+  window.addEventListener("resize", renderDots);
+  renderDots();
+});
 
 const teamModal = document.querySelector("#teamModal");
 const teamModalName = document.querySelector("#teamModalName");
