@@ -43,7 +43,7 @@
       <div class="section-inner article-featured-wrap">
         <figure class="article-featured">
           <?php if ( has_post_thumbnail() ) : ?>
-            <?php the_post_thumbnail( 'delphine-article-featured' ); ?>
+            <?php the_post_thumbnail( 'full' ); ?>
           <?php else : ?>
             <?php delphine_fallback_featured_image( get_the_title() ); ?>
           <?php endif; ?>
