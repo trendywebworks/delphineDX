@@ -53,20 +53,20 @@
             <p>Sepsis care is constrained by diagnostic uncertainty, slow culture workflows, and the need to choose effective antimicrobial treatment quickly. Delphine combines <strong>rapid molecular testing</strong> with <strong>clinical risk intelligence</strong> to support better decisions earlier in the patient journey.</p>
           </div>
           <div class="capability-list">
-            <article class="capability">
+            <a class="capability" href="https://delphinedx.com/products/delphine-sepsis-diagnostic-assay/">
               <div class="capability-icon">01</div>
               <div>
-                <h3>Sepsis Diagnostic Panel</h3>
+                <h3>SepSeek Maternal and Infant Health</h3>
                 <p>Pathogen and resistance marker identification  6-9 times faster than standard of care</p>
               </div>
-            </article>
-            <article class="capability">
+            </a>
+            <a class="capability" href="https://delphinedx.com/products/delphine-ai-ml-healthcare-platform/">
               <div class="capability-icon">02</div>
               <div>
-                <h3>ML Prediction software tool</h3>
+                <h3>SepSeek Comprehensive Panel</h3>
                 <p>Our Goal: Early detection of sepsis risk enabling 50% reduction in readmission rate</p>
               </div>
-            </article>            
+            </a>            
           </div>
         </div>
       </div>
@@ -76,6 +76,12 @@
       <div class="section-inner">
         <div class="section-head">
           <h2 id="outcomes-title">Faster, targeted treatment can change the patient journey.</h2>
+        </div>
+        <div class="outcome-audience-list" aria-label="Primary beneficiaries">
+          <div class="outcome-audience-item"><span>01</span>Patients</div>
+          <div class="outcome-audience-item"><span>02</span>Health Care Providers</div>
+          <div class="outcome-audience-item"><span>03</span>Insurers</div>
+          <div class="outcome-audience-item"><span>04</span>Hospitals</div>
         </div>
         <div class="outcome-grid">
           <article class="outcome-card">
@@ -109,14 +115,14 @@
     <section class="products" id="products">
       <div class="section-inner">
         <div class="section-head">
-          <h2>A connected portfolio for infection diagnosis and treatment support.</h2>
+          <h2>A connected portfolio for infection diagnosis, treatment support, and ongoing research initiatives.</h2>
           <p>Delphine's roadmap includes SepSeek, ClinSight, and RUO pathogen identification assays.</p>
         </div>
         <div class="portfolio-products-grid" aria-label="Delphine product areas">
           <article class="portfolio-product-card">
             <span class="portfolio-product-eyebrow">Diagnostic Assay</span>
             <h3>SepSeek Sepsis Diagnostic Test Kits</h3>
-            <p>A PCR-based assay concept for rapid detection of pathogen and host markers to support personalized
+            <p>A PCR-based assay for rapid detection of pathogen and host markers to support personalized
               patient care.</p>
             <ul>
               <li>Targets pathogen identification</li>
@@ -141,7 +147,7 @@
 
           <article class="portfolio-product-card">
             <span class="portfolio-product-eyebrow">Research Use</span>
-            <h3>RUO Pathogen Identification Kits</h3>
+            <h3>PathoVue RUO Pathogen Identification Kits</h3>
             <p>Real-time PCR assays for organisms including E. coli, S. aureus, K. pneumoniae, and A. baumannii.</p>
             <ul>
               <li>Environmental monitoring</li>
@@ -174,7 +180,7 @@
                   <circle cx="22" cy="22" r="18"></circle>
                   <path d="M22 10v13l9 6"></path>
                 </svg>
-                <strong>48-72 Hrs</strong>
+                <strong>36-72 hours</strong>
               </div>
             </div>
             <div class="workflow-infographic-body">
