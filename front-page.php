@@ -240,30 +240,6 @@
       </div>
     </section>
 
-    <section class="traction" id="traction">
-      <div class="section-inner">
-        <div class="section-head">
-          <h2>Best-in-class, affordable products for diagnosis and treatment.</h2>
-        </div>
-        <div class="mission-grid">
-          <article class="mission-card">
-            <span>Our Vision</span>
-            <h3>Enhance human healthcare.</h3>
-            <p>Our vision is to enhance human healthcare by engaging in the development and supply of best-in-class,
-              affordable products for diagnosis and treatment.</p>
-          </article>
-          <article class="mission-card">
-            <span>Our Mission</span>
-            <h3>Speed effective diagnosis and treatment.</h3>
-            <p>Delphine Diagnostics, a New Jersey-based startup, is passionate in its efforts to deliver top-tier
-              diagnostic products and supplemental data insights capabilities to speed effective diagnosis and treatment
-              for patients with infectious diseases. The affordability and reliability of our innovative products guide
-              our journey.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="sepseek-video" aria-labelledby="sepseek-video-title">
       <div class="section-inner">
         <h2 id="sepseek-video-title">SepSeek &amp; CDSA</h2>
