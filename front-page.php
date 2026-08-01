@@ -116,7 +116,7 @@
       <div class="section-inner">
         <div class="section-head">
           <h2>A connected portfolio for infection diagnosis, treatment support, and ongoing research initiatives.</h2>
-          <p>Delphine's roadmap includes SepSeek, ClinSight, and RUO pathogen identification assays.</p>
+          <p>Delphine's roadmap includes SepSeek, ClinSight, PathoVue, and RUO pathogen identification assays.</p>
         </div>
         <div class="portfolio-products-grid" aria-label="Delphine product areas">
           <article class="portfolio-product-card">
@@ -146,8 +146,21 @@
           </article>
 
           <article class="portfolio-product-card">
+            <span class="portfolio-product-eyebrow">Research Initiative</span>
+            <h3>PathoVue</h3>
+            <p>An ongoing research initiative focused on pathogen intelligence, visibility, and actionable infectious
+              disease insights.</p>
+            <ul>
+              <li>Supports pathogen-focused research</li>
+              <li>Designed for clearer infectious disease context</li>
+              <li>Built to complement Delphine's diagnostic portfolio</li>
+            </ul>
+            <a class="portfolio-product-link" href="#">Explore PathoVue</a>
+          </article>
+
+          <article class="portfolio-product-card">
             <span class="portfolio-product-eyebrow">Research Use</span>
-            <h3>PathoVue RUO Pathogen Identification Kits</h3>
+            <h3>RUO Pathogen Identification Kits</h3>
             <p>Real-time PCR assays for organisms including E. coli, S. aureus, K. pneumoniae, and A. baumannii.</p>
             <ul>
               <li>Environmental monitoring</li>
