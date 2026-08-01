@@ -43,7 +43,7 @@ function mytheme_enqueue_assets() {
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_assets');
 
-/* Reading-time label for standard Blog and News posts. */
+/* Reading-time label for standard Blog posts. */
 function delphine_reading_time() {
     $word_count = str_word_count( wp_strip_all_tags( get_post_field( 'post_content', get_the_ID() ) ) );
     $minutes = max( 1, (int) ceil( $word_count / 200 ) );
