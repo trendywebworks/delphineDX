@@ -136,6 +136,21 @@
       </div>
     </section>
 
+    <section class="traction about-mission" aria-label="Vision and mission">
+      <div class="section-inner">
+        <div class="mission-grid">
+          <article class="mission-card">
+            <span>Vision</span>
+            <p>We envision a future where every treatable infection is swiftly identified, precisely managed, and never allowed to claim a life &mdash; a world where preventable deaths from infection are eliminated.</p>
+          </article>
+          <article class="mission-card">
+            <span>Mission</span>
+            <p>Our mission is to transform infectious disease care by equipping clinicians with advanced diagnostics and machine&#8209;learning insights that drive rapid, precise, and life-saving treatment decisions &mdash; beginning with sepsis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="team-section" id="team">
       <div class="section-inner">
         <div class="team-group">
