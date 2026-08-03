@@ -686,7 +686,7 @@ section {
 
 .outcome-card .outcome-card-subhead {
   margin-bottom: 12px;
-  color: var(--navy);
+  color: var(--secondary);
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.35;
