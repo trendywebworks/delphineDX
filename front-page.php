@@ -81,7 +81,7 @@
           <article class="outcome-card">
             <span>01</span>
             <h3>Patients</h3>
-            <p class="outcome-card-subhead">Improve and save patient lives</p>
+            <p class="outcome-card-subhead">Improve and Save Patients life</p>
             <p>Faster, targeted treatment means a better chance of survival, fewer complications, and safer recovery
               with less exposure to unnecessary antibiotics.</p>
           </article>
