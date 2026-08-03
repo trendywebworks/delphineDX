@@ -77,34 +77,32 @@
         <div class="section-head">
           <h2 id="outcomes-title">Faster, targeted treatment can change the patient journey.</h2>
         </div>
-        <div class="outcome-audience-list" aria-label="Primary beneficiaries">
-          <div class="outcome-audience-item"><span>01</span>Patients</div>
-          <div class="outcome-audience-item"><span>02</span>Health Care Providers</div>
-          <div class="outcome-audience-item"><span>03</span>Insurers</div>
-          <div class="outcome-audience-item"><span>04</span>Hospitals</div>
-        </div>
         <div class="outcome-grid">
           <article class="outcome-card">
             <span>01</span>
-            <h3>Improve and save patient lives</h3>
+            <h3>Patients</h3>
+            <p class="outcome-card-subhead">Improve and save patient lives</p>
             <p>Faster, targeted treatment means a better chance of survival, fewer complications, and safer recovery
               with less exposure to unnecessary antibiotics.</p>
           </article>
           <article class="outcome-card">
             <span>02</span>
-            <h3>Reduce diagnostic uncertainty</h3>
+            <h3>Healthcare</h3>
+            <p class="outcome-card-subhead">Reduce diagnostic uncertainty</p>
             <p>Rapid answers and early risk signals empower clinicians to intervene sooner, choose the right therapy,
               and reduce diagnostic uncertainty.</p>
           </article>
           <article class="outcome-card">
             <span>03</span>
-            <h3>Improve outcomes and lower cost of care</h3>
+            <h3>Insurance</h3>
+            <p class="outcome-card-subhead">Improve outcomes and lower cost of care</p>
             <p>Preventing deterioration and avoiding broad-spectrum overtreatment can reduce high-cost admissions,
               readmissions, and downstream complications.</p>
           </article>
           <article class="outcome-card">
             <span>04</span>
-            <h3>Shorten length of stay and improve quality</h3>
+            <h3>Hospitals</h3>
+            <p class="outcome-card-subhead">Shorten length of stay and improve quality</p>
             <p>Earlier detection and optimized antibiotic use can lower ICU burden, shorten length of stay, reduce
               readmissions, and improve quality metrics.</p>
           </article>
@@ -116,7 +114,7 @@
       <div class="section-inner">
         <div class="section-head">
           <h2>A connected portfolio for infection diagnosis, treatment support, and ongoing research initiatives.</h2>
-          <p>Delphine's roadmap includes SepSeek, ClinSight, PathoVue, and RUO pathogen identification assays.</p>
+          <p>Delphine's roadmap includes SepSeek, ClinSight, and PathoSeek RUO pathogen identification assays.</p>
         </div>
         <div class="portfolio-products-grid" aria-label="Delphine product areas">
           <article class="portfolio-product-card">
@@ -146,21 +144,8 @@
           </article>
 
           <article class="portfolio-product-card">
-            <span class="portfolio-product-eyebrow">Research Initiative</span>
-            <h3>PathoVue</h3>
-            <p>An ongoing research initiative focused on pathogen intelligence, visibility, and actionable infectious
-              disease insights.</p>
-            <ul>
-              <li>Supports pathogen-focused research</li>
-              <li>Designed for clearer infectious disease context</li>
-              <li>Built to complement Delphine's diagnostic portfolio</li>
-            </ul>
-            <a class="portfolio-product-link" href="#">Explore PathoVue</a>
-          </article>
-
-          <article class="portfolio-product-card">
             <span class="portfolio-product-eyebrow">Research Use</span>
-            <h3>RUO Pathogen Identification Kits</h3>
+            <h3>PathoSeek RUO Pathogen Identification Kits</h3>
             <p>Real-time PCR assays for organisms including E. coli, S. aureus, K. pneumoniae, and A. baumannii.</p>
             <ul>
               <li>Environmental monitoring</li>
