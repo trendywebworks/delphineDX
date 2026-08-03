@@ -67,7 +67,6 @@ const revealSelectors = [
   ".section-head",
   ".approach-visual",
   ".capability",
-  ".outcome-audience-item",
   ".product-card",
   ".portfolio-product-card",
   ".workflow-card",
