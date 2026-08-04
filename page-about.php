@@ -107,6 +107,69 @@
       </div>
     </section>
 
+    <section class="pipeline-section" aria-labelledby="pipeline-title">
+      <div class="section-inner">
+        <div class="pipeline-board">
+          <h2 id="pipeline-title">Our Pipeline</h2>
+          <div class="pipeline-scroll" role="region" aria-label="Delphine product development pipeline">
+            <div class="pipeline-table">
+              <div class="pipeline-header pipeline-indication-heading">Indication</div>
+              <div class="pipeline-header">Feasibility</div>
+              <div class="pipeline-header">Prototype</div>
+              <div class="pipeline-header">Development</div>
+              <div class="pipeline-header">Regulatory Clearance</div>
+
+              <div class="pipeline-row-label">
+                <strong class="pipeline-product purple">PathoVue</strong>
+                <span>Pathogen DNA detection from whole blood samples (bacterial, viral, fungal)</span>
+              </div>
+              <div class="pipeline-track" style="--bar-left: 16px; --bar-width: calc(84% - 26px); --bar-color: #923ca7;"></div>
+              <div class="pipeline-na"><span>N/A</span></div>
+
+              <div class="pipeline-row-label">
+                <strong class="pipeline-product purple-light">PathoVue</strong>
+                <span>Pathogen DNA detection from food and environmental samples (bacterial, viral, fungal)</span>
+              </div>
+              <div class="pipeline-track" style="--bar-left: 16px; --bar-width: calc(16% - 8px); --bar-color: #a75abe;"></div>
+              <div class="pipeline-spacer"></div>
+
+              <div class="pipeline-row-label">
+                <strong class="pipeline-product indigo">SepSeek</strong>
+                <span>Detection of specific pathogens and antimicrobial resistance genes associated with maternal and infant sepsis</span>
+              </div>
+              <div class="pipeline-track" style="--bar-left: 16px; --bar-width: calc(66.666% - 14px); --bar-color: #5668c5;"></div>
+              <div class="pipeline-spacer"></div>
+
+              <div class="pipeline-row-label">
+                <strong class="pipeline-product blue">SepSeek</strong>
+                <span>Detection of more than 60 pathogens and antimicrobial resistance genes broadly associated with sepsis</span>
+              </div>
+              <div class="pipeline-track" style="--bar-left: 16px; --bar-width: calc(50% - 12px); --bar-color: #3e73c4;"></div>
+              <div class="pipeline-spacer"></div>
+
+              <div class="pipeline-row-label">
+                <strong class="pipeline-product sky">SepSeek</strong>
+                <span>Inflammation: host-response genes for early detection &amp; guidance</span>
+              </div>
+              <div class="pipeline-track" style="--bar-left: 16px; --bar-width: calc(33.333% - 10px); --bar-color: #3e8dcc;"></div>
+              <div class="pipeline-spacer"></div>
+
+              <div class="pipeline-row-label">
+                <strong class="pipeline-product teal">ClinSight</strong>
+                <span>Clinical Decision Support Assistant: EHR integrated, near real-time sepsis risk scoring and recommendations</span>
+              </div>
+              <div class="pipeline-track" style="--bar-left: 16px; --bar-width: calc(100% - 32px); --bar-color: #3195a6;"></div>
+              <div class="pipeline-na"><span>N/A</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="pipeline-legend" aria-label="Pipeline legend">
+          <span><i class="pipeline-phase-dot" aria-hidden="true"></i>Marks current development phase</span>
+          <span><i class="pipeline-na-key" aria-hidden="true"></i>Not applicable</span>
+        </div>
+      </div>
+    </section>
+
     <section class="roadmap-section">
       <div class="section-inner">
         <div class="roadmap-heading">
