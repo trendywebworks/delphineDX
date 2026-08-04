@@ -4,7 +4,7 @@
     <section class="assay-hero" aria-labelledby="assay-title">
       <div class="section-inner assay-hero-grid">
         <div class="assay-hero-copy">
-          <h1 id="assay-title">Delphine Sepsis Diagnostic Assay</h1>
+          <h1 id="assay-title">SepSeek Maternal and Infant Health</h1>
           <p>A concept-stage real-time PCR assay designed to detect microbial pathogens and resistance markers directly
             from whole blood specimens of patients with suspected sepsis.</p>
           <div class="hero-actions">
