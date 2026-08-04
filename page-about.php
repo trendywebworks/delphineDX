@@ -131,7 +131,7 @@
                 <span>Pathogen DNA detection from food and environmental samples (bacterial, viral, fungal)</span>
               </div>
               <div class="pipeline-track" style="--bar-left: 16px; --bar-width: calc(16% - 8px); --bar-color: #a75abe;"></div>
-              <div class="pipeline-spacer"></div>
+              <div class="pipeline-na"><span>N/A</span></div>
 
               <div class="pipeline-row-label">
                 <strong class="pipeline-product indigo">SepSeek</strong>
