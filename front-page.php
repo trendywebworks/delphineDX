@@ -87,7 +87,7 @@
           </article>
           <article class="outcome-card">
             <span>02</span>
-            <h3>Healthcare</h3>
+            <h3>Healthcare Providers</h3>
             <p class="outcome-card-subhead">Reduce diagnostic uncertainty</p>
             <p>Rapid answers and early risk signals empower clinicians to intervene sooner, choose the right therapy,
               and reduce diagnostic uncertainty.</p>
