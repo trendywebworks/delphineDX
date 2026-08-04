@@ -4,7 +4,7 @@
     <section class="ai-hero" aria-labelledby="ai-title">
       <div class="section-inner ai-hero-grid">
         <div class="ai-hero-copy">
-          <h1 id="ai-title">Delphine AI/ML Healthcare Platform</h1>
+          <h1 id="ai-title"><a href="<?php echo esc_url( home_url( '/products/delphine-ai-ml-healthcare-platform/' ) ); ?>">SepSeek Comprehensive Panel</a></h1>
           <p>A development-stage software platform designed to bring machine-learning risk signals into hospital
             workflows, beginning with patients at risk of developing sepsis.</p>
           <div class="hero-actions">

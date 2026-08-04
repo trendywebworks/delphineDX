@@ -40,7 +40,7 @@
     <section class="purpose-section" aria-label="Vision, mission, and strategic intent">
       <div class="section-inner">
         <div class="purpose-grid">
-          <article class="purpose-card purpose-card-featured">
+          <article class="purpose-card">
             <span class="purpose-number">01</span>
             <h2>Enhance human healthcare.</h2>
             <p>Develop and supply best-in-class, affordable products for diagnosis and treatment.</p>

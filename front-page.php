@@ -145,7 +145,7 @@
 
           <article class="portfolio-product-card">
             <span class="portfolio-product-eyebrow">Research Use</span>
-            <h3>PathoSeek RUO Pathogen Identification Kits</h3>
+            <h3>PathoVue RUO Pathogen Identification Kits</h3>
             <p>Real-time PCR assays for organisms including E. coli, S. aureus, K. pneumoniae, and A. baumannii.</p>
             <ul>
               <li>Environmental monitoring</li>

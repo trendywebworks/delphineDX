@@ -4521,9 +4521,11 @@ section {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fbf9fd;
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, color 180ms ease;
 }
 
-.purpose-card-featured {
+.purpose-card:hover,
+.purpose-card:focus-within {
   color: var(--white);
   border-color: var(--primary);
   background: var(--primary);
@@ -4538,7 +4540,8 @@ section {
   line-height: 1;
 }
 
-.purpose-card-featured .purpose-number {
+.purpose-card:hover .purpose-number,
+.purpose-card:focus-within .purpose-number {
   color: var(--sky);
 }
 
@@ -4549,7 +4552,8 @@ section {
   line-height: 1.16;
 }
 
-.purpose-card-featured h2 {
+.purpose-card:hover h2,
+.purpose-card:focus-within h2 {
   color: var(--white);
 }
 
@@ -4558,7 +4562,8 @@ section {
   color: var(--muted);
 }
 
-.purpose-card-featured p:last-child {
+.purpose-card:hover p:last-child,
+.purpose-card:focus-within p:last-child {
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -4926,10 +4931,14 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.06);
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
-.roadmap-card:nth-child(2) {
+.roadmap-card:hover,
+.roadmap-card:focus-within {
+  border-color: rgba(255, 255, 255, 0.24);
   background: linear-gradient(145deg, rgba(150, 82, 177, 0.48), rgba(71, 139, 200, 0.2));
+  box-shadow: 0 22px 55px rgba(18, 10, 32, 0.26);
 }
 
 .roadmap-card h3 {
@@ -6585,11 +6594,6 @@ body.job-modal-open {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .purpose-card-featured,
-  .roadmap-card:first-child {
-    grid-column: span 2;
-  }
-
   .about-prose {
     padding-left: 0;
     border-left: 0;
@@ -7311,11 +7315,6 @@ body.job-modal-open {
   .archive-card p,
   .archive-card h3 {
     min-height: 0;
-  }
-
-  .purpose-card-featured,
-  .roadmap-card:first-child {
-    grid-column: auto;
   }
 
   .purpose-card {
