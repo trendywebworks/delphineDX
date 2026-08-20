@@ -80,7 +80,6 @@ const revealSelectors = [
   ".about-hero-copy",
   ".about-hero-visual",
   ".about-prose",
-  ".purpose-card",
   ".difference-media",
   ".values-list article",
   ".team-card",

@@ -37,27 +37,6 @@
       </div>
     </section>
 
-    <section class="purpose-section" aria-label="Vision, mission, and strategic intent">
-      <div class="section-inner">
-        <div class="purpose-grid">
-          <article class="purpose-card">
-            <h2>Enhance human healthcare.</h2>
-            <p>Develop and supply best-in-class, affordable products for diagnosis and treatment.</p>
-          </article>
-          <article class="purpose-card">
-            <h2>Speed effective diagnosis and treatment.</h2>
-            <p>Deliver reliable diagnostic products and supplemental data insights for patients with infectious
-              diseases, guided by affordability, quality, and real-world clinical need.</p>
-          </article>
-          <article class="purpose-card">
-            <h2>Connect trusted testing with intelligent software.</h2>
-            <p>Pair certified molecular testing kits with AI/ML applications that strengthen analysis, diagnostic
-              accuracy, and clinical decision support while following global best practices.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="difference-section">
       <div class="section-inner difference-grid">
         <div class="difference-media">
@@ -232,27 +211,6 @@
 
         <div class="team-group">
           <div class="team-group-heading">
-            <h3>Intern</h3>
-          </div>
-          <div class="team-grid">
-            <article class="team-card">
-              <button class="team-card-button" type="button" data-team-member="gabriella-sebbag"
-                data-name="Gabriella Sebbag" data-role="Laboratory Technician"
-                data-image="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/gabriella-sebbag.webp">
-                <span class="team-photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/gabriella-sebbag.webp"
-                    alt="Gabriella Sebbag"></span>
-                <span class="team-card-content">
-                  <strong>Gabriella Sebbag</strong>
-                  <span>Laboratory Technician</span>
-                  <span class="team-card-link">View full profile</span>
-                </span>
-              </button>
-            </article>
-          </div>
-        </div>
-
-        <div class="team-group">
-          <div class="team-group-heading">
             <h3>Clinical Advisory Board</h3>
           </div>
           <div class="team-grid">
@@ -370,6 +328,27 @@
                 <span class="team-card-content">
                   <strong>Raj Devalapalli</strong>
                   <span>Industry Entrepreneur Advisor</span>
+                  <span class="team-card-link">View full profile</span>
+                </span>
+              </button>
+            </article>
+          </div>
+        </div>
+
+        <div class="team-group">
+          <div class="team-group-heading">
+            <h3>Intern</h3>
+          </div>
+          <div class="team-grid">
+            <article class="team-card">
+              <button class="team-card-button" type="button" data-team-member="gabriella-sebbag"
+                data-name="Gabriella Sebbag" data-role="Laboratory Technician"
+                data-image="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/gabriella-sebbag.webp">
+                <span class="team-photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/gabriella-sebbag.webp"
+                    alt="Gabriella Sebbag"></span>
+                <span class="team-card-content">
+                  <strong>Gabriella Sebbag</strong>
+                  <span>Laboratory Technician</span>
                   <span class="team-card-link">View full profile</span>
                 </span>
               </button>
