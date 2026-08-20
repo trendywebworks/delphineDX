@@ -83,7 +83,6 @@ const revealSelectors = [
   ".purpose-card",
   ".difference-media",
   ".values-list article",
-  ".roadmap-card",
   ".team-card",
   ".advisor-card",
   ".contact-intro .section-inner",
