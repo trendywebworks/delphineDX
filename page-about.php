@@ -25,14 +25,14 @@
     <section class="about-intro" id="our-story">
       <div class="section-inner about-intro-grid">
         <div class="section-head">
-          <h2>A mission-driven diagnostics company built around time-critical care.</h2>
+          <h2>A mission driven diagnostic company focused on time critical care for patients with infectious diseases</h2>
         </div>
         <div class="about-prose">
           <p>Sepsis is a medical emergency where every hour matters. Yet clinicians often face overlapping symptoms,
             slow culture workflows, and limited information when critical treatment decisions must be made.</p>
           <p>Delphine brings together biomedical science, molecular biology, machine learning, clinical insight, data
             analytics, operations, and commercialization. Our goal is to reduce diagnostic uncertainty by uniting rapid
-            pathogen and resistance-marker identification with earlier, explainable risk prediction.</p>
+            pathogen ID and resistance marker identification with earlier, explanable risk prediction.</p>
         </div>
       </div>
     </section>
@@ -41,18 +41,15 @@
       <div class="section-inner">
         <div class="purpose-grid">
           <article class="purpose-card">
-            <span class="purpose-number">01</span>
             <h2>Enhance human healthcare.</h2>
             <p>Develop and supply best-in-class, affordable products for diagnosis and treatment.</p>
           </article>
           <article class="purpose-card">
-            <span class="purpose-number">02</span>
             <h2>Speed effective diagnosis and treatment.</h2>
             <p>Deliver reliable diagnostic products and supplemental data insights for patients with infectious
               diseases, guided by affordability, quality, and real-world clinical need.</p>
           </article>
           <article class="purpose-card">
-            <span class="purpose-number">03</span>
             <h2>Connect trusted testing with intelligent software.</h2>
             <p>Pair certified molecular testing kits with AI/ML applications that strengthen analysis, diagnostic
               accuracy, and clinical decision support while following global best practices.</p>
@@ -170,35 +167,6 @@
       </div>
     </section>
 
-    <section class="roadmap-section">
-      <div class="section-inner">
-        <div class="roadmap-heading">
-          <div class="section-head">
-            <p class="eyebrow">OUR ROADMAP</p>
-            <h2>Building a connected healthcare diagnostics enterprise.</h2>
-          </div>
-          <p>Delphine's long-term direction extends from rapid assays and decision support into connected laboratory services and privacy-conscious health data analytics.</p>
-        </div>
-        <div class="roadmap-grid">
-          <article class="roadmap-card">
-            <span>NOW</span>
-            <h3>Advance rapid molecular testing</h3>
-            <p>Develop SepSeek and RUO assays for pathogen identification, with planned expansion into resistance and additional microbial targets.</p>
-          </article>
-          <article class="roadmap-card">
-            <span>NEXT</span>
-            <h3>Embed clinical intelligence</h3>
-            <p>Develop Clinsight as an explainable sepsis risk and decision-support experience designed for integration with hospital EHR systems.</p>
-          </article>
-          <article class="roadmap-card">
-            <span>FUTURE</span>
-            <h3>Connect labs and health data</h3>
-            <p>Establish broader testing and analytics services through certified laboratory networks and secure, regulation- aligned health data infrastructure.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section class="traction about-mission" aria-label="Vision and mission">
       <div class="section-inner">
         <div class="mission-grid">
@@ -259,6 +227,14 @@
                 </span>
               </button>
             </article>
+          </div>
+        </div>
+
+        <div class="team-group">
+          <div class="team-group-heading">
+            <h3>Intern</h3>
+          </div>
+          <div class="team-grid">
             <article class="team-card">
               <button class="team-card-button" type="button" data-team-member="gabriella-sebbag"
                 data-name="Gabriella Sebbag" data-role="Laboratory Technician"
@@ -340,19 +316,6 @@
               </button>
             </article>
             <article class="team-card">
-              <button class="team-card-button" type="button" data-team-member="ghulam-rasool"
-                data-name="Dr. Ghulam Rasool" data-role="ML Technical Consultant, CDSA"
-                data-image="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/ghulam-rasool.jpg">
-                <span class="team-photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/ghulam-rasool.jpg"
-                    alt="Dr. Ghulam Rasool"></span>
-                <span class="team-card-content">
-                  <strong>Dr. Ghulam Rasool</strong>
-                  <span>ML Technical Consultant, CDSA</span>
-                  <span class="team-card-link">View full profile</span>
-                </span>
-              </button>
-            </article>
-            <article class="team-card">
               <button class="team-card-button" type="button" data-team-member="raja-duraisamy"
                 data-name="Raja Duraisamy, ME" data-role="Chief Data Officer"
                 data-image="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/raja-duraisamy.jpg">
@@ -398,18 +361,6 @@
             <h3>Industry Advisors</h3>
           </div>
           <div class="team-grid">
-            <article class="team-card">
-              <button class="team-card-button" type="button" data-team-member="monica-smith"
-                data-name="Monica C. Smith" data-role="Senior Advisor"
-                data-image="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/monica-smith.png">
-                <span class="team-photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/monica-smith.png" alt="Monica C. Smith"></span>
-                <span class="team-card-content">
-                  <strong>Monica C. Smith</strong>
-                  <span>Senior Advisor</span>
-                  <span class="team-card-link">View full profile</span>
-                </span>
-              </button>
-            </article>
             <article class="team-card">
               <button class="team-card-button" type="button" data-team-member="raj-devalapalli"
                 data-name="Raj Devalapalli" data-role="Industry Entrepreneur Advisor"
@@ -519,13 +470,6 @@
         Founder of Deep AI Solutions, LLC. She advises Delphine Diagnostics on advanced AI technologies and precision
         healthcare solutions.</p>
     </template>
-    <template id="profile-ghulam-rasool">
-      <p>Dr. Ghulam Rasool works in the Department of Machine Learning at Moffitt Cancer Center, leading research at
-        the intersection of AI and oncology. His work includes multimodal data integration, federated learning, and
-        applying large language models to complex medical datasets.</p>
-      <p>He is a technical consultant to Delphine, collaborating on CDSA, the Clinical Decision Support Assistant
-        machine learning product.</p>
-    </template>
     <template id="profile-raja-duraisamy">
       <p>Raja Duraisamy is an accomplished technology leader specializing in IoT, data analytics, and
         telecommunications. He has built centers of excellence and led next-generation product development for global
@@ -564,16 +508,6 @@
         <li>AS, Engineering Science, Hudson Valley Community College</li>
       </ul>
     </template>
-    <template id="profile-monica-smith">
-      <p>Monica C. Smith is the CEO and founder of Marketsmith Inc., an award-winning performance marketing agency
-        based in Whippany, New Jersey.</p>
-      <p>Over more than 25 years, Monica and Marketsmith have delivered results for brands including Shark/Ninja, Tumi,
-        Bluemercury, and Lovesac. She has also helped drive creative and go-to-market design for major New Jersey
-        behavioral-change campaigns including GetCoveredNJ, ReachNJ, and the 988 Suicide &amp; Crisis Lifeline.</p>
-      <p>Her approach combines data and artificial intelligence with human insight, experience, and creativity to
-        produce consumer-centered marketing and business results.</p>
-      <p>Monica holds a BA in Communication and Media Studies from the University of Mount Saint Vincent.</p>
-    </template>
     <template id="profile-raj-devalapalli">
       <p>Raj Devalapalli is an experienced pharmaceutical professional, entrepreneur, and author. His education
         includes BS and MS degrees in Pharmacy, an MS in Industrial Pharmacy from Long Island University, and an MBA in
@@ -589,7 +523,7 @@
     <section class="cta" id="contact">
       <div class="section-inner">
         <div class="cta-box">
-          <h2>Help bring faster, smarter infection diagnostics closer to patients.</h2>
+          <h2>Help bring faster, smarter infection diagnostics.</h2>
           <p>We welcome conversations with hospitals, laboratories, clinicians, researchers, strategic partners, and
             healthcare organizations working to improve infectious disease outcomes.</p>
           <div class="hero-actions">

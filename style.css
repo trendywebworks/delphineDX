@@ -4443,8 +4443,7 @@ section {
 }
 
 .team-card-content>span,
-.advisor-card span,
-.roadmap-card>span {
+.advisor-card span {
   display: block;
   margin-bottom: 9px;
   color: var(--sky);
@@ -4530,19 +4529,6 @@ section {
   border-color: var(--primary);
   background: var(--primary);
   box-shadow: var(--shadow);
-}
-
-.purpose-number {
-  display: block;
-  margin-bottom: 72px;
-  color: var(--secondary);
-  font-size: 2.6rem;
-  line-height: 1;
-}
-
-.purpose-card:hover .purpose-number,
-.purpose-card:focus-within .purpose-number {
-  color: var(--sky);
 }
 
 .purpose-card h2 {
@@ -4892,64 +4878,6 @@ section {
     gap: 14px 28px;
     font-size: 0.86rem;
   }
-}
-
-.roadmap-section {
-  color: var(--white);
-  background: #1d1230;
-}
-
-.roadmap-heading {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 70px;
-  align-items: end;
-  margin-bottom: 48px;
-}
-
-.roadmap-heading .section-head {
-  margin-bottom: 0;
-}
-
-.roadmap-heading h2 {
-  color: var(--white);
-}
-
-.roadmap-heading>p {
-  color: rgba(255, 255, 255, 0.68);
-}
-
-.roadmap-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.roadmap-card {
-  min-height: 310px;
-  padding: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.06);
-  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
-}
-
-.roadmap-card:hover,
-.roadmap-card:focus-within {
-  border-color: rgba(255, 255, 255, 0.24);
-  background: linear-gradient(145deg, rgba(150, 82, 177, 0.48), rgba(71, 139, 200, 0.2));
-  box-shadow: 0 22px 55px rgba(18, 10, 32, 0.26);
-}
-
-.roadmap-card h3 {
-  margin: 70px 0 12px;
-  font-size: 1.45rem;
-  line-height: 1.2;
-}
-
-.roadmap-card p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.72);
 }
 
 .team-section {
@@ -6589,7 +6517,6 @@ body.job-modal-open {
   }
 
   .purpose-grid,
-  .roadmap-grid,
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -6601,11 +6528,6 @@ body.job-modal-open {
 
   .difference-media {
     width: min(680px, 100%);
-  }
-
-  .roadmap-heading {
-    grid-template-columns: 1fr;
-    gap: 10px;
   }
 
   .team-modal-layout {
@@ -6903,7 +6825,6 @@ body.job-modal-open {
   .pathoseek-ifu-grid,
   .mission-grid,
   .purpose-grid,
-  .roadmap-grid,
   .team-grid,
   .contact-details-list,
   .post-grid {
@@ -7321,20 +7242,8 @@ body.job-modal-open {
     min-height: 0;
   }
 
-  .purpose-number {
-    margin-bottom: 46px;
-  }
-
   .difference-media>img {
     height: 470px;
-  }
-
-  .roadmap-card {
-    min-height: 0;
-  }
-
-  .roadmap-card h3 {
-    margin-top: 40px;
   }
 
   .team-photo {
