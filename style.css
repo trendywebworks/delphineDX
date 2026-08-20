@@ -4503,56 +4503,6 @@ section {
   margin-bottom: 0;
 }
 
-.purpose-section {
-  padding-top: 0;
-  background: var(--white);
-}
-
-.purpose-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.purpose-card {
-  min-height: 390px;
-  padding: 34px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fbf9fd;
-  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, color 180ms ease;
-}
-
-.purpose-card:hover,
-.purpose-card:focus-within {
-  color: var(--white);
-  border-color: var(--primary);
-  background: var(--primary);
-  box-shadow: var(--shadow);
-}
-
-.purpose-card h2 {
-  margin-bottom: 16px;
-  color: var(--primary);
-  font-size: 1.75rem;
-  line-height: 1.16;
-}
-
-.purpose-card:hover h2,
-.purpose-card:focus-within h2 {
-  color: var(--white);
-}
-
-.purpose-card p:last-child {
-  margin: 0;
-  color: var(--muted);
-}
-
-.purpose-card:hover p:last-child,
-.purpose-card:focus-within p:last-child {
-  color: rgba(255, 255, 255, 0.8);
-}
-
 .difference-section {
   background: linear-gradient(180deg, #eef7fc 0%, #fbf9fd 100%);
 }
@@ -6516,7 +6466,6 @@ body.job-modal-open {
     width: min(720px, 100%);
   }
 
-  .purpose-grid,
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -6824,7 +6773,6 @@ body.job-modal-open {
   .pathoseek-panel-grid,
   .pathoseek-ifu-grid,
   .mission-grid,
-  .purpose-grid,
   .team-grid,
   .contact-details-list,
   .post-grid {
@@ -7235,10 +7183,6 @@ body.job-modal-open {
   .post-card>p,
   .archive-card p,
   .archive-card h3 {
-    min-height: 0;
-  }
-
-  .purpose-card {
     min-height: 0;
   }
 
