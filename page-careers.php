@@ -206,8 +206,8 @@
     <h3>How to apply</h3>
     <p>Send your resume and a short introduction describing your relevant research or diagnostics experience to
       Delphine Diagnostics.</p>
-    <a class="button job-apply-button"
-      href="mailto:customerservice@delphinedx.com?subject=Application%20-%20Laboratory%20Technician">Apply by email</a>
+
+    <a class="button job-apply-button" href="mailto:afynn@delphinedx.com">afynn@delphinedx.com</a>
   </template>
 
 
@@ -232,8 +232,7 @@
     <h3>How to apply</h3>
     <p>Send your resume and a short introduction describing your relevant research or diagnostics experience to
       Delphine Diagnostics.</p>
-    <a class="button job-apply-button"
-      href="mailto:customerservice@delphinedx.com?subject=Application%20-%20Research%20and%20Development%20Scientist">Apply by email</a>
+    <a class="button job-apply-button" href="mailto:afynn@delphinedx.com">afynn@delphinedx.com</a>
   </template>
 
 <?php get_footer(); ?>
