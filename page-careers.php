@@ -52,6 +52,29 @@
 
         <div class="job-list">
           <article class="job-card">
+            <div class="job-card-department">Laboratory Technician</div>
+            <div class="job-card-main">
+              <div>
+                <h3>Laboratory Technician</h3>
+                <div class="job-meta">
+                  <span>NJIT Newark</span>
+                  <span>Research &amp; Development – Molecular Diagnostics</span>
+                  <span>Laboratory Technician</span>
+                </div>
+              </div>
+              <p>We are looking for a Laboratory Technician to support our Research &amp; Development activities in real-time PCR sepsis diagnostic kit development and validation.</p>
+            </div>
+            <button class="job-card-button" type="button" data-job="rd-laboratory-technician"
+              data-title="Laboratory Technician" data-department="Laboratory Technician"
+              data-location="NJIT Newark">
+              View position
+              <span aria-hidden="true">↗</span>
+            </button>
+          </article>
+        </div>
+
+        <div class="job-list">
+          <article class="job-card">
             <div class="job-card-department">Research &amp; Development</div>
             <div class="job-card-main">
               <div>
@@ -94,6 +117,100 @@
     </div>
     <div class="job-modal-body" id="jobModalBody"></div>
   </dialog>
+
+  <template id="job-laboratory-technician">
+
+    <p><strong>Molecular Biology / Molecular Diagnostics R&amp;D</strong></p>
+    <p><strong>Position:</strong> Laboratory Technician</p>
+    <p><strong>Job location:</strong> NJIT Newark</p>
+    <p><strong>Department:</strong> Research &amp; Development – Molecular Diagnostics</p>
+    <p><strong>Experience:</strong> 1–3 years of relevant hands-on laboratory experience</p>
+    <p><strong>Education:</strong> B.Sc./B.Tech. in Biotechnology, Microbiology, Biochemistry, Molecular Biology,
+    Life Sciences, or related field. M.Sc. / Ph.D. candidates currently pursuing their degree are
+    also eligible.</p>
+
+    <p>We are looking for a Laboratory Technician to support our Research &amp; Development activities in real-time PCR sepsis diagnostic kit development and validation.</p>
+    <p>The candidate will work closely with scientists and senior R&amp;D personnel on molecular biology experiments, sample preparation, DNA/RNA extraction, PCR/qPCR testing, assay optimization, and documentation. The role is highly hands-on and requires candidates who are comfortable working in a laboratory environment and following experimental protocols accurately.</p>
+
+    <h3>Key Responsibilities</h3>
+    <ul>
+      <li>Perform DNA extraction from whole blood and other biological samples using manual and automated extraction methods.</li>
+      <li>Perform RNA extraction where required for assay development.</li>
+      <li>Prepare and process samples for molecular biology experiments.</li>
+      <li>Prepare PCR/qPCR master mixes, reagents, primers, probes, and other assay components under supervision.</li>
+      <li>Set up and perform real-time PCR experiments for R&amp;D activities.</li>
+      <li>Support real-time PCR kit development, optimization, and validation.</li>
+      <li>Assist in evaluating assay performance, including parameters such as amplification efficiency, specificity, sensitivity, reproducibility, and precision.</li>
+      <li>Perform serial dilutions and preparation of standards/control materials as required.</li>
+      <li>Run positive, negative, and internal controls as part of experimental workflows.</li>
+      <li>Operate and maintain real-time PCR instruments and other routine molecular biology equipment.</li>
+      <li>Maintain strict pre-PCR/post-PCR separation and contamination-control practices.</li>
+      <li>Accurately record experimental observations, raw data, sample information, and results.</li>
+      <li>Maintain laboratory notebooks, experiment sheets, reagent records, and equipment logs.</li>
+      <li>Assist scientists in troubleshooting experimental issues and optimizing laboratory workflows.</li>
+      <li>Follow established SOPs, experimental protocols, biosafety procedures, and laboratory quality practices.</li>
+      <li>Maintain laboratory cleanliness, organization, and inventory of reagents and consumables.</li>
+      <li>Support routine R&amp;D experiments and other molecular biology activities as assigned by the project team.</li>
+    </ul>
+
+    <h3>Required Qualifications</h3>
+    <ul>
+      <li>B.Sc./B.Tech. in Biotechnology, Microbiology, Biochemistry, Molecular Biology, Life Sciences, or a related field.</li>
+      <li>M.Sc. candidates currently pursuing their degree are also eligible.</li>
+      <li>1–3 years of hands-on laboratory experience in molecular biology, molecular diagnostics R&amp;D, biotechnology, research, or a related laboratory environment.</li>
+      <li>Practical experience with blood sample processing and DNA extraction is preferred.</li>
+      <li>Hands-on experience with PCR/real-time PCR is strongly preferred.</li>
+      <li>Good understanding of basic molecular biology principles.</li>
+      <li>Ability to accurately follow experimental protocols and SOPs.</li>
+      <li>Strong attention to detail and good laboratory documentation skills.</li>
+    </ul>
+
+    <h3>Preferred Technical Experience</h3>
+    <p>Experience in one or more of the following will be an advantage:</p>
+    <ul>
+      <li>DNA extraction from whole blood</li>
+      <li>RNA extraction</li>
+      <li>PCR and real-time PCR</li>
+      <li>Primer and probe handling</li>
+      <li>PCR master mix preparation</li>
+      <li>Serial dilution and standard preparation</li>
+      <li>Assay optimization</li>
+      <li>PCR troubleshooting</li>
+      <li>Analytical sensitivity and specificity studies</li>
+      <li>Repeatability/reproducibility experiments</li>
+      <li>Internal and external controls</li>
+      <li>DNA quantification</li>
+      <li>Gel electrophoresis</li>
+      <li>Molecular assay development</li>
+      <li>Real-time PCR kit development or validation</li>
+    </ul>
+
+    <h3>Candidate Profile</h3>
+    <p>The ideal candidate should be:</p>
+    <ul>
+      <li>Hands-on and laboratory-oriented.</li>
+      <li>Comfortable performing repetitive molecular biology experiments with accuracy.</li>
+      <li>Detail-oriented and careful with sample and reagent handling.</li>
+      <li>Able to maintain clear and complete experimental records.</li>
+      <li>Willing to learn new molecular techniques and R&amp;D workflows.</li>
+      <li>Comfortable working under the supervision of scientists while independently performing routine laboratory tasks.</li>
+      <li>Able to work effectively in a fast-paced R&amp;D environment.</li>
+    </ul>
+
+    <h3>Stipend / Compensation</h3>
+    <p>Stipend will be provided based on the availability and allotment of project/grant funding. The position is supported through research and development grant funding, and the stipend/compensation will be determined based on the applicable grant provisions, candidate qualifications, and relevant laboratory experience.</p>
+
+    <h3>Note</h3>
+    <p>This is an R&D laboratory position focused on molecular assay and real-time PCR kit development, not a routine clinical diagnostic testing role. Candidates with genuine hands-on experience in blood DNA extraction, PCR/qPCR, and molecular biology laboratory workflows will be preferred.</p>
+    
+    <h3>How to apply</h3>
+    <p>Send your resume and a short introduction describing your relevant research or diagnostics experience to
+      Delphine Diagnostics.</p>
+    <a class="button job-apply-button"
+      href="mailto:customerservice@delphinedx.com?subject=Application%20-%20Research%20and%20Development%20Scientist">Apply by email</a>
+  </template>
+
+
 
   <template id="job-rd-scientist">
     <p>Delphine Diagnostics is a New Jersey-based life sciences startup passionate about creating high-quality
