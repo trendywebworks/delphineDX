@@ -5647,7 +5647,7 @@ body.team-modal-open {
 
 .job-apply-button {
   margin-top: 14px;
-  color: var(--white);
+  color: var(--primary);
 }
 
 .job-modal-close {
