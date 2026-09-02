@@ -64,7 +64,7 @@
               </div>
               <p>We are looking for a Laboratory Technician to support our Research &amp; Development activities in real-time PCR sepsis diagnostic kit development and validation.</p>
             </div>
-            <button class="job-card-button" type="button" data-job="rd-laboratory-technician"
+            <button class="job-card-button" type="button" data-job="laboratory-technician"
               data-title="Laboratory Technician" data-department="Laboratory Technician"
               data-location="NJIT Newark">
               View position
@@ -207,7 +207,7 @@
     <p>Send your resume and a short introduction describing your relevant research or diagnostics experience to
       Delphine Diagnostics.</p>
     <a class="button job-apply-button"
-      href="mailto:customerservice@delphinedx.com?subject=Application%20-%20Research%20and%20Development%20Scientist">Apply by email</a>
+      href="mailto:customerservice@delphinedx.com?subject=Application%20-%20Laboratory%20Technician">Apply by email</a>
   </template>
 
 
