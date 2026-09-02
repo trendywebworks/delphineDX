@@ -203,11 +203,9 @@
     <h3>Note</h3>
     <p>This is an R&D laboratory position focused on molecular assay and real-time PCR kit development, not a routine clinical diagnostic testing role. Candidates with genuine hands-on experience in blood DNA extraction, PCR/qPCR, and molecular biology laboratory workflows will be preferred.</p>
     
-    <h3>How to apply</h3>
+    <h3>How to apply</h3>    
     <p>Send your resume and a short introduction describing your relevant research or diagnostics experience to
-      Delphine Diagnostics.</p>
-
-    <a class="button job-apply-button" href="mailto:afynn@delphinedx.com">afynn@delphinedx.com</a>
+      Delphine Diagnostics. Please email your application to <a class="job-apply-button" href="mailto:afynn@delphinedx.com">afynn@delphinedx.com</a></p>
   </template>
 
 
@@ -231,8 +229,7 @@
     </ul>
     <h3>How to apply</h3>
     <p>Send your resume and a short introduction describing your relevant research or diagnostics experience to
-      Delphine Diagnostics.</p>
-    <a class="button job-apply-button" href="mailto:afynn@delphinedx.com">afynn@delphinedx.com</a>
+      Delphine Diagnostics. Please email your application to <a class="job-apply-button" href="mailto:afynn@delphinedx.com">afynn@delphinedx.com</a></p>
   </template>
 
 <?php get_footer(); ?>
