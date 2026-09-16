@@ -40,6 +40,7 @@
         </div>
       </header>
 
+      <?php if ( ! has_category( 'events' ) ) : ?>
       <div class="section-inner article-featured-wrap">
         <figure class="article-featured">
           <?php if ( has_post_thumbnail() ) : ?>
@@ -49,6 +50,7 @@
           <?php endif; ?>
         </figure>
       </div>
+      <?php endif; ?>
 
       <section class="article-body-section">
         <div class="section-inner article-layout article-layout-single">
