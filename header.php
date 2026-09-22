@@ -89,7 +89,7 @@
         </div>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>careers/">Careers</a>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/blog/">Blog</a>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/events/">Events</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>category/events-and-updates/">Events and Updates</a>
       </div>
       <a class="button nav-cta" href="<?php echo esc_url( home_url( '/' ) ); ?>/contact-us/">Contact Us</a>
     </nav>
