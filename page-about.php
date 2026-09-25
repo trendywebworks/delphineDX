@@ -341,13 +341,13 @@
           </div>
           <div class="team-grid">
             <article class="team-card">
-              <button class="team-card-button" type="button" data-team-member="gabriella-sebbag"
-                data-name="Gabriella Sebbag" data-role="Laboratory Technician"
-                data-image="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/gabriella-sebbag.webp">
-                <span class="team-photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/gabriella-sebbag.webp"
-                    alt="Gabriella Sebbag"></span>
+              <button class="team-card-button" type="button" data-team-member="lucia-martinez"
+                data-name="Lucia Martinez" data-role="Laboratory Technician"
+                data-image="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/lucia-martinez.webp">
+                <span class="team-photo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/team/lucia-martinez.webp"
+                    alt="Lucia Martinez"></span>
                 <span class="team-card-content">
-                  <strong>Gabriella Sebbag</strong>
+                  <strong>Lucia Martinez</strong>
                   <span>Laboratory Technician</span>
                   <span class="team-card-link">View full profile</span>
                 </span>
@@ -404,16 +404,13 @@
         <li>Master's in Education, Temple University</li>
       </ul>
     </template>
-    <template id="profile-gabriella-sebbag">
-      <ul>
-        <li>Graduated cum laude from Rutgers University with a BA in Molecular Biology and Biochemistry.</li>
-        <li>Experienced in molecular biology research, diagnostic assay development, human sample processing, DNA
-          extraction, qPCR, and experimental data analysis.</li>
-        <li>Contributed to Delphine's PCR-based sepsis detection assay through laboratory workflows, assay optimization,
-          and research documentation.</li>
-        <li>Conducted genetics, oncology, and neurobiology research resulting in a peer-reviewed publication and
-          multiple research presentations.</li>
-      </ul>
+    <template id="profile-lucia-martinez">
+      <p>Lucia Julvez Martinez graduated cum laude from the New Jersey Institute of Technology with a B.S. in Biochemistry
+        and is currently pursuing a Professional Science Master’s in Cell and Gene Therapy. Her research experience
+        includes forensic biology and epigenetics, with hands-on experience in semen and saliva detection, DNA extraction
+        from human bone samples, and laboratory-based experimental research. Her forensic research was presented at the
+        American Academy of Forensic Sciences Annual Meeting in 2026. She is also gaining industry experience in molecular
+        diagnostics at Delphine Diagnostics, where she contributes to PCR-based assay development and laboratory workflows.</p>
     </template>
     <template id="profile-steven-simpson">
       <p>Dr. Steven Simpson is certified by the American Board of Internal Medicine with subcertifications in pulmonary
