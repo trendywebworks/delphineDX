@@ -4,11 +4,10 @@
   <?php while ( have_posts() ) : the_post(); ?>
     <?php
       $categories = get_the_category();
-      $author_initial = substr( get_the_author(), 0, 1 );
     ?>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class( 'article-post' ); ?>>
-      <header class="article-hero">
+      <header class="article-hero<?php echo has_post_thumbnail() ? '' : ' article-hero-no-image'; ?>">
         <div class="section-inner article-hero-inner">
           <nav class="article-breadcrumbs" aria-label="Breadcrumb">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
@@ -20,34 +19,21 @@
             <span aria-current="page"><?php echo esc_html( get_the_title() ); ?></span>
           </nav>
 
-          <?php if ( ! empty( $categories ) ) : ?>
-            <a class="article-category" href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>"><?php echo esc_html( $categories[0]->name ); ?></a>
-          <?php endif; ?>
+          <div class="article-meta">
+            <?php if ( ! empty( $categories ) ) : ?>
+              <a class="article-category" href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>"><?php echo esc_html( $categories[0]->name ); ?></a>
+            <?php endif; ?>
+            <time class="article-date" datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time>
+          </div>
 
           <h1><?php the_title(); ?></h1>
-
-          <div class="article-byline">
-            <span class="article-author-mark" aria-hidden="true"><?php echo esc_html( strtoupper( $author_initial ) ); ?></span>
-            <div>
-              <span><?php the_author(); ?></span>
-              <div class="article-date">
-                <time datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time>
-                <span aria-hidden="true">•</span>
-                <span><?php echo esc_html( delphine_reading_time() ); ?></span>
-              </div>
-            </div>
-          </div>
         </div>
       </header>
 
-      <?php if ( ! has_category( 'events' ) ) : ?>
+      <?php if ( has_post_thumbnail() ) : ?>
       <div class="section-inner article-featured-wrap">
         <figure class="article-featured">
-          <?php if ( has_post_thumbnail() ) : ?>
-            <?php the_post_thumbnail( 'full' ); ?>
-          <?php else : ?>
-            <?php delphine_fallback_featured_image( get_the_title() ); ?>
-          <?php endif; ?>
+          <?php the_post_thumbnail( 'full' ); ?>
         </figure>
       </div>
       <?php endif; ?>
