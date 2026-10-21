@@ -5854,6 +5854,18 @@ body.job-modal-open {
   max-width: 1000px;
 }
 
+.article-hero.article-hero-no-image {
+  padding-bottom: 66px;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 18px;
+  margin-bottom: 22px;
+}
+
 .article-breadcrumbs {
   display: flex;
   gap: 10px;
@@ -5874,7 +5886,6 @@ body.job-modal-open {
 
 .article-category {
   display: inline-flex;
-  margin-bottom: 22px;
   padding: 8px 13px;
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 999px;
@@ -5900,34 +5911,7 @@ body.job-modal-open {
   line-height: 1.7;
 }
 
-.article-byline {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  margin-top: 36px;
-}
-
-.article-author-mark {
-  display: grid;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  place-items: center;
-  color: var(--primary);
-  font-size: 0.76rem;
-  font-weight: 700;
-  background: var(--white);
-}
-
-.article-byline>div:last-child>span {
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
 .article-date {
-  display: flex;
-  gap: 8px;
-  margin-top: 3px;
   color: rgba(255, 255, 255, 0.62);
   font-size: 0.78rem;
 }
